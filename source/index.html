@@ -11,19 +11,19 @@
   <!-- Шапка -->
 
   <header class="page-header">
-    <a href="#" class="page-header__logo">
-      <svg class="page-header__primary-logo" width="33" height="38">
-        <use href="./img/sprite.svg#primary-logo"></use>
+    <a href="index.html" class="page-header__logo" aria-current="page">
+      <svg class="page-header__primary-logo" width="33" height="38" role="img" aria-label="Логотип Cat Energy">
+        <use href="img/sprite.svg#primary-logo"></use>
       </svg>
-      <svg class="page-header__secondary-logo" width="101" height="18">
-        <use href="./img/sprite.svg#secondary-logo"></use>
+      <svg class="page-header__secondary-logo" width="101" height="18" role="img" aria-label="Cat Energy">
+        <use href="img/sprite.svg#secondary-logo"></use>
       </svg>
     </a>
     <nav class="page-header__user-menu user-menu">
       <button class="user-menu__button-menu" type="button">Меню</button>
       <ul class="user-menu__navigation-list user-menu__navigation-list--is-opened">
         <li class="user-menu__navigation-item">
-          <a class="user-menu__navigation-link user-menu__navigation-link--active" href="#">Главная</a>
+          <a class="user-menu__navigation-link user-menu__navigation-link--active" href="index.html" aria-current="page">Главная</a>
         </li>
         <li class="user-menu__navigation-item">
           <a class="user-menu__navigation-link" href="#">Каталог продукции</a>
@@ -36,11 +36,12 @@
   </header>
 
   <!--Блок герой-->
+
 <main class="page-main">
   <section class="hero">
     <h1 class="hero__primary-title">Функциональное питание для котов</h1>
     <p class="hero__slogan">Занялся собой? Займись котом!</p>
-    <img class="hero__advertising-banner" src="./img/cat-energy-chicken.png" width="280" height="270"
+    <img class="hero__advertising-banner" src="img/cat-energy-chicken.png" width="280" height="270"
       alt="Cat Energy с курицей.">
     <a href="#" class="hero__button basic-button">подобрать программу</a>
   </section>
@@ -82,15 +83,15 @@
       изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
     </p>
     <div class="success-stories__progress">
-      <div class="success-stories__metrics">5 КГ</div>
-      <div class="success-stories__options">снижение веса</div>
-      <div class="success-stories__metrics">60 ДНЕЙ</div>
-      <div class="success-stories__metrics">затрачено времени</div>
+      <span class="success-stories__metrics">5 КГ</span>
+      <span class="success-stories__options">снижение веса</span>
+      <span class="success-stories__metrics">60 ДНЕЙ</span>
+      <span class="success-stories__metrics">затрачено времени</span>
     </div>
     <p class="success-stories-accent-text">Затраты на питание: 15 000 РУБ. </p>
     <div class="success-stories__slider slider">
-      <img class="slider__before" src="./img/fat-cat.png" width="280" height="256" alt="Борис до корма Cat Energy.">
-      <img class="slider__after" src="./img/skinny cat.png" width="280" height="256"
+      <img class="slider__before" src="img/fat-cat.png" width="280" height="256" alt="Борис до корма Cat Energy.">
+      <img class="slider__after" src="img/skinny cat.png" width="280" height="256"
         alt="Борис после корма Cat Energy.">
       <button class="slider__switch" type="button">Переключатель</button>
     </div>
@@ -106,16 +107,16 @@
       <address class="contacts__address">
         <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
         <span class="contacts__city"> Санкт-Петербург</span>
-        <div class="contacts__map"><img src="./img/map.jpg" alt="Карта" loading="lazy"></div>
+        <div class="contacts__map"><img src="img/map.jpg" alt="Карта" loading="lazy"></div>
       </address>
     </section>
 
     <!-- Логотип -->
 
     <div class="page-footer__logo">
-      <a href="#" class="page-footer__link-logo">
-        <svg class="page-footer__img-logo" width="101" height="18">
-          <use href="./img/sprite.svg#secondary-logo"></use>
+      <a href="index.html" class="page-footer__link-logo" aria-current="page">
+        <svg class="page-footer__img-logo" width="101" height="18" role="Cat Energy">
+          <use href="img/sprite.svg#secondary-logo"></use>
         </svg>
       </a>
     </div>
