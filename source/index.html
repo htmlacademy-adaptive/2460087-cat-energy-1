@@ -7,7 +7,6 @@
 </head>
 
 <body>
-
   <!-- Шапка -->
 
   <header class="page-header">
@@ -20,13 +19,14 @@
       </svg>
     </a>
     <nav class="page-header__user-menu user-menu">
-      <button class="user-menu__button-menu" type="button">Меню</button>
+      <button class="user-menu__button-menu" type="button"><span class="visually-hidden">Меню</span></button>
       <ul class="user-menu__navigation-list user-menu__navigation-list--is-opened">
         <li class="user-menu__navigation-item">
-          <a class="user-menu__navigation-link user-menu__navigation-link--active" href="index.html" aria-current="page">Главная</a>
+          <a class="user-menu__navigation-link user-menu__navigation-link--active" href="index.html"
+            aria-current="page">Главная</a>
         </li>
         <li class="user-menu__navigation-item">
-          <a class="user-menu__navigation-link" href="#">Каталог продукции</a>
+          <a class="user-menu__navigation-link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="user-menu__navigation-item">
           <a class="user-menu__navigation-link" href="#">Подбор программы</a>
@@ -37,66 +37,67 @@
 
   <!--Блок герой-->
 
-<main class="page-main">
-  <section class="hero">
-    <h1 class="hero__primary-title">Функциональное питание для котов</h1>
-    <p class="hero__slogan">Занялся собой? Займись котом!</p>
-    <img class="hero__advertising-banner" src="img/cat-energy-chicken.png" width="280" height="270"
-      alt="Cat Energy с курицей.">
-    <a href="#" class="hero__button basic-button">подобрать программу</a>
-  </section>
+  <main class="page-main">
+    <section class="hero">
+      <h1 class="hero__primary-title">Функциональное питание для котов</h1>
+      <p class="hero__slogan">Занялся собой? Займись котом!</p>
+      <img class="hero__advertising-banner" src="img/cat-energy-chicken.png" width="280" height="270"
+        alt="Cat Energy с курицей.">
+      <a class="hero__button basic-button" href="#">подобрать программу</a>
+    </section>
 
-  <!--Рацион питания-->
+    <!--Рацион питания-->
 
-  <section class="ration-description">
-    <h2 class="ration-description__title ration-description__title visually-hidden">Программа питания</h2>
-    <h3 class="ration-description__subtitle secondary-title">Похудение</h3>
-    <p class="ration-description__purpose main-text">
-      Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет
-      вашему питомцу сбросить лишний вес.
-    </p>
-    <a class="ration-description__link" href="#">Каталог slim</a>
-    <h3 class="ration-description__subtitle secondary-title">Набор массы</h3>
-    <p class="ration-description__purpose main-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
-      Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-    <a class="ration-description__link" href="#">Каталог pro</a>
-  </section>
+    <section class="ration-description">
+      <h2 class="ration-description__title ration-description__title visually-hidden">Программа питания</h2>
+      <h3 class="ration-description__subtitle secondary-title">Похудение</h3>
+      <p class="ration-description__purpose main-text">
+        Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
+        поможет
+        вашему питомцу сбросить лишний вес.
+      </p>
+      <a class="ration-description__link" href="#">Каталог slim</a>
+      <h3 class="ration-description__subtitle secondary-title">Набор массы</h3>
+      <p class="ration-description__purpose main-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+        Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+      <a class="ration-description__link" href="#">Каталог pro</a>
+    </section>
 
-  <!--Промо-блок-->
+    <!--Промо-блок-->
 
-  <section class="promo-block">
-    <h2 class="promo-block__title basic-title">Как это работает</h2>
-    <ol class="promo-block__list">
-      <li class="promo-block__item">Функциональное питание содержит только полезные питательные вещества.</li>
-      <li class="promo-block__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-      <li class="promo-block__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
-      <li class="promo-block__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
-    </ol>
-  </section>
+    <section class="promo-block">
+      <h2 class="promo-block__title basic-title">Как это работает</h2>
+      <ol class="promo-block__list">
+        <li class="promo-block__item">Функциональное питание содержит только полезные питательные вещества.</li>
+        <li class="promo-block__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+        <li class="promo-block__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
+        <li class="promo-block__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+      </ol>
+    </section>
 
-  <!--Истории успеха-->
+    <!--Истории успеха-->
 
-  <section class="success-stories">
-    <h2 class="success-stories__title basic-title">Живой пример</h2>
-    <p class="success-stories__description main-text">
-      Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
-      изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-    </p>
-    <div class="success-stories__progress">
-      <span class="success-stories__metrics">5 КГ</span>
-      <span class="success-stories__options">снижение веса</span>
-      <span class="success-stories__metrics">60 ДНЕЙ</span>
-      <span class="success-stories__metrics">затрачено времени</span>
-    </div>
-    <p class="success-stories-accent-text">Затраты на питание: 15 000 РУБ. </p>
-    <div class="success-stories__slider slider">
-      <img class="slider__before" src="img/fat-cat.png" width="280" height="256" alt="Борис до корма Cat Energy.">
-      <img class="slider__after" src="img/skinny cat.png" width="280" height="256"
-        alt="Борис после корма Cat Energy.">
-      <button class="slider__switch" type="button">Переключатель</button>
-    </div>
-  </section>
-</main>
+    <section class="success-stories">
+      <h2 class="success-stories__title basic-title">Живой пример</h2>
+      <p class="success-stories__description main-text">
+        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
+        изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+      </p>
+      <div class="success-stories__progress">
+        <span class="success-stories__metrics">5 КГ</span>
+        <span class="success-stories__options">снижение веса</span>
+        <span class="success-stories__metrics">60 ДНЕЙ</span>
+        <span class="success-stories__metrics">затрачено времени</span>
+      </div>
+      <p class="success-stories-accent-text">Затраты на питание: 15 000 РУБ. </p>
+      <div class="success-stories__slider slider">
+        <img class="slider__before" src="img/fat-cat.png" width="280" height="256" alt="Борис до корма Cat Energy.">
+        <img class="slider__after" src="img/skinny cat.png" width="280" height="256"
+          alt="Борис после корма Cat Energy.">
+        <button class="slider__switch" type="button"><span class="visually-hidden">Переключатель</span></button>
+      </div>
+    </section>
+  </main>
 
   <!--Подвал-->
 
