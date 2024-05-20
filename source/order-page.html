@@ -38,8 +38,59 @@
 
   <main class="page-main">
     <section class="program-selection">
-      <h1 class="program_selection__title primary-title">Подбор программы</h1>
-      
+      <h1 class="program-selection__title primary-title">Подбор программы</h1>
+      <p class="program-selection__subtitle">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
+      <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="post">
+
+        <fieldset class="form__cat-info">
+          <legend class="visually-hidden">Введите информацию о коте</legend>
+          <ul class="form__cat-info-list">
+            <li class="form__cat-info-input">
+              <label class="form__info-title">Имя:*
+                <input class="form__info-subtitle" type="text" name="name" placeholder="Барсик" required>
+              </label>
+            </li>
+            <li class="form__cat-info-input">
+              <label class="form__cat-info-label">Вес (кг):*
+                <input class="form__info-subtitle" type="number" name="weight" placeholder="7" required>
+              </label>
+            </li>
+            <li class="form__cat-info-input">
+              <label class="form__info-title">Возраст (лет):
+                <input class="form__info-subtitle" type="number" name="age" placeholder="7">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__nutrition">
+          <legend class="visually-hidden">Выберите цель диеты </legend>
+          <ul class="form-nutrion__list">
+            <li class="fotm-nutrion__input">
+            <label class="form-nutrition__label">
+              <input class="form-nutrition__radio" type="radio" name="nutrition-type" value="thinness" checked>
+              <span class="form-nutrition__text">Похудение</span>
+            </label>
+            </li>
+            <li class="fotm-nutrion__input">
+            <label class="form-nutrition__label">
+              <input class="form-nutrition__radio" type="radio" name="nutrition-type" value="weight">
+              <span class="form-nutrition__text">Набор массы</span>
+            </label>
+            </li>
+            <li class="fotm-nutrion__input">
+            <label class="form-nutrition__label">
+              <input class="form-nutrition__radio" type="radio" name="nutrition-type" value="unsure">
+              <span class="form-nutrition__text">Не знаю (Нужен ваш совет)</span>
+            </label>
+            </li>
+          </ul>
+        </fieldset>
+
+
+      </form>
+
     </section>
   </main>
 
