@@ -1,0 +1,27 @@
+.page-header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+
+  &__logo-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    max-width: 70%;
+  }
+
+  &__logo {
+    text-decoration: none;
+    padding: 23px 20px;
+    position: relative;
+  }
+
+  &__secondary-logo {
+    position: absolute;
+    left: 109px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
