@@ -4,9 +4,9 @@
 @import "text-rules.scss";
 @import "basic-button.scss";
 
-@import "blocks/page-header.scss";
-@import "blocks/user-menu.scss";
+@import "index/page-header.scss";
+@import "index/user-menu.scss";
 
-@import "blocks/hero.scss";
-
-@import "blocks/ration-description.scss"
+@import "index/hero.scss";
+@import "index/ration-description.scss";
+@import "index/promo-block.scss";
