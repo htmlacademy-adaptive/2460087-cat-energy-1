@@ -1,0 +1,62 @@
+.hero {
+  text-align: center;
+  color: var(--main-color);
+  position: relative;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/index-background.jpg");
+    background-color: var(--accent-color);
+    background-size: 320px 302px;
+    background-repeat: no-repeat;
+    width: 320px;
+    height: 302px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: var(--accent-color);
+    position: absolute;
+    width: 100vw;
+    height: 302px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.85;
+    z-index: -1;
+  }
+}
+
+.hero__primary-title {
+  margin: 0;
+  padding: 23px 10px 25px;
+}
+
+.hero__slogan {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding: 0 10px 29px;
+  margin: 0;
+}
+
+.hero__advertising-banner {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero__button {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  margin: 0 20px;
+}
