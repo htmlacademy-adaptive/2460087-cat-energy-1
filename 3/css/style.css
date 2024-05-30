@@ -1,0 +1,310 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2"), url("../fonts/oswald/oswaldmedium.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2"), url("../fonts/oswald/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2"), url("../fonts/lato/Lato-Regular.woff") format("woff");
+  font-display: swap;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+:root {
+  --main-color: #ffffff;
+  --accent-color: #68b738;
+  --title-color: #000000;
+  --extra-light: #f2f2f2;
+  --extra-dark: #444444;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: var(--main-color);
+  color: var(--extra-dark);
+  min-height: 100%;
+  min-width: 320px;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.primary-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.main-text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.basic-title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.basic-button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.page-header {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+}
+
+.page-header__logo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  max-width: 70%;
+}
+
+.page-header__logo {
+  text-decoration: none;
+  padding: 23px 20px;
+  position: relative;
+}
+
+.page-header__secondary-logo {
+  position: absolute;
+  left: 109px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.user-menu {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.user-menu__button-menu {
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+  background: none;
+  background-image: url("../../img/hamburger.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: -43px;
+  transform: translateY(-50%);
+}
+
+.user-menu__navigation-list {
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  list-style: none;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.user-menu__navigation-item {
+  padding: 23px 20px;
+}
+.user-menu__navigation-item--first-item {
+  border-top: solid 1px #E6E6E6;
+  border-bottom: solid 1px #E6E6E6;
+}
+.user-menu__navigation-item--other-item {
+  border-bottom: solid 1px #E6E6E6;
+}
+
+.user-menu__navigation-link {
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+.hero {
+  text-align: center;
+  color: var(--main-color);
+  position: relative;
+  box-sizing: border-box;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/index-background.jpg");
+  background-color: var(--accent-color);
+  background-size: 320px 302px;
+  background-repeat: no-repeat;
+  width: 320px;
+  height: 302px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -2;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  background-color: var(--accent-color);
+  position: absolute;
+  width: 100vw;
+  height: 302px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.85;
+  z-index: -1;
+}
+
+.hero__primary-title {
+  margin: 0;
+  padding: 23px 10px 25px;
+}
+
+.hero__slogan {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding: 0 10px 29px;
+  margin: 0;
+}
+
+.hero__advertising-banner {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero__button {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.ration-description__wrapper {
+  background-color: var(--extra-light);
+  margin: 20px;
+}
+
+.ration-description__subtitle {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0 22px 0 20px;
+}
+
+.ration-description__purpose {
+  padding: 0 33px 22px 20px;
+  position: relative;
+  color: var(--extra-dark);
+}
+.ration-description__purpose::after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #d9d9d9;
+  width: 240px;
+  height: 1px;
+  bottom: 0;
+  left: 20px;
+}
+
+.ration-description__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--title-color);
+  padding: 0 4px;
+  margin: 0 0 18px 20px;
+}
+
+.promo-block__title {
+  box-sizing: border-box;
+  color: var(--title-color);
+  margin: 0 20px 40px;
+  padding: 0;
+}
+
+.promo-block__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: var(--extra-dark);
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.promo-block__item {
+  padding: 0 0 0 80px;
+  position: relative;
+}
+.promo-block__item::before {
+  content: "";
+  position: absolute;
+  background-color: var(--accent-color);
+  width: 60px;
+  height: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+/*# sourceMappingURL=style.css.map */
