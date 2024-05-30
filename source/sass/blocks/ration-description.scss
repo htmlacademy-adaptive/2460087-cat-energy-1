@@ -1,0 +1,44 @@
+.ration-description__wrapper {
+  background-color: var(--extra-light);
+  margin: 20px;
+}
+
+.ration-description__subtitle {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0 22px 0 20px;
+}
+
+.ration-description__purpose {
+  padding: 0 33px 22px 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid #d9d9d9;
+    width: 240px;
+    height: 1px;
+    bottom: 0;
+    left: 20px;
+  }
+}
+
+.ration-description__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--title-color);
+  padding: 4px;
+  margin: 15px 0 18px 20px;
+}
