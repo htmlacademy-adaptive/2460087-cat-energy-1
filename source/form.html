@@ -32,7 +32,7 @@
             <a class="user-menu__navigation-link" href="catalog.html" aria-current="page">Каталог продукции</a>
           </li>
           <li class="user-menu__navigation-item user-menu__navigation-item--other-item">
-            <a class="user-menu__navigation-link user-menu__navigation-link--active" href="order-page.html"
+            <a class="user-menu__navigation-link user-menu__navigation-link--active" href="form.html"
               aria-current="page">Подбор программы</a>
           </li>
         </ul>
@@ -60,12 +60,12 @@
               </li>
               <li class="form__cat-info-input">
                 <label class="form__cat-info-label form-text">Вес (кг):*
-                  <input class="form__info-subtitle form-text" type="number" name="weight" placeholder="7" required>
+                  <input class="form__info-subtitle form-text" type="number" name="weight" placeholder="7" min="0" max="30" required>
                 </label>
               </li>
               <li class="form__cat-info-input">
                 <label class="form__info-title form-text">Возраст (лет):
-                  <input class="form__info-subtitle form-text" type="number" name="age" placeholder="7">
+                  <input class="form__info-subtitle form-text" type="number" name="age" placeholder="7" min="0" max="30">
                 </label>
               </li>
             </ul>
@@ -122,7 +122,7 @@
               <h2 class="form-title">Комментарий</h2>
             </legend>
             <textarea class="form__comments-textarea form-text" name="commetns" cols="40"
-              rows="10">Расскажите обо всех повадках кота</textarea>
+              rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form__extras">
