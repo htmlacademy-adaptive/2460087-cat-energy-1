@@ -1,6 +1,6 @@
 .hero {
   text-align: center;
-  color: var(--main-color);
+  color: #ffffff;
   position: relative;
   box-sizing: border-box;
 
@@ -8,7 +8,7 @@
     content: "";
     position: absolute;
     background-image: url("../../img/index-background.jpg");
-    background-color: var(--accent-color);
+    background-color: var(--main-color);
     background-size: 320px 302px;
     background-repeat: no-repeat;
     width: 320px;
@@ -22,7 +22,7 @@
   &::after {
     content: "";
     position: absolute;
-    background-color: var(--accent-color);
+    background-color: var(--main-color);
     position: absolute;
     width: 100vw;
     height: 302px;
@@ -37,6 +37,7 @@
 .hero__primary-title {
   margin: 0;
   padding: 23px 10px 25px;
+  color: #ffffff;
 }
 
 .hero__slogan {
@@ -59,4 +60,5 @@
   padding: 10px;
   text-align: center;
   margin: 0 20px;
+  background-color: var(--main-color);
 }

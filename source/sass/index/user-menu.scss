@@ -5,24 +5,6 @@
   position: relative;
 }
 
-.user-menu__button-menu {
-  width: 24px;
-  height: 24px;
-  border: none;
-  padding: 0;
-  background: none;
-  background-image: url("../../img/hamburger.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 24px;
-  display: block;
-  cursor: pointer;
-  position: absolute;
-  right: 20px;
-  top: -43px;
-  transform: translateY(-50%);
-}
-
 .user-menu__navigation-list {
   font-size: 20px;
   line-height: 20px;
@@ -48,6 +30,6 @@
 
 .user-menu__navigation-link {
   text-decoration: none;
-  color: var(--title-color);
+  color: #000000;
 }
 
