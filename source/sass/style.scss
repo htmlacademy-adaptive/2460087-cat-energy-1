@@ -1,14 +1,11 @@
-@import "fonts.scss";
-@import "general-rules.scss";
-
-
-@import "text-rules/basic-title.scss";
-@import "text-rules/main-text.scss";
-@import "text-rules/primary-title.scss";
-
-@import "basic-button.scss";
+@import "common/fonts.scss";
+@import "common/variables.scss";
+@import "common/general-rules.scss";
+@import "common/basic-button.scss";
+@import "common/text-rules.scss";
 
 @import "index/page-header.scss";
 @import "index/user-menu.scss";
 
 @import "index/hero.scss";
+

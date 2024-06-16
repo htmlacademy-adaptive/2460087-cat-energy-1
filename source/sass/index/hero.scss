@@ -1,6 +1,5 @@
 .hero {
   text-align: center;
-  color: #ffffff;
   position: relative;
   box-sizing: border-box;
 
@@ -8,10 +7,10 @@
     content: "";
     position: absolute;
     background-image: url("../../img/index-background.jpg");
-    background-color: var(--main-color);
-    background-size: 320px 302px;
+    background-color: $main-color;
+    background-size: $mobile-width 302px;
     background-repeat: no-repeat;
-    width: 320px;
+    width: $mobile-width;
     height: 302px;
     top: 0;
     left: 50%;
@@ -22,7 +21,7 @@
   &::after {
     content: "";
     position: absolute;
-    background-color: var(--main-color);
+    background-color: $main-color;
     position: absolute;
     width: 100vw;
     height: 302px;
@@ -35,19 +34,27 @@
 }
 
 .hero__primary-title {
+  font-family: $secondary-font;
   margin: 0;
   padding: 23px 10px 25px;
+
+  &--mobile {
   color: #ffffff;
+}
 }
 
 .hero__slogan {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   padding: 0 10px 29px;
   margin: 0;
+
+  &--mobile {
+    color: #ffffff;
+  }
 }
 
 .hero__advertising-banner {
@@ -60,5 +67,6 @@
   padding: 10px;
   text-align: center;
   margin: 0 20px;
-  background-color: var(--main-color);
+  background-color: $main-color;
+  color: #ffffff;
 }

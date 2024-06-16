@@ -11,13 +11,9 @@
   overflow: hidden;
 }
 
-:root {
-  --main-color: #68b738;
-}
-
 body {
   margin: 0;
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: $base-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -25,10 +21,10 @@ body {
   background-color: #ffffff;
   color:#444444;
   min-height: 100%;
-  min-width: 320px;
+  min-width: $mobile-width;
 }
 
 .main-container {
   margin: 0 auto;
-  width: 320px;
+  width: $mobile-width;
 }

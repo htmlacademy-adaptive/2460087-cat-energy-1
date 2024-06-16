@@ -1,11 +1,5 @@
-.user-menu {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  position: relative;
-}
-
 .user-menu__navigation-list {
+  font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
   text-align: center;
