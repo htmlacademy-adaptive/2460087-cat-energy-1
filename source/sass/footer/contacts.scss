@@ -1,0 +1,19 @@
+.contacts-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+  padding: 26px 0;
+  align-items: center;
+}
+
+.contacts__invitation {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+}
+
+.contacts__address {
+  line-height: 20px;
+  font-style: normal;
+}

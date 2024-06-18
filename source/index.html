@@ -126,14 +126,16 @@
       <!--Контакты-->
 
       <section class="page-footer__contacts contacts">
+        <div class="contacts-wrapper">
         <h2 class="contacts__title visually-hidden">Контакты</h2>
         <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">
           <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
           <span class="contacts__city"> Санкт-Петербург</span>
-          <div id="map" style="width:320px; height:362px">
-          </div>
         </address>
+        </div>
+        <div id="map" class="contacts__map" style="width:320px; height:362px">
+        </div>
       </section>
 
       <!-- Логотип -->
@@ -183,8 +185,10 @@
   </div>
 </body>
 
-    <script src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=748c05f5-b923-40a4-87ff-c372433ecd66"
-      type="text/javascript"></script>
+<script
+  src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=748c05f5-b923-40a4-87ff-c372433ecd66"
+  type="text/javascript"></script>
 
-    <script src="../js/mapbasics.js" type="text/javascript"></script>
+<script src="../js/mapbasics.js" type="text/javascript"></script>
+
 </html>

@@ -60,12 +60,14 @@
               </li>
               <li class="form__cat-info-input">
                 <label class="form__cat-info-label form-text">Вес (кг):*
-                  <input class="form__info-subtitle form-text" type="number" name="weight" placeholder="7" min="0" max="30" required>
+                  <input class="form__info-subtitle form-text" type="number" name="weight" placeholder="7" min="0"
+                    max="30" required>
                 </label>
               </li>
               <li class="form__cat-info-input">
                 <label class="form__info-title form-text">Возраст (лет):
-                  <input class="form__info-subtitle form-text" type="number" name="age" placeholder="7" min="0" max="30">
+                  <input class="form__info-subtitle form-text" type="number" name="age" placeholder="7" min="0"
+                    max="30">
                 </label>
               </li>
             </ul>
@@ -121,8 +123,8 @@
             <legend class="form__comments-title">
               <h2 class="form-title">Комментарий</h2>
             </legend>
-            <textarea class="form__comments-textarea form-text" name="commetns" cols="40"
-              rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__comments-textarea form-text" name="commetns" cols="40" rows="10"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form__extras">
@@ -167,69 +169,72 @@
       </section>
     </main>
 
-    <!--Подвал-->
+<!--Подвал-->
 
-    <footer class="page-footer">
+<footer class="page-footer">
 
-      <!--Контакты-->
+  <!--Контакты-->
 
-      <section class="page-footer__contacts contacts">
-        <h2 class="contacts__title visually-hidden">Контакты</h2>
-        <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">
-          <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
-          <span class="contacts__city"> Санкт-Петербург</span>
-          <div id="map" style="width:320px; height:362px">
-          </div>
-        </address>
-      </section>
+  <section class="page-footer__contacts contacts">
+    <div class="contacts-wrapper">
+      <h2 class="contacts__title visually-hidden">Контакты</h2>
+      <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
+      <address class="contacts__address">
+        <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
+        <span class="contacts__city"> Санкт-Петербург</span>
+      </address>
+    </div>
+    <div id="map" class="contacts__map" style="width:320px; height:362px">
+    </div>
+  </section>
 
-      <!-- Логотип -->
+  <!-- Логотип -->
 
-      <div class="page-footer__logo">
-        <a href="index.html" class="page-footer__link-logo">
-          <svg class="page-footer__text-logo text-logo" width="101" height="18" role="img" aria-label="Cat Energy">
-            <use href="img/sprite.svg#secondary-logo"></use>
-          </svg>
-        </a>
-      </div>
-
-      <!--Социальные сети-->
-
-      <section class="page-footer__social-media social-media">
-        <h2 class="social-media__title visually-hidden">Социальные сети</h2>
-        <ul class="social-media-list">
-          <li class="social-media-item">
-            <a class="social-media__link" href="#">
-              <span class="visually-hidden">Vkontakte</span>
-            </a>
-          </li>
-          <li class="social-media-item">
-            <a class="social-media__link" href="#">
-              <span class="visually-hidden">YouTube</span>
-            </a>
-          </li>
-          <li class="social-media-item">
-            <a class="social-media__link" href="#">
-              <span class="visually-hidden">Telegram</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <!--Разработчики-->
-
-      <section class="page-footer__developers developers">
-        <h2 class="developers__title visually-hidden">Разработчики сайта</h2>
-        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="developers__text">HTML Academy</span>
-          <span class="developers__logo"></span>
-        </a>
-      </section>
-
-    </footer>
+  <div class="page-footer__logo">
+    <a href="index.html" class="page-footer__link-logo" aria-current="page">
+      <svg class="page-footer__text-logo text-logo" width="101" height="18" role="img" aria-label="Cat Energy">
+        <use href="img/sprite.svg#secondary-logo"></use>
+      </svg>
+    </a>
   </div>
+
+  <!--Социальные сети-->
+
+  <section class="page-footer__social-media social-media">
+    <h2 class="social-media__title visually-hidden">Социальные сети</h2>
+    <ul class="social-media-list">
+      <li class="social-media-item">
+        <a class="social-media__link" href="#">
+          <span class="visually-hidden">Vkontakte</span>
+        </a>
+      </li>
+      <li class="social-media-item">
+        <a class="social-media__link" href="#">
+          <span class="visually-hidden">YouTube</span>
+        </a>
+      </li>
+      <li class="social-media-item">
+        <a class="social-media__link" href="#">
+          <span class="visually-hidden">Telegram</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <!--Разработчики-->
+
+  <section class="page-footer__developers developers">
+    <h2 class="developers__title visually-hidden">Разработчики сайта</h2>
+    <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="developers__text">HTML Academy</span>
+      <span class="developers__logo"></span>
+    </a>
+  </section>
+
+</footer>
+</div>
 </body>
+
 <script
   src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=748c05f5-b923-40a4-87ff-c372433ecd66"
   type="text/javascript"></script>
