@@ -1,0 +1,17 @@
+.developers__link {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  position: relative;
+  padding: 20px;
+  align-items: center;
+}
+
+.developers__text {
+  color: #444444;
+}
+
+.developers__logo {
+  position: absolute;
+  right: 20px;
+}
