@@ -1,5 +1,5 @@
 .catalog {
-
+  padding: 0 0 25px;
   &--border {
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
@@ -9,4 +9,31 @@
 .catalog__title {
   margin: 0 0 41px;
   padding: 27px 20px 0;
+}
+
+.catalog__additionally {
+  text-align: center;
+}
+
+.catalog__additionally-title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 25px 0 8px;
+  padding: 0 10px;
+}
+
+.catalog__additionally-text {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 21px;
+}
+
+.catalog__additionally-button {
+  background-color: #f2f2f2;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
 }
