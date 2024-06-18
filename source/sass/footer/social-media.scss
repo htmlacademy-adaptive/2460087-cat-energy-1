@@ -1,0 +1,17 @@
+.social-media__list {
+  margin: 0 20px;
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 26px;
+  justify-content: center;
+
+  &--border {
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.social-media__item {
+  list-style: none;
+}
