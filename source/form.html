@@ -179,7 +179,8 @@
         <address class="contacts__address">
           <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
           <span class="contacts__city"> Санкт-Петербург</span>
-          <div class="contacts__map"><img src="img/map.jpg" alt="Карта" loading="lazy"></div>
+          <div id="map" style="width:320px; height:362px">
+          </div>
         </address>
       </section>
 
@@ -229,3 +230,10 @@
     </footer>
   </div>
 </body>
+<script
+  src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=748c05f5-b923-40a4-87ff-c372433ecd66"
+  type="text/javascript"></script>
+
+<script src="../js/mapbasics.js" type="text/javascript"></script>
+
+</html>
