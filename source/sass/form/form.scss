@@ -44,6 +44,15 @@
   outline: solid 1px #e7e7e7;
 }
 
+.form__cat-info-description::-webkit-outer-spin-button,
+.form__cat-info-description::-webkit-inner-spin-button {
+  --webkit-appearance: none;
+}
+
+.form__cat-info-description[type="number"] {
+  --moz-appearance: textfield;
+}
+
 // Цель диеты
 
 .form__nutrition {
