@@ -170,6 +170,10 @@ body {
   z-index: -1;
 }
 
+.page-main__hero {
+  margin: 0 0 20px;
+}
+
 .hero__primary-title {
   font-family: "Oswald", "Arial", sans-serif;
   margin: 0;
