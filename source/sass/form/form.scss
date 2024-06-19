@@ -9,7 +9,7 @@
 // Информация о коте
 
 .form__cat-info {
-  margin: 0;
+  margin: 0 0 23px;
   padding: 0 20px 26px;
   border: none;
 
@@ -53,3 +53,26 @@
   }
 }
 
+// Цель диеты
+
+.form__nutrition {
+  border: none;
+
+  &--line {
+    border-bottom: solid 1px #d9d9d9;
+  }
+}
+
+.form__nutrition-list {
+  margin: 0;
+  padding: 0;
+}
+
+.form__nutrion-input-radio {
+  list-style: none;
+  margin: 0 0 13px;
+}
+
+.form__nutrition-text {
+  margin: 0 0 0 15px;
+}
