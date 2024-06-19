@@ -11,13 +11,9 @@
   margin: 0 0 20px;
 }
 
-.catalog__title {
-  margin: 0 0 41px;
-  padding: 27px 20px 0;
-}
-
 .catalog__additionally {
   text-align: center;
+  @include mobile-width;
 }
 
 .catalog__additionally-title {
@@ -40,5 +36,6 @@
   background-color: #f2f2f2;
   text-decoration: none;
   padding: 10px;
+  margin: 0 20px;
   display: block;
 }

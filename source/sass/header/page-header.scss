@@ -27,3 +27,12 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+.page-header__container {
+  @include mobile-width;
+}
+
+.page-header__title {
+  margin: 0 0 41px;
+  padding: 27px 20px 0;
+}
