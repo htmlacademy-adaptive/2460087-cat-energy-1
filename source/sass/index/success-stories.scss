@@ -1,6 +1,7 @@
 .success-stories {
   background-color: #eaeaea;
   padding: 25px 20px 40px;
+  @include mobile-width;
 }
 
 .success-stories__title {

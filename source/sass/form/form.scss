@@ -46,11 +46,11 @@
 
 .form__cat-info-description::-webkit-outer-spin-button,
 .form__cat-info-description::-webkit-inner-spin-button {
-  --webkit-appearance: none;
+  appearance: none;
 }
 
 .form__cat-info-description[type="number"] {
-  --moz-appearance: textfield;
+  appearance: textfield;
 }
 
 // Цель диеты

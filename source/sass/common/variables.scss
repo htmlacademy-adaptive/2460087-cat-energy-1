@@ -7,3 +7,10 @@ $secondary-font: "Oswald", "Arial", sans-serif;
 
 // Ширина окна
 $mobile-width: 320px;
+
+
+@mixin mobile-width {
+  width: $mobile-width;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

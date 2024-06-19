@@ -2,6 +2,10 @@
   padding: 0 20px 49px;
 }
 
+.page-main__promo-block {
+  @include mobile-width;
+}
+
 .promo-block__title {
   margin: 0 0 40px;
 }

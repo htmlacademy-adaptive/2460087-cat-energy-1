@@ -1,10 +1,15 @@
-.developers {
-  padding: 20px;
+.page-footer__developers {
+  @include mobile-width;
+  padding: 0 0 20px;
 }
 
 .developers__link {
   text-decoration: none;
   position: relative;
+}
+
+.developers__wrapper {
+  padding: 0 0 20px;
 }
 
 .developers__text {

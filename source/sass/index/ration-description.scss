@@ -10,6 +10,7 @@
 .ration-description__wrapper {
   background-color: #f2f2f2;
   padding: 30px 20px 22px;
+  @include mobile-width;
 }
 
 .ration-description__title {
@@ -24,7 +25,6 @@
   padding: 0 0 23px;
 
   &--line {
-    width: 200px;
     border-bottom: 1px solid #d9d9d9;
   }
 }

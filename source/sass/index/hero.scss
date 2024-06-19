@@ -2,19 +2,20 @@
   text-align: center;
   position: relative;
   box-sizing: border-box;
+  margin: 0 auto;
 
   &::before {
     content: "";
     position: absolute;
     background-image: url("../../img/index-background.jpg");
     background-color: $main-color;
-    background-size: $mobile-width 302px;
+    background-size: cover;
     background-repeat: no-repeat;
     width: $mobile-width;
-    height: 302px;
+    min-height: 302px;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%);
     z-index: -2;
   }
 
@@ -22,23 +23,25 @@
     content: "";
     position: absolute;
     background-color: $main-color;
-    width: 100vw;
-    height: 302px;
+    width: 100%;
+    min-height: 302px;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     opacity: 0.85;
     z-index: -1;
   }
 }
 
-.page-main__hero {
+.page-header__hero {
   margin: 0 0 20px;
+}
+
+.hero__container {
+  @include mobile-width;
 }
 
 .hero__primary-title {
   font-family: $secondary-font;
-  margin: 0;
   padding: 23px 10px 25px;
 
   &--mobile {
