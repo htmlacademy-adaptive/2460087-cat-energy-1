@@ -167,3 +167,26 @@
   margin: 0 0 13px;
 }
 
+// Форма отправки
+
+.form__footer {
+  margin: 0 0 32px;
+  padding: 0 20px;
+}
+
+.form__button {
+  background-color: $main-color;
+  color: #ffffff;
+  border: none;
+  padding: 10px 78px;
+  margin: 0 0 21px;
+}
+
+.form__notice {
+  font-family: $base-font;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  text-align: center;
+}
