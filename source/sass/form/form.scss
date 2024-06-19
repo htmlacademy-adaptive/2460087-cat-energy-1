@@ -18,6 +18,10 @@
   }
 }
 
+.form__container {
+  @include mobile-width;
+}
+
 .form__cat-info-list {
   margin: 0;
   padding: 0;
@@ -142,6 +146,7 @@
   outline: 1px solid #e7e7e7;
   resize: vertical;
   flex: 1;
+  min-width: 100%;
 }
 
 // Дополнительно
@@ -170,8 +175,12 @@
 // Форма отправки
 
 .form__footer {
-  margin: 0 0 32px;
+  margin: 0 auto 32px;
   padding: 0 20px;
+  width: $mobile-width;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .form__button {
@@ -180,6 +189,8 @@
   border: none;
   padding: 10px 78px;
   margin: 0 0 21px;
+  display: block;
+  width: object-fit;
 }
 
 .form__notice {
