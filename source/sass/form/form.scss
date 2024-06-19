@@ -41,7 +41,7 @@
   margin: 0 0 0 13px;
   padding: 14px 15px 13px;
   flex: 1;
-  outline: solid 1px $form-border;
+  outline: solid 1px #e7e7e7;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -57,6 +57,7 @@
 
 .form__nutrition {
   border: none;
+  margin: 0;
 
   &--line {
     border-bottom: solid 1px #d9d9d9;
@@ -76,3 +77,43 @@
 .form__nutrition-text {
   margin: 0 0 0 15px;
 }
+
+// Контактные данные
+
+.form__owner {
+  border: none;
+  margin: 0;
+}
+
+.form__owner-title {
+  text-transform: none;
+  margin: 0 0 35px;
+  padding: 26px 0 0;
+}
+
+.form__owner-list {
+  margin: 0;
+  padding: 0;
+}
+
+.form__owner-item {
+  list-style: none;
+  margin: 0 0 14px;
+}
+
+.form__owner-label {
+  display: flex;
+  align-items: center;
+}
+
+.form__owner-input {
+    font-family: inherit;
+    border: none;
+    color: inherit;
+    text-transform: inherit;
+    margin: 0 0 0 13px;
+    padding: 14px 15px 13px;
+    flex: 1;
+    outline: solid 1px #cdcdcd;
+}
+
