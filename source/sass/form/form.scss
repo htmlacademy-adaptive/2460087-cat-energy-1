@@ -82,7 +82,7 @@
 
 .form__owner {
   border: none;
-  margin: 0;
+  margin: 0 0 10px;
 }
 
 .form__owner-title {
@@ -107,13 +107,40 @@
 }
 
 .form__owner-input {
-    font-family: inherit;
-    border: none;
-    color: inherit;
-    text-transform: inherit;
-    margin: 0 0 0 13px;
-    padding: 14px 15px 13px;
-    flex: 1;
-    outline: solid 1px #cdcdcd;
+  font-family: inherit;
+  border: none;
+  color: inherit;
+  text-transform: inherit;
+  margin: 0 0 0 13px;
+  padding: 14px 15px 13px;
+  flex: 1;
+  outline: solid 1px #cdcdcd;
+}
+
+// Комментарий
+
+.form__comments {
+  border: none;
+  margin: 0 0 23px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.form__comments-title {
+  text-transform: none;
+  margin: 0 0 38px;
+}
+
+.form__comments-textarea {
+  font-family: inherit;
+  text-transform: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 14px 14px 0;
+  border: none;
+  outline: 1px solid #e7e7e7;
+  resize: vertical;
+  min-width: 280px;
+  min-height: 150px;
 }
 
