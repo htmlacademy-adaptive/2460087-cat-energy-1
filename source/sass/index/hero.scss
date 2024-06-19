@@ -22,7 +22,6 @@
     content: "";
     position: absolute;
     background-color: $main-color;
-    position: absolute;
     width: 100vw;
     height: 302px;
     top: 0;
@@ -39,8 +38,8 @@
   padding: 23px 10px 25px;
 
   &--mobile {
-  color: #ffffff;
-}
+    color: #ffffff;
+  }
 }
 
 .hero__slogan {
@@ -69,5 +68,4 @@
   margin: 0 20px;
   background-color: $main-color;
   color: #ffffff;
-  margin: 0 0 20px;
 }

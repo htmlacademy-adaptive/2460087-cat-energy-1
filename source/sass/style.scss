@@ -3,26 +3,22 @@
 @import "common/general-rules.scss";
 @import "common/basic-button.scss";
 @import "common/text-rules.scss";
-
-
+//Шапка
 @import "header/page-header.scss";
 @import "header/user-menu.scss";
-
-
+//Главная
 @import "index/hero.scss";
 @import "index/ration-description.scss";
 @import "index/promo-block.scss";
 @import "index/success-stories.scss";
-
-
+//Каталог
 @import "catalog/catalog.scss";
 @import "catalog/card.scss";
 @import "catalog/extras.scss";
-
-
+//Форма
 @import "form/program-selection.scss";
 @import "form/form.scss";
-
+//Подвал
 @import "footer/page-footer.scss";
 @import "footer/contacts.scss";
 @import "footer/social-media.scss";
