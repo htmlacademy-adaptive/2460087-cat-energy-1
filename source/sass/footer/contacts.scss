@@ -4,7 +4,10 @@
   box-sizing: border-box;
   padding: 26px 20px;
   align-items: center;
-  background-color: #ffffff;
+
+  &--index {
+    background-color: #ffffff;
+  }
 }
 
 .contacts__invitation {

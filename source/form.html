@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Кэт энерджи</title>
+  <title>Cat Energy | Функциональное питание для котов </title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -46,27 +46,27 @@
         <h1 class="program-selection__title primary-title">Подбор программы</h1>
         <p class="program-selection__subtitle">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
+
         <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="post">
 
-          <fieldset class="form__cat-info">
-            <legend class="visually-hidden">
-              <h2 class="visually-hidden">Введите информацию о коте</h2>
+          <fieldset class="form__cat-info form__cat-info--line">
+            <legend class="visually-hidden">Введите информацию о коте
             </legend>
             <ul class="form__cat-info-list">
-              <li class="form__cat-info-input">
-                <label class="form__info-title form-text">Имя:*
-                  <input class="form__info-subtitle form-text" type="text" name="name" placeholder="Барсик" required>
+              <li class="form__cat-info-item">
+                <label class="form__cat-info-label">Имя:*
+                  <input class="form__cat-info-description" type="text" name="name" placeholder="Барсик" required>
                 </label>
               </li>
-              <li class="form__cat-info-input">
-                <label class="form__cat-info-label form-text">Вес (кг):*
-                  <input class="form__info-subtitle form-text" type="number" name="weight" placeholder="7" min="0"
+              <li class="form__cat-info-item">
+                <label class="form__cat-info-label">Вес (кг):*
+                  <input class="form__cat-info-description" type="number" name="weight" placeholder="7" min="0"
                     max="30" required>
                 </label>
               </li>
-              <li class="form__cat-info-input">
-                <label class="form__info-title form-text">Возраст (лет):
-                  <input class="form__info-subtitle form-text" type="number" name="age" placeholder="7" min="0"
+              <li class="form__cat-info-item">
+                <label class="form__cat-info-label">Возраст (лет):
+                  <input class="form__cat-info-description" type="number" name="age" placeholder="7" min="0"
                     max="30">
                 </label>
               </li>
@@ -81,19 +81,19 @@
               <li class="form__nutrion-input-radio">
                 <label class="form__nutrion-label">
                   <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="thinness" checked>
-                  <span class="form__nutrition-text form-text">Похудение</span>
+                  <span class="form__nutrition-text">Похудение</span>
                 </label>
               </li>
               <li class="form__nutrion-input-radio">
                 <label class="form__nutrion-label">
                   <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="weight">
-                  <span class="form__nutrition-text form-text">Набор массы</span>
+                  <span class="form__nutrition-text">Набор массы</span>
                 </label>
               </li>
               <li class="form__nutrion-input-radio">
                 <label class="form__nutrion-label">
                   <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="unsure">
-                  <span class="form__nutrition-text form-text">Не знаю (Нужен ваш совет)</span>
+                  <span class="form__nutrition-text">Не знаю (Нужен ваш совет)</span>
                 </label>
               </li>
             </ul>
@@ -105,14 +105,14 @@
             </legend>
             <ul class="form-owner__list">
               <li class="form-owner__item">
-                <label class="form-owner__label form-text">E-mail:*
-                  <input class="form-owner__input form-text" type="email" name="owner-mail"
+                <label class="form-owner__label">E-mail:*
+                  <input class="form-owner__input" type="email" name="owner-mail"
                     placeholder="kuklachev@gmail.com" required>
                 </label>
               </li>
               <li class="form-owner__item">
-                <label class="form-owner__label form-text">Телефон:*
-                  <input class="form-owner__input form-text" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90"
+                <label class="form-owner__label">Телефон:*
+                  <input class="form-owner__input" type="tel" name="owner-tel" placeholder="8 (960) 900-60-90"
                     required>
                 </label>
               </li>
@@ -123,7 +123,7 @@
             <legend class="form__comments-title">
               <h2 class="form-title">Комментарий</h2>
             </legend>
-            <textarea class="form__comments-textarea form-text" name="commetns" cols="40" rows="10"
+            <textarea class="form__comments-textarea" name="commetns" cols="40" rows="10"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
@@ -135,25 +135,25 @@
               <li class="form__extras-item">
                 <label class="form__extras-label">
                   <input class="form__extras-input" type="checkbox" name="sugar-substitute" checked>
-                  <span class="form__extras-text form-text">Cахарозаменитель</span>
+                  <span class="form__extras-text">Cахарозаменитель</span>
                 </label>
               </li>
               <li class="form__extras-item">
                 <label class="form__extras-label">
                   <input class="form__extras-input" type="checkbox" name="water">
-                  <span class="form__extras-text form-text">Питьевая вода</span>
+                  <span class="form__extras-text">Питьевая вода</span>
                 </label>
               </li>
               <li class="form__extras-item">
                 <label class="form__extras-label">
                   <input class="form__extras-input" type="checkbox" name="milk">
-                  <span class="form__extras-text form-text">Молоко</span>
+                  <span class="form__extras-text">Молоко</span>
                 </label>
               </li>
               <li class="form__extras-item">
                 <label class="form__extras-label">
                   <input class="form__extras-input" type="checkbox" name="vitamins">
-                  <span class="form__extras-text form-text">Витамины</span>
+                  <span class="form__extras-text">Витамины</span>
                 </label>
               </li>
             </ul>
