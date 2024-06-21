@@ -27,6 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  min-width: $width-xs;
 }
 
 .container {
@@ -34,4 +35,3 @@ body {
   display: flex;
   flex-direction: column;
 }
-

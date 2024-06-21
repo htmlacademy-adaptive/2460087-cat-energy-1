@@ -44,7 +44,6 @@
 }
 
 .hero__primary-title {
-  font-family: $secondary-font;
   padding: 23px 10px 25px;
 
   &--mobile {
@@ -54,7 +53,6 @@
 
 .hero__slogan {
   font-family: $secondary-font;
-  font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -73,7 +71,7 @@
 
 .hero__button {
   display: block;
-  padding: 10px 62px;
+  padding: 10px 58px;
   text-align: center;
   margin: 0 auto;
   background-color: $main-color;

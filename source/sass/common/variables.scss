@@ -11,14 +11,14 @@ $width-m: 768px;
 $width-xl: 1440px;
 
 
-@mixin mobile-width {
-  width: $width-xs;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
 :root {
   --padding-xs: 20px;
   --padding-m: 30px;
   --padding-xl: 110px;
+}
+
+@mixin mobile-width {
+  width: $width-xs;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
