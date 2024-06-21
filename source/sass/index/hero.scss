@@ -1,8 +1,6 @@
 .hero {
-  text-align: center;
   position: relative;
   box-sizing: border-box;
-  margin: 0 auto;
 
   &::before {
     content: "";
@@ -11,7 +9,7 @@
     background-color: $main-color;
     background-size: cover;
     background-repeat: no-repeat;
-    width: $width-xs;
+    min-width: $width-xs;
     min-height: 302px;
     top: 0;
     left: 50%;
@@ -37,7 +35,12 @@
 }
 
 .hero__container {
-  @include mobile-width;
+  margin: 0 auto;
+  width: $width-xs;
+
+  &--mobile-position {
+    text-align: center;
+  }
 }
 
 .hero__primary-title {
@@ -70,9 +73,10 @@
 
 .hero__button {
   display: block;
-  padding: 10px;
+  padding: 10px 62px;
   text-align: center;
-  margin: 0 20px;
+  margin: 0 auto;
   background-color: $main-color;
   color: #ffffff;
+  width: fit-content;
 }
