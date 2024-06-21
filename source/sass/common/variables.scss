@@ -16,9 +16,3 @@ $width-xl: 1440px;
   --padding-m: 30px;
   --padding-xl: 110px;
 }
-
-@mixin mobile-width {
-  width: $width-xs;
-  margin: 0 auto;
-  box-sizing: border-box;
-}

@@ -11,7 +11,6 @@
   flex-wrap: wrap;
   column-gap: 26px;
   justify-content: center;
-  @include mobile-width;
 }
 
 .social-media__item {
