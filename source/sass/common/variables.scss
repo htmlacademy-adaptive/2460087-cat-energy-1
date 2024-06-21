@@ -5,12 +5,20 @@ $main-color: #68b738;
 $base-font: "Lato", "Arial", sans-serif;
 $secondary-font: "Oswald", "Arial", sans-serif;
 
-// Ширина окна
-$mobile-width: 320px;
+// Вьюпорты
+$width-xs: 320px;
+$width-m: 768px;
+$width-xl: 1440px;
 
 
 @mixin mobile-width {
-  width: $mobile-width;
+  width: $width-xs;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+:root {
+  --padding-xs: 20px;
+  --padding-m: 30px;
+  --padding-xl: 110px;
 }
