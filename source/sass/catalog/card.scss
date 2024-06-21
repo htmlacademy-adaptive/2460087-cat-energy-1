@@ -10,7 +10,6 @@
 }
 
 .card__container {
-  @include mobile-width;
   display: grid;
   grid-template-columns: 2fr repeat(2, 1fr);
   grid-template-rows: auto;

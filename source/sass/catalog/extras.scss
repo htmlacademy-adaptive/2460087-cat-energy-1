@@ -1,7 +1,6 @@
 .extras {
   padding: 0 20px 0;
   margin: 20px 0 35px;
-  @include mobile-width;
 }
 
 .extras__title {
@@ -61,11 +60,12 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/cat-case.jpg");
+    background-image: url("../../img/cat-case.png");
     background-color: $main-color;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    top: 0;
     height: 290px;
     z-index: -2;
   }
