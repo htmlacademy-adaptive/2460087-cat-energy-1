@@ -42,15 +42,15 @@
   padding: 14px 15px 13px;
   flex: 1;
   outline: solid 1px #e7e7e7;
-}
 
-.form__cat-info-description::-webkit-outer-spin-button,
-.form__cat-info-description::-webkit-inner-spin-button {
-  appearance: none;
-}
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    appearance: none;
+  }
 
-.form__cat-info-description[type="number"] {
-  appearance: textfield;
+  &[type="number"] {
+    appearance: textfield;
+  }
 }
 
 // Цель диеты
@@ -142,7 +142,7 @@
   outline: 1px solid #e7e7e7;
   resize: vertical;
   flex: 1;
-  min-width: 100%;
+  min-width: 280px;
 }
 
 // Дополнительно
@@ -173,9 +173,7 @@
 .form__footer {
   margin: 0 auto 32px;
   padding: 0 20px;
-  width: $width-xs;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 
