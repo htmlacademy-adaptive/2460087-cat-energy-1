@@ -1,0 +1,18 @@
+// Цветовая схема
+$main-color: #68b738;
+
+//Шрифты
+$base-font: "Lato", "Arial", sans-serif;
+$secondary-font: "Oswald", "Arial", sans-serif;
+
+// Вьюпорты
+$width-xs: 320px;
+$width-m: 768px;
+$width-xl: 1440px;
+
+
+:root {
+  --padding-xs: 20px;
+  --padding-m: 30px;
+  --padding-xl: 110px;
+}

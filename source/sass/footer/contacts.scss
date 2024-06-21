@@ -1,0 +1,32 @@
+.contacts__wrapper {
+  padding: 26px 0;
+
+  &--index {
+    background-color: #ffffff;
+  }
+}
+
+.contacts__text-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  padding: 0 20px;
+}
+
+.contacts__invitation {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  line-height: 20px;
+  font-style: normal;
+}
+
+.contacts__map {
+  min-height: 320px;
+}

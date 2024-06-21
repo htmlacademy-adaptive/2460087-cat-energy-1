@@ -1,0 +1,80 @@
+.hero {
+  position: relative;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/index-background.jpg");
+    background-color: $main-color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: $width-xs;
+    min-height: 302px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $main-color;
+    width: 100%;
+    min-height: 302px;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    z-index: -1;
+  }
+}
+
+.page-header__hero {
+  margin: 0 0 20px;
+}
+
+.hero__container {
+  margin: 0 auto;
+  width: $width-xs;
+
+  &--mobile-position {
+    text-align: center;
+  }
+}
+
+.hero__primary-title {
+  padding: 23px 10px 25px;
+
+  &--mobile {
+    color: #ffffff;
+  }
+}
+
+.hero__slogan {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  padding: 0 10px 29px;
+  margin: 0;
+
+  &--mobile {
+    color: #ffffff;
+  }
+}
+
+.hero__advertising-banner {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero__button {
+  display: block;
+  padding: 10px 58px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: $main-color;
+  color: #ffffff;
+  width: fit-content;
+}

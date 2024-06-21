@@ -1,0 +1,18 @@
+.promo-block {
+  padding: 0 20px 49px;
+}
+
+.promo-block__title {
+  margin: 0 0 40px;
+}
+
+.promo-block__list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-row-gap: 26px;
+}
+
+.promo-block__item {
+  list-style: none;
+}

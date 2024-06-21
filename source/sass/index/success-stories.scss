@@ -1,0 +1,57 @@
+.success-stories {
+  background-color: #eaeaea;
+}
+
+.success-stories-container {
+  padding: 25px 20px 40px;
+}
+
+.success-stories__title {
+  margin: 0;
+}
+
+.success-stories__progress {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  grid-template-rows: auto auto;
+  column-gap: 32px;
+  row-gap: 8px;
+}
+
+.success-stories__progress-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.success-stories__progress-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.success-stories__metrics {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+.success-stories__options {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 100%;
+  display: block;
+  text-align: center;
+}
+
+.success-stories-accent-text {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
