@@ -13,7 +13,7 @@
 
   <header class="page-header">
     <div class="page-header__logo-wrapper">
-      <a href="index.html" class="page-header__logo">
+      <a href="index.html" class="page-header__logo" aria-current="page">
         <svg class="page-header__primary-logo" width="33" height="38" role="img" aria-label="Логотип Cat Energy">
           <use href="img/sprite.svg#primary-logo"></use>
         </svg>
@@ -26,20 +26,22 @@
       <button class="user-menu__button-menu" type="button"><span class="visually-hidden">Меню</span></button>
       <ul class="user-menu__navigation-list user-menu__navigation-list--is-opened">
         <li class="user-menu__navigation-item user-menu__navigation-item--first-item">
-          <a class="user-menu__navigation-link" href="index.html">Главная</a>
+          <a class="user-menu__navigation-link user-menu__navigation-link--active" href="index.html">Главная</a>
         </li>
         <li class="user-menu__navigation-item user-menu__navigation-item--other-item">
-          <a class="user-menu__navigation-link" href="catalog.html" aria-current="page">Каталог продукции</a>
+          <a class="user-menu__navigation-link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="user-menu__navigation-item user-menu__navigation-item--other-item">
-          <a class="user-menu__navigation-link user-menu__navigation-link--active" href="form.html"
-            aria-current="page">Подбор программы</a>
+          <a class="user-menu__navigation-link" href="form.html" aria-current="page">Подбор программы</a>
         </li>
       </ul>
     </nav>
-    <div class="page-header__container">
+
+    <!--Заголовок страницы-->
+
       <h1 class="page-header__title primary-title">Подбор программы</h1>
-    </div>
+      <p class="page-header__subtitle">Заполните анкету, и мы подберем
+        программу питания для вашего кота</p>
   </header>
 
   <!--Форма-->
@@ -47,9 +49,6 @@
   <main class="page-main">
     <section class="program-selection">
       <h2 class="visually-hidden">Анкета</h2>
-      <p class="program-selection__subtitle">Заполните анкету, и мы подберем
-        программу питания для вашего кота</p>
-
       <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="post">
 
         <fieldset class="form__cat-info form__cat-info--line">
@@ -192,13 +191,15 @@
     <!--Контакты-->
 
     <section class="page-footer__contacts contacts">
-      <div class="contacts-wrapper">
-        <h2 class="contacts__title visually-hidden">Контакты</h2>
-        <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">
-          <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
-          <span class="contacts__city"> Санкт-Петербург</span>
-        </address>
+      <div class="contacts__wrapper contacts__wrapper--index">
+        <div class="contacts__text-container">
+          <h2 class="contacts__title visually-hidden">Контакты</h2>
+          <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров! </p>
+          <address class="contacts__address">
+            <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contacts__city"> Санкт-Петербург </span>
+          </address>
+        </div>
       </div>
       <div id="map" class="contacts__map">
       </div>
@@ -216,26 +217,26 @@
 
     <!--Социальные сети-->
 
-    <section class="page-footer__social-media social-media">
+    <section class="page-footer__social-media page-footer__social-media--border social-media">
       <h2 class="social-media__title visually-hidden">Социальные сети</h2>
       <ul class="social-media__list social-media__list--border">
         <li class="social-media__item">
           <a class="social-media__link" href="#">
-            <svg class="social-media__vkontakte" width="27" height="17" role="img" aria-label="Vkontakte">
+            <svg class="social-media__vkontakte" width="28" height="22" role="img" aria-label="Vkontakte">
               <use href="img/sprite.svg#vkontakte"></use>
             </svg>
           </a>
         </li>
         <li class="social-media__item">
           <a class="social-media__link" href="#">
-            <svg class="social-media__youtube" width="24" height="19" role="img" aria-label="YouTube">
+            <svg class="social-media__youtube" width="28" height="22" role="img" aria-label="YouTube">
               <use href="img/sprite.svg#youtube"></use>
             </svg>
           </a>
         </li>
         <li class="social-media__item">
           <a class="social-media__link" href="#">
-            <svg class="social-media__telegram" width="20" height="18" role="img" aria-label="Telegram">
+            <svg class="social-media__telegram" width="28" height="22" role="img" aria-label="Telegram">
               <use href="img/sprite.svg#telegram"></use>
             </svg>
           </a>
@@ -256,6 +257,7 @@
     </section>
 
   </footer>
+
 
   <script
     src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=748c05f5-b923-40a4-87ff-c372433ecd66"></script>

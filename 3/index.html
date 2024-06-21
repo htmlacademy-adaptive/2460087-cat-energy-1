@@ -13,7 +13,6 @@
     <header class="page-header">
 
       <!-- Шапка -->
-
       <div class="page-header__logo-wrapper">
         <a href="index.html" class="page-header__logo" aria-current="page">
           <svg class="page-header__primary-logo" width="33" height="38" role="img" aria-label="Логотип Cat Energy">
@@ -24,6 +23,7 @@
           </svg>
         </a>
       </div>
+
       <nav class="page-header__user-menu user-menu">
         <button class="user-menu__button-menu" type="button"><span class="visually-hidden">Меню</span></button>
         <ul class="user-menu__navigation-list user-menu__navigation-list--is-opened">
@@ -43,14 +43,14 @@
       <!--Блок герой-->
 
       <section class="page-header__hero hero">
-        <div class="hero__container">
+        <div class="hero__container hero__container--mobile-position">
           <h1 class="hero__primary-title hero__primary-title--mobile primary-title">Функциональное питание для котов
           </h1>
           <p class="hero__slogan hero__slogan--mobile">Занялся собой? Займись котом! </p>
-          <img class="hero__advertising-banner" src="img/cat-energy-chicken.png" width="280" height="270"
-            alt="Cat Energy с курицей.">
-          <a class="hero__button basic-button" href="form.html">подобрать программу</a>
         </div>
+        <img class="hero__advertising-banner" src="img/cat-energy-chicken.png" width="280" height="270"
+          alt="Cat Energy с курицей.">
+        <a class="hero__button basic-button" href="form.html">подобрать программу</a>
       </section>
     </header>
 
@@ -106,6 +106,7 @@
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без
             изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
+          <div class="success-stories__progress-container">
           <div class="success-stories__progress">
             <div class="success-stories__progress-wrapper">
               <span class="success-stories__metrics">5 КГ</span>
@@ -116,11 +117,11 @@
               <span class="success-stories__options">затрачено времени</span>
             </div>
           </div>
-          <p class="success-stories-accent-text">Затраты на питание: 15 000 РУБ</p>
+          <p class="success-stories-accent-text"><span>Затраты на питание:</span><span> 15 000 РУБ</span></p>
+          </div>
           <div class="success-stories__slider slider">
-            <img class="slider__before" src="img/fat-cat.png" width="280" height="256" alt="Борис до корма Cat Energy.">
-            <img class="slider__after" src="img/skinny-cat.png" width="280" height="256"
-              alt="Борис после корма Cat Energy.">
+            <img class="slider__before" src="#" width="280" height="256" alt="Борис до корма Cat Energy.">
+            <img class="slider__after" src="#" width="280" height="256" alt="Борис после корма Cat Energy.">
             <button class="slider__switch" type="button"><span class="visually-hidden">Переключатель</span></button>
           </div>
         </div>
@@ -165,21 +166,21 @@
       <ul class="social-media__list social-media__list--border">
         <li class="social-media__item">
           <a class="social-media__link" href="#">
-            <svg class="social-media__vkontakte" width="27" height="17" role="img" aria-label="Vkontakte">
+            <svg class="social-media__vkontakte" width="28" height="22" role="img" aria-label="Vkontakte">
               <use href="img/sprite.svg#vkontakte"></use>
             </svg>
           </a>
         </li>
         <li class="social-media__item">
           <a class="social-media__link" href="#">
-            <svg class="social-media__youtube" width="24" height="19" role="img" aria-label="YouTube">
+            <svg class="social-media__youtube" width="28" height="22" role="img" aria-label="YouTube">
               <use href="img/sprite.svg#youtube"></use>
             </svg>
           </a>
         </li>
         <li class="social-media__item">
           <a class="social-media__link" href="#">
-            <svg class="social-media__telegram" width="20" height="18" role="img" aria-label="Telegram">
+            <svg class="social-media__telegram" width="28" height="22" role="img" aria-label="Telegram">
               <use href="img/sprite.svg#telegram"></use>
             </svg>
           </a>
@@ -191,14 +192,12 @@
 
     <section class="page-footer__developers developers">
       <h2 class="developers__title visually-hidden">Разработчики сайта</h2>
-      <div class="developers__wrapper">
-        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="developers__text">HTML Academy</span>
-          <svg class="developers__logo" width="27" height="34" role="img" aria-label="HTML Academy">
-            <use href="img/sprite.svg#academy"></use>
-          </svg>
-        </a>
-      </div>
+      <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="developers__text">HTML Academy</span>
+        <svg class="developers__logo" width="27" height="34" role="img" aria-label="HTML Academy">
+          <use href="img/sprite.svg#academy"></use>
+        </svg>
+      </a>
     </section>
 
   </footer>
