@@ -2,17 +2,13 @@
   font-family: $base-font;
   font-style: normal;
   font-weight: 400;
-  position: relative;
 }
 
 .page-header__logo-wrapper {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  text-align: center;
-  max-width: 70%;
-  width: $width-xs;
-  margin: 0 auto;
+  align-self: start;
 }
 
 .page-header__logo {
@@ -26,10 +22,6 @@
   left: 109px;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.page-header__container {
-  @include mobile-width;
 }
 
 .page-header__title {

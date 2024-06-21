@@ -17,6 +17,8 @@
   position: absolute;
   left: var(--padding-xs);
   pointer-events: auto;
+  top: 0;
+  transform: translateY(50%);
 }
 
 .developers__logo {

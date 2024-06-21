@@ -1,7 +1,3 @@
-.page-header__user-menu {
-  margin: 0 auto;
-}
-
 .user-menu__navigation-list {
   font-family: $secondary-font;
   font-size: 20px;
@@ -14,7 +10,6 @@
 }
 
 .user-menu__navigation-item {
-  padding: 23px 20px;
 
   &--first-item {
     border-top: solid 1px #e6e6e6;
@@ -29,4 +24,17 @@
 .user-menu__navigation-link {
   text-decoration: none;
   color: #000000;
+  display: block;
+  padding: 23px 20px;
+}
+
+.user-menu__button-menu {
+  width: 24px;
+  height: 24px;
+  background-color: red;
+  border: none;
+  position: relative;
+  margin: -58px 0 20px auto;
+  display: block;
+  right: var(--padding-xs);
 }
