@@ -10,7 +10,7 @@
 
 .form__cat-info {
   margin: 0 0 23px;
-  padding: 0 20px 26px;
+  padding: 0 var(--page-indentation) 26px;
   border: none;
 
   &--line {
@@ -58,6 +58,7 @@
 .form__nutrition {
   border: none;
   margin: 0;
+  padding: 0 var(--page-indentation);
 
   &--line {
     border-bottom: solid 1px #d9d9d9;
@@ -83,6 +84,7 @@
 .form__owner {
   border: none;
   margin: 0 0 10px;
+  padding: 0 var(--page-indentation);
 }
 
 .form__owner-title {
@@ -122,7 +124,7 @@
 .form__comments {
   border: none;
   margin: 0 0 23px;
-  padding: 0 20px;
+  padding: 0 var(--page-indentation);
   box-sizing: border-box;
   display: flex;
 }
@@ -149,7 +151,7 @@
 
 .form__extras {
   margin: 0 0 34px;
-  padding: 0 20px;
+  padding: 0 var(--page-indentation);
   border: none;
 }
 
@@ -172,7 +174,7 @@
 
 .form__footer {
   margin: 0 auto 32px;
-  padding: 0 20px;
+  padding: 0 var(--page-indentation);
   display: flex;
   flex-wrap: wrap;
 }

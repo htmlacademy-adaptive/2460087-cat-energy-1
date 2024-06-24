@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 23px 20px;
+  padding: 23px var(--page-indentation);
   position: relative;
 }
 
@@ -24,7 +24,7 @@
 
 .page-header__title {
   margin: 0 0 41px;
-  padding: 27px 20px 0;
+  padding: 27px var(--page-indentation) 0;
 }
 
 .page-header__subtitle {
@@ -34,5 +34,5 @@
   color: #000000;
   text-transform: uppercase;
   margin: 0 0 35px;
-  padding: 0 20px;
+  padding: 0 var(--page-indentation);
 }

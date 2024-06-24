@@ -8,6 +8,7 @@
     background-image: url("../../img/index-background.jpg");
     background-color: $main-color;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     min-height: 302px;
@@ -36,7 +37,7 @@
 
 .hero__container {
   margin: 0 auto;
-  width: $width-xs;
+  width: 320px;
 
   &--mobile-position {
     text-align: center;

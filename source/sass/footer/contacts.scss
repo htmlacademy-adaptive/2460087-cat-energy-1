@@ -11,7 +11,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
-  padding: 0 20px;
+  padding: 0 var(--page-indentation);
 }
 
 .contacts__invitation {
