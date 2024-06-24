@@ -15,6 +15,18 @@
   text-decoration: none;
 }
 
+.page-header__primary-logo {
+  display: block;
+
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
 .page-header__secondary-logo {
   position: absolute;
   left: 50%;
@@ -35,4 +47,29 @@
   text-transform: uppercase;
   margin: 0 0 35px;
   padding: 0 var(--page-indentation);
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-header__primary-logo--mobile {
+    display: none;
+  }
+
+  .page-header__primary-logo--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__primary-logo--mobile {
+    display: none;
+  }
+
+  .page-header__primary-logo--tablet {
+    display: none;
+  }
+
+  .page-header__primary-logo--desktop {
+    display: block;
+  }
 }
