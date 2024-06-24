@@ -1,48 +1,25 @@
 .developers {
-  padding: 30px 0;
+  padding: 30px 20px;
+  position: relative;
 }
 
 .developers__link {
   font-size: 16px;
   line-height: 20px;
-  position: relative;
   display: block;
   text-decoration: none;
   color: inherit;
-  pointer-events: none;
-  min-height: 34px;
+  width: fit-content;
+  margin: 0 0 0 auto;
 }
 
 .developers__text {
   position: absolute;
-  left: var(--padding-xs);
-  pointer-events: auto;
-  top: 0;
-  transform: translateY(50%);
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .developers__logo {
-  position: absolute;
-  right: var(--padding-xs);
-  pointer-events: auto;
-}
-
-@media (min-width: $width-m) {
-  .developers__text {
-    left: var(--padding-m);
-  }
-
-  .developers__logo {
-    right: var(--padding-m);
-  }
-}
-
-@media (min-width: $width-xl) {
-  .developers__text {
-    left: var(--padding-xl);
-  }
-
-  .developers__logo {
-    right: var(--padding-xl);
-  }
+  display: block;
 }

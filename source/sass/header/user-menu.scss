@@ -1,5 +1,6 @@
 .user-menu__navigation-list {
   font-family: $secondary-font;
+  position: relative;
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
@@ -29,12 +30,13 @@
 }
 
 .user-menu__button-menu {
+  position: absolute;
+  content: '';
   width: 24px;
   height: 24px;
   background-color: #00f621;
   border: none;
-  position: relative;
-  margin: -58px 0 20px auto;
   display: block;
-  right: var(--padding-xs);
+  top: 33px;
+  right: 20px
 }
