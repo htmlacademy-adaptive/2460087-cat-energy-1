@@ -51,6 +51,12 @@
 
 @media (min-width: $tablet-width) {
 
+  .page-header__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
   .page-header__primary-logo {
     &--mobile {
       display: none;
