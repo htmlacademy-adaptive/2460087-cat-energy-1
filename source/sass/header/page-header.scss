@@ -4,15 +4,13 @@
 }
 
 .page-header__logo-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   padding: 23px var(--page-indentation);
   position: relative;
 }
 
 .page-header__logo {
   text-decoration: none;
+  display: block;
 }
 
 .page-header__primary-logo {
@@ -64,13 +62,13 @@
   }
 
   .page-header__secondary-logo {
-    left: 144px;
+    left: 90px;
+    transform: translate(0, -50%);
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__primary-logo {
-
     &--mobile {
       display: none;
     }
@@ -85,7 +83,8 @@
   }
 
   .page-header__secondary-logo {
-    left: 262px;
+    left: 180px;
+    transform: translate(0, -50%);
     width: 118px;
     height: 21px;
   }
