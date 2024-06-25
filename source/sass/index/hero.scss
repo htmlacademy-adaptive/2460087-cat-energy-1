@@ -102,7 +102,8 @@
       height: 609px;
       object-fit: cover;
       z-index: -1;
-      top: 200px;
+      left: -50px;
+      top: 205px;
     }
   }
 
@@ -135,7 +136,7 @@
 @media (min-width: $desktop-width) {
 
   .page-header__hero {
-    margin: 0 0 210px 44px;
+    margin: 0 0 95px 44px;
   }
 
   .hero__advertising-banner {
@@ -150,7 +151,7 @@
       height: 499px;
       position: absolute;
       left: 490px;
-      top: 0;
+      top: -114px;
       z-index: -1;
     }
   }
