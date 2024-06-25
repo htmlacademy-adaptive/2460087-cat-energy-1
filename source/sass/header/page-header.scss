@@ -60,7 +60,6 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 0 var(--page-indentation);
-    margin: 0 0 65px;
   }
 
   .page-header__primary-logo {
@@ -82,9 +81,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__container {
-    margin: 0 0 114px;
-  }
 
   .page-header__primary-logo {
     &--mobile {
