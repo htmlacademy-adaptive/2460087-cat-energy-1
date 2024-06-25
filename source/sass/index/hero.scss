@@ -38,6 +38,7 @@
 .hero__container {
   margin: 0 auto;
   width: 320px;
+  box-sizing: border-box;
 
   &--mobile-position {
     text-align: center;
@@ -46,10 +47,7 @@
 
 .hero__primary-title {
   padding: 23px 10px 25px;
-
-  &--mobile {
-    color: #ffffff;
-  }
+  color: #ffffff;
 }
 
 .hero__slogan {
@@ -59,15 +57,16 @@
   text-transform: uppercase;
   padding: 0 10px 29px;
   margin: 0;
-
-  &--mobile {
-    color: #ffffff;
-  }
+  color: #ffffff;
 }
 
 .hero__advertising-banner {
   display: block;
   margin: 0 auto;
+
+  &--tablet {
+    display: none;
+  }
 }
 
 .hero__button {
@@ -78,4 +77,40 @@
   background-color: $main-color;
   color: #ffffff;
   width: fit-content;
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    background-color: #ffffff;
+    padding: 0 var(--page-indentation);
+  }
+
+  .hero__container {
+    margin: 0;
+    width: 414px;
+  }
+
+  .hero__advertising-banner {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+
+  .hero__primary-title {
+    color: #000000;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .hero__slogan {
+    color: #000000;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

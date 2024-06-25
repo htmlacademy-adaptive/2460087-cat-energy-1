@@ -1,6 +1,5 @@
 .page-header__user-menu {
   margin: 0 0 0 auto;
-  padding: 0 var(--page-indentation);
 }
 
 .user-menu__navigation-list {
@@ -16,6 +15,7 @@
 }
 
 .user-menu__navigation-item {
+
   &--first-item {
     border-top: solid 1px #e6e6e6;
     border-bottom: solid 1px #e6e6e6;
