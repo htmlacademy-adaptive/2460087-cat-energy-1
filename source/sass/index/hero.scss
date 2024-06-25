@@ -104,7 +104,6 @@
     line-height: 60px;
     margin: 0 0 40px 90px;
     padding: 0;
-    grid-area: 1 / 1 / 2 / 2;
   }
 
   .hero__slogan {
@@ -114,7 +113,6 @@
     line-height: 20px;
     margin: 0 0 50px 90px;
     padding: 0;
-    grid-area: 2 / 1 / 3 / 2;
   }
 
   .hero__button {
@@ -122,6 +120,39 @@
     padding: 18px 26px;
     font-size: 20px;
     line-height: 26px;
-    grid-area: 3 / 1 / 4 / 2;
   }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-items: start;
+  }
+
+  .hero__advertising-banner {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+      grid-area: 1 / 2 / 4 / 3;
+      object-fit: cover;
+      justify-self: start;
+    }
+  }
+
+  .hero__primary-title {
+    margin: 0 0 40px 190px;
+  }
+
+  .hero__slogan {
+    margin: 0 0 52px 190px;
+  }
+
+  .hero__button {
+    margin: 0 0 0 190px;
+  }
+
 }

@@ -76,6 +76,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header__container {
+    margin: 0 0 29px;
+  }
+
   .page-header__primary-logo {
     &--mobile {
       display: none;
