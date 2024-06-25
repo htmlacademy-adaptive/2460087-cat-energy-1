@@ -21,3 +21,10 @@
   color: #000000;
   font-weight: 400;
 }
+
+@media (min-width: $tablet-width) {
+  .basic-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

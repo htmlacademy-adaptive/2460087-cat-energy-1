@@ -50,6 +50,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__ration-description {
+    margin: 0 var(--page-indentation) 45px;
+  }
+
   .ration-description__wrapper {
     padding: 77px 52px 53px;
 
@@ -91,6 +95,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 80px;
+  }
+
+  .page-main__ration-description {
+    margin: 0 var(--page-indentation) 71px;
   }
 
   .ration-description__wrapper {
