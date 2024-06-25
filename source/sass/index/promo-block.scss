@@ -18,6 +18,10 @@
 }
 
 @media (min-width: $tablet-width) {
+.page-main__promo-block {
+  margin: 0 0 91px;
+}
+
   .promo-block__title {
     margin: 0 0 32px;
   }
@@ -60,6 +64,10 @@
 }
 
 @media (min-width: $desktop-width) {
+.page-main__promo-block {
+    margin: 0 0 69px;
+  }
+
   .promo-block__list {
     margin: 0;
   }
