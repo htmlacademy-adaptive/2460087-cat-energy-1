@@ -4,7 +4,7 @@
 }
 
 .page-header__logo-wrapper {
-  padding: 23px var(--page-indentation);
+  padding: 23px 0;
   position: relative;
 }
 
@@ -95,7 +95,7 @@
   }
 
   .page-header__secondary-logo {
-    left: 180px;
+    left: 70px;
     transform: translate(0, -50%);
     width: 118px;
     height: 21px;

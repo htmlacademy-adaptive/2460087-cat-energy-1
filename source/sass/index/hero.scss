@@ -86,7 +86,7 @@
   }
 
   .page-header__hero {
-    margin: 0 0 526px;
+    margin: 0 0 526px 90px;
   }
 
   .hero__advertising-banner {
@@ -111,7 +111,7 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 40px 90px;
+    margin: 0 0 40px;
     padding: 0;
   }
 
@@ -120,12 +120,12 @@
     text-align: left;
     font-size: 20px;
     line-height: 20px;
-    margin: 0 0 50px 90px;
+    margin: 0 0 50px;
     padding: 0;
   }
 
   .hero__button {
-    margin: 0 0 0 90px;
+    margin: 0;
     padding: 18px 26px;
     font-size: 20px;
     line-height: 26px;
@@ -135,7 +135,7 @@
 @media (min-width: $desktop-width) {
 
   .page-header__hero {
-    margin: 0 0 210px;
+    margin: 0 0 210px 44px;
   }
 
   .hero__advertising-banner {
@@ -149,21 +149,21 @@
       width: 552px;
       height: 499px;
       position: absolute;
-      left: 662px;
+      left: 490px;
       top: 0;
       z-index: -1;
     }
   }
 
   .hero__primary-title {
-    margin: 0 0 40px 190px;
+    margin: 0 0 40px;
   }
 
   .hero__slogan {
-    margin: 0 0 52px 190px;
+    margin: 0 0 52px;
   }
 
   .hero__button {
-    margin: 0 0 0 190px;
+    margin: 0 0 0;
   }
 }
