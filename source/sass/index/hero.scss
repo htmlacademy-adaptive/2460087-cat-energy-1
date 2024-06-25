@@ -82,7 +82,11 @@
 @media (min-width: $tablet-width) {
   .hero {
     padding: 0 var(--page-indentation);
-    display: grid;
+    text-align: center;
+  }
+
+  .page-header__hero {
+    margin: 0 0 526px;
   }
 
   .hero__advertising-banner {
@@ -92,8 +96,13 @@
 
     &--tablet {
       display: block;
-      margin: -90px 0 0;
-      grid-area: 4 / 1 / 5 / 2;
+      margin: 0;
+      position: absolute;
+      width: 709px;
+      height: 609px;
+      object-fit: cover;
+      z-index: -1;
+      top: 200px;
     }
   }
 
@@ -124,10 +133,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  .hero {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    align-items: start;
+
+  .page-header__hero {
+    margin: 0 0 210px;
   }
 
   .hero__advertising-banner {
@@ -137,9 +145,13 @@
 
     &--desktop {
       display: block;
-      grid-area: 1 / 2 / 4 / 3;
       object-fit: cover;
-      justify-self: start;
+      width: 552px;
+      height: 499px;
+      position: absolute;
+      left: 662px;
+      top: 0;
+      z-index: -1;
     }
   }
 
@@ -154,5 +166,4 @@
   .hero__button {
     margin: 0 0 0 190px;
   }
-
 }
