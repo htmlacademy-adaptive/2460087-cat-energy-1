@@ -4,6 +4,7 @@
 
 .success-stories__container {
   padding: 25px var(--page-indentation) 40px;
+  box-sizing: border-box;
 }
 
 
@@ -66,6 +67,7 @@
 .success-stories__slider {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .slider__dummy {
@@ -140,7 +142,7 @@
 
   .success-stories__container {
     display: grid;
-    grid-template-columns: 458px auto;
+    grid-template-columns: min-content 1fr;
     grid-template-rows: auto;
   }
 
@@ -161,6 +163,8 @@
   .success-stories__description {
     grid-column: 1 / 2;
     margin: 0 0 69px;
+    box-sizing: border-box;
+    width: 436px;
   }
 
   .success-stories__progress-container {
@@ -175,13 +179,10 @@
   }
 
   .success-stories__accent-text {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 60px;
-  }
-
-  .success-stories__accent-content {
-    display: inline;
+    display: grid;
+    grid-template-columns: 180px 180px;
+    align-items: center;
+    text-align: center;
   }
 
   .success-stories__slider {
