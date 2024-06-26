@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  box-sizing: border-box
+  max-width: $desktop-width;
 }
 
 .page-header__hero {
@@ -82,11 +82,16 @@
 @media (min-width: $tablet-width) {
   .hero {
     padding: 0 var(--page-indentation);
-    text-align: center;
   }
 
   .page-header__hero {
-    margin: 65px 0 526px 90px;
+    margin: 0 0 526px;
+  }
+
+  .hero__container {
+    width: 515px;
+    margin: 0 auto;
+    position: relative;
   }
 
   .hero__advertising-banner {
@@ -96,14 +101,12 @@
 
     &--tablet {
       display: block;
-      margin: 0;
       position: absolute;
       width: 709px;
       height: 609px;
       object-fit: cover;
       z-index: -1;
-      left: -50px;
-      top: 205px;
+      left: -87px;
     }
   }
 
@@ -133,10 +136,15 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 1000px) {
 
   .page-header__hero {
-    margin: 129px 0 95px 44px;
+    margin: 0 0 113px;
+  }
+
+  .hero__container {
+    margin: 0;
+    padding: 82px 0 0 80px;
   }
 
   .hero__advertising-banner {
@@ -150,8 +158,8 @@
       width: 552px;
       height: 499px;
       position: absolute;
-      left: 490px;
-      top: -114px;
+      left: 390px;
+      top: 0;
       z-index: -1;
     }
   }

@@ -3,8 +3,14 @@
   font-weight: 400;
 }
 
+.page-header__container {
+  max-width: $desktop-width;
+  margin: 0 auto;
+}
+
 .page-header__logo-wrapper {
   padding: 23px 0;
+  margin: 0 0 0 20px;
   position: relative;
 }
 
@@ -61,6 +67,11 @@
     align-items: center;
     padding: 0 var(--page-indentation);
   }
+
+  .page-header__logo-wrapper {
+    margin: 0;
+  }
+
 
   .page-header__primary-logo {
     &--mobile {
