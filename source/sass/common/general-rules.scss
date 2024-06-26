@@ -36,3 +36,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.position-container {
+  max-width: $desktop-width;
+  margin: 0 auto;
+}

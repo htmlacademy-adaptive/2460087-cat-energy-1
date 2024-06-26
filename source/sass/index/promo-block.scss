@@ -19,7 +19,7 @@
 
 @media (min-width: $tablet-width) {
 .page-main__promo-block {
-  margin: 0 0 91px;
+  margin: 0;
 }
 
   .promo-block__title {
@@ -28,9 +28,9 @@
 
   .promo-block__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
     grid-template-rows: auto;
-    gap: 37px;
+    gap: 37px 60px;
     align-items: center;
     margin: 0 75px 0 0;
   }
@@ -38,7 +38,7 @@
   .promo-block__item {
     padding: 151px 0 57px;
     position: relative;
-    width: 250px;
+    width: 245px;
 
     &::before {
       position: absolute;
@@ -65,7 +65,7 @@
 
 @media (min-width: $desktop-width) {
 .page-main__promo-block {
-    margin: 0 0 69px;
+    margin: 0;
   }
 
   .promo-block__list {
