@@ -142,8 +142,9 @@
 
   .success-stories__container {
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    grid-column-gap: 90px;
   }
 
   .success-stories__progress-layout {
@@ -163,8 +164,8 @@
   .success-stories__description {
     grid-column: 1 / 2;
     margin: 0 0 69px;
+    padding: 0 130px 0 0;
     box-sizing: border-box;
-    width: 436px;
   }
 
   .success-stories__progress-container {

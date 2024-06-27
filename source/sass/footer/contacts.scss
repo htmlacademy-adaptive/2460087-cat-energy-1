@@ -7,6 +7,7 @@
 }
 
 .contacts__text-container {
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -29,4 +30,10 @@
 
 .contacts__map {
   min-height: 320px;
+}
+
+@media (min-width: 420px) {
+  .contacts__text-container {
+    gap: 10px;
+  }
 }

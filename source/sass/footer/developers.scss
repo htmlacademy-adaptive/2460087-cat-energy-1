@@ -1,6 +1,6 @@
 .developers {
-  padding: 30px var(--page-indentation);
   position: relative;
+  padding: 30px 20px;
 }
 
 .developers__link {
@@ -22,4 +22,35 @@
 
 .developers__logo {
   display: block;
+  width: 27px;
+  height: 34px;
+}
+
+@media (min-width: 600px) {
+  .developers {
+    position: static;
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+  }
+
+  .developers__link {
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+    position: relative;
+  }
+
+  .developers__text {
+    position: absolute;
+    width: max-content;
+    left: initial;
+    right: 50px;
+  }
+
+  .developers__logo {
+    display: block;
+    width: 27px;
+    height: 34px;
+  }
 }

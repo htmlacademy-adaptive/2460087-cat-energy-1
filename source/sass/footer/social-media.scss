@@ -20,3 +20,11 @@
 .social-media__icon {
   display: block;
 }
+
+@media (min-width: 600px) {
+  .page-footer__social-media {
+    &--border {
+      border: none;
+    }
+  }
+}
