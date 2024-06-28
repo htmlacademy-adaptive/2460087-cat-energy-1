@@ -56,3 +56,9 @@ $desktop-width: 1440px;
     --scale-factor: 1.94;
   }
 }
+
+@media (min-width: 600px) {
+  :root {
+    --scale-factor: 0.9;
+  }
+}
