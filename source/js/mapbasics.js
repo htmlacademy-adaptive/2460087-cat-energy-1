@@ -12,7 +12,7 @@ function init() {
 }
 
 function getMapOptions() {
-  if (window.innerWidth <= 1440) {
+  if (window.innerWidth <= 1110) {
     return {
       center: [59.938631, 30.323037],
       zoom: 15

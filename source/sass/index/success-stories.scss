@@ -24,17 +24,19 @@
   align-items: center;
 }
 
-.success-stories__progress-layout {
+.success-stories__progress-item {
   display: grid;
   grid-template-columns: 124px 124px;
   grid-column-gap: 32px;
   text-align: center;
   align-items: flex-start;
   margin: 0 10px 19px;
+  padding: 0;
 }
 
-.success-stories__progress-wrapper {
+.success-stories__progress-list {
   outline: 1px solid #444444;
+  list-style: none;
 }
 
 .success-stories__metrics {
@@ -61,7 +63,7 @@
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
-  margin: 0
+  margin: 0 0 20px;
 }
 
 .success-stories__slider {
@@ -100,7 +102,7 @@
     margin: 0 0 99px;
   }
 
-  .success-stories__progress-layout {
+  .success-stories__progress-item {
     display: grid;
     grid-template-columns: 150px 150px;
     gap: 32px;
@@ -122,6 +124,7 @@
     line-height: 20px;
     color: #000000;
     text-align: end;
+    margin: 0;
   }
 
   .success-stories__accent-content {
@@ -147,12 +150,12 @@
     grid-column-gap: 90px;
   }
 
-  .success-stories__progress-layout {
+  .success-stories__progress-item {
     grid-column-gap: 60px;
     grid-template-rows: auto;
   }
 
-  .success-stories__progress-wrapper {
+  .success-stories__progress-list {
     margin: 0 0 60px;
   }
 
@@ -184,6 +187,7 @@
     grid-template-columns: 180px 180px;
     align-items: center;
     text-align: center;
+    margin: 0;
   }
 
   .success-stories__slider {

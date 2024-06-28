@@ -3,7 +3,6 @@
 }
 
 .user-menu__navigation-list {
-  position: relative;
   text-align: center;
   list-style: none;
   text-transform: uppercase;
@@ -46,7 +45,7 @@
   border: none;
   display: block;
   top: 33px;
-  right: var(--page-indentation);
+  right: 20px;
 }
 
 @media (min-width: $tablet-width) {
