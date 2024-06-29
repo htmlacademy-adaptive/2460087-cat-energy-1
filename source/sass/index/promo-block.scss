@@ -38,9 +38,9 @@
 
 @media (min-width: $tablet-width) {
   .page-main__promo-block {
-    margin: 0;
+    margin: 0 auto;
     border-bottom: 1px solid #e6e6e6;
-    }
+  }
 
   .promo-block__title {
     margin: 0 0 32px;
@@ -53,11 +53,13 @@
     gap: 37px 60px;
     align-items: center;
     margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .promo-block__item {
     padding: 151px 0 57px;
     width: 245px;
+    margin: 0 auto;
 
     &::before {
       position: absolute;
@@ -83,7 +85,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 1237px) {
+
   .page-main__promo-block {
     margin: 0;
     border: none;

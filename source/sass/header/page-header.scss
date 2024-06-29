@@ -53,13 +53,6 @@
   padding: 0 var(--page-indentation);
 }
 
-
-@media (min-width: 600px) {
-  .page-header__title--catalog {
-    margin: 0 0 84px;
-  }
-}
-
 @media (min-width: $tablet-width) {
 
   .page-header__container {
@@ -89,10 +82,7 @@
     left: 90px;
     transform: translate(0, -50%);
   }
-
-
 }
-
 
 @media (min-width: $desktop-width) {
 
