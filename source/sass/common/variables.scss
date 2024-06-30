@@ -14,7 +14,7 @@ $desktop-width: 1440px;
   --scale-factor: 1;
 
 }
-
+//Отвечает за паддинги
 @media (min-width: $tablet-width) {
   :root {
     --page-indentation: 30px;
@@ -27,6 +27,7 @@ $desktop-width: 1440px;
   }
 }
 
+//Отвечает за адаптив карточек товара
 @media (min-width: 375px) {
   :root {
     --scale-factor: 1.25;
