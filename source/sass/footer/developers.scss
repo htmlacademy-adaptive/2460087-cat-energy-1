@@ -1,48 +1,56 @@
 .developers {
-  padding: 30px 0;
+  position: relative;
+  padding: 30px 20px;
 }
 
 .developers__link {
   font-size: 16px;
   line-height: 20px;
-  position: relative;
   display: block;
   text-decoration: none;
   color: inherit;
-  pointer-events: none;
-  min-height: 34px;
+  width: fit-content;
+  margin: 0 0 0 auto;
 }
 
 .developers__text {
   position: absolute;
-  left: var(--padding-xs);
-  pointer-events: auto;
-  top: 0;
-  transform: translateY(50%);
+  left: var(--page-indentation);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .developers__logo {
-  position: absolute;
-  right: var(--padding-xs);
-  pointer-events: auto;
+  display: block;
+  width: 27px;
+  height: 34px;
 }
 
-@media (min-width: $width-m) {
+@media (min-width: 600px) {
+  .developers {
+    position: static;
+    text-decoration: none;
+    color: inherit;
+    padding: 0;
+  }
+
+  .developers__link {
+    font-size: 16px;
+    line-height: 20px;
+    display: block;
+    position: relative;
+  }
+
   .developers__text {
-    left: var(--padding-m);
+    position: absolute;
+    width: max-content;
+    left: initial;
+    right: 50px;
   }
 
   .developers__logo {
-    right: var(--padding-m);
-  }
-}
-
-@media (min-width: $width-xl) {
-  .developers__text {
-    left: var(--padding-xl);
-  }
-
-  .developers__logo {
-    right: var(--padding-xl);
+    display: block;
+    width: 27px;
+    height: 34px;
   }
 }
