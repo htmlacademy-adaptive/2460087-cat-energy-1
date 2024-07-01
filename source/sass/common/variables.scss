@@ -26,22 +26,3 @@ $desktop-width: 1440px;
     --page-indentation: 110px;
   }
 }
-
-//Отвечает за адаптив карточек товара
-@media (min-width: 375px) {
-  :root {
-    --scale-factor: 1.25;
-  }
-}
-
-@media (min-width: 425px) {
-  :root {
-    --scale-factor: 1.5;
-  }
-
-  @media (min-width: 475px) {
-    :root {
-      --scale-factor: 1.75;
-    }
-  }
-}

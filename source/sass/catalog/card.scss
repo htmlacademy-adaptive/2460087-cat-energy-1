@@ -32,8 +32,8 @@
 
 .card__img-min {
   display: block;
-  width: calc(68px * var(--scale-factor));
-  height: calc(78px * var(--scale-factor));
+  width: 68px;
+  height: 78px;
 }
 
 .card__title {
@@ -43,10 +43,10 @@
   padding: 0;
   color: #222222;
   font-family: $secondary-font;
-  font-size: calc(16px * var(--scale-factor));
-  line-height: calc(20px * var(--scale-factor));
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
-  width: calc(80px * var(--scale-factor));
+  width: 80px;
 }
 
 .card__list {
@@ -55,8 +55,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  font-size: calc(12px * var(--scale-factor));
-  line-height: calc(16px * var(--scale-factor));
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .card__term {
@@ -82,9 +82,9 @@
   text-align: center;
 }
 
-@media (min-width: 550px) {
+@media (min-width: $tablet-width) {
   .card {
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     text-align: center;
     padding: 0;
@@ -157,8 +157,4 @@
     grid-row: 4 / 5;
     padding: 10px;
   }
-}
-
-@media (min-width: $tablet-width) {
-  
 }

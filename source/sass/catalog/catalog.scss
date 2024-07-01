@@ -25,8 +25,8 @@
 
 .catalog__additionally-title {
   font-family: $secondary-font;
-  font-size: calc(16px * var(--scale-factor));
-  line-height: calc(20px * var(--scale-factor));
+  font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
   color: #111111;
   margin: 0;
@@ -34,8 +34,8 @@
 }
 
 .catalog__additionally-text {
-  font-size: calc(12px * var(--scale-factor));
-  line-height: calc(16px * var(--scale-factor));
+  font-size: 12px;
+  line-height: 16px;
   margin: 0 0 21px;
 }
 
@@ -47,14 +47,14 @@
   display: block;
 }
 
-@media (min-width: 550px) {
+@media (min-width: $tablet-width) {
   .catalog__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
     grid-template-rows: 1fr auto;
     grid-auto-rows: auto;
     box-sizing: border-box;
-    gap: 20px;
+    gap: 60px;
     padding: 0 var(--page-indentation);
     margin: 0 auto;
   }
