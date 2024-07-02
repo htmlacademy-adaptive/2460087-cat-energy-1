@@ -14,6 +14,14 @@
   font-weight: 400;
 }
 
+.page-title {
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  font-weight: 400;
+}
+
 .form-title {
   font-family: $secondary-font;
   font-size: 24px;
@@ -21,6 +29,8 @@
   color: #000000;
   font-weight: 400;
 }
+
+
 
 @media (min-width: $tablet-width) {
   .basic-title {
@@ -31,5 +41,14 @@
   .primary-title {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  .page-title {
+    font-size: 60px;
+    line-height: 60px;
+
+    &--catalog {
+      margin: 0 0 84px;
+    }
   }
 }

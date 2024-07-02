@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  padding: 0 var(--page-indentation);
+  padding: 20px var(--page-indentation) 0;
   position: relative;
 
   &::after {
@@ -87,9 +87,10 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     text-align: center;
-    padding: 0;
-    margin: 0;
+    padding: 30px;
     justify-content: center;
+    background-image: linear-gradient(to bottom, #ffffff 24%, #f2f2f2 0);
+
 
     &::after {
       border: none;
