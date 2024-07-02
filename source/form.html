@@ -50,8 +50,8 @@
     </div>
     <!--Заголовок страницы-->
 
-    <h1 class="page-header__title primary-title">Подбор программы</h1>
-    <p class="page-header__subtitle">Заполните анкету, и мы подберем
+    <h1 class="page-header__title page-title page-title--form">Подбор программы</h1>
+    <p class="page-header__subtitle page-header__subtitle--form">Заполните анкету, и&nbsp;мы&nbsp;подберем
       программу питания для вашего кота</p>
   </header>
 
@@ -61,9 +61,8 @@
     <section class="program-selection">
       <h2 class="visually-hidden">Анкета</h2>
       <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="post">
-
-        <fieldset class="form__cat-info form__cat-info--line">
-          <div class="form__container">
+        <div class="program-selection__layout">
+          <fieldset class="form__cat-info form__cat-info--line">
             <legend class="visually-hidden">Введите информацию о коте
             </legend>
             <ul class="form__cat-info-list">
@@ -84,41 +83,37 @@
                 </label>
               </li>
             </ul>
-          </div>
-        </fieldset>
+          </fieldset>
 
-        <fieldset class="form__nutrition form__nutrition--line">
-          <div class="form__container">
-            <legend class="visually-hidden">Выберите цель диеты
-            </legend>
-            <ul class="form__nutrition-list">
-              <li class="form__nutrion-input-radio">
-                <label class="form__nutrion-label">
-                  <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="thinness" checked>
-                  <span class="form__radio-style"></span>
-                  <span class="form__nutrition-text">Похудение</span>
-                </label>
-              </li>
-              <li class="form__nutrion-input-radio">
-                <label class="form__nutrion-label">
-                  <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="weight">
-                  <span class="form__radio-style"></span>
-                  <span class="form__nutrition-text">Набор массы</span>
-                </label>
-              </li>
-              <li class="form__nutrion-input-radio">
-                <label class="form__nutrion-label">
-                  <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="unsure">
-                  <span class="form__radio-style"></span>
-                  <span class="form__nutrition-text">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-
+          <fieldset class="form__nutrition form__nutrition--line">
+              <legend class="visually-hidden">Выберите цель диеты
+              </legend>
+              <ul class="form__nutrition-list">
+                <li class="form__nutrion-input-radio">
+                  <label class="form__nutrion-label">
+                    <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="thinness" checked>
+                    <span class="form__radio-style"></span>
+                    <span class="form__nutrition-text">Похудение</span>
+                  </label>
+                </li>
+                <li class="form__nutrion-input-radio">
+                  <label class="form__nutrion-label">
+                    <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="weight">
+                    <span class="form__radio-style"></span>
+                    <span class="form__nutrition-text">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form__nutrion-input-radio">
+                  <label class="form__nutrion-label">
+                    <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="unsure">
+                    <span class="form__radio-style"></span>
+                    <span class="form__nutrition-text">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+          </fieldset>
+        </div>
         <fieldset class="form__owner">
-          <div class="form__container">
             <legend class="form__owner-title form-title">Контактные данные (владельца кота)
             </legend>
             <ul class="form__owner-list">
@@ -134,11 +129,9 @@
                 </label>
               </li>
             </ul>
-          </div>
         </fieldset>
 
         <fieldset class="form__comments">
-          <div class="form__container">
             <legend class="form__comments-title form-title">
               Комментарий
             </legend>
@@ -148,7 +141,6 @@
         </fieldset>
 
         <fieldset class="form__extras">
-          <div class="form__container">
             <legend class="form__extras-title form-title">
               Дополнительно
             </legend>
@@ -185,10 +177,8 @@
         </fieldset>
 
         <div class="form__footer">
-          <div class="cat-info__container">
-            <button class="form__button basic-button" type="submit">Отправить заявку</button>
-            <p class="form__notice">* — Обязательные поля</p>
-          </div>
+          <button class="form__button basic-button" type="submit">Отправить заявку</button>
+          <p class="form__notice">* — Обязательные поля</p>
         </div>
       </form>
 
