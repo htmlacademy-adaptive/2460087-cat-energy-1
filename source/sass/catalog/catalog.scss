@@ -48,6 +48,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    padding: 0 var(--page-indentation);
+  }
+
   .catalog__container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
@@ -55,11 +59,12 @@
     grid-auto-rows: auto;
     box-sizing: border-box;
     gap: 60px;
-    padding: 0 var(--page-indentation);
     margin: 0 auto;
+    min-width: $tablet-width;
   }
 
   .catalog__additionally {
+    box-sizing: border-box;
     text-align: center;
     padding: 80px 30px 0;
     margin: 0;
@@ -77,5 +82,11 @@
   .catalog__additionally-text {
     font-size: 16px;
     line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+.catalog__container {
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
   }
 }
