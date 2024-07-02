@@ -51,8 +51,8 @@
     </div>
     <!--Заголовок страницы-->
 
-    <h1 class="page-header__title primary-title">Подбор программы</h1>
-    <p class="page-header__subtitle">Заполните анкету, и мы подберем
+    <h1 class="page-header__title page-title page-title--form">Подбор программы</h1>
+    <p class="page-header__subtitle page-header__subtitle--form">Заполните анкету, и&nbsp;мы&nbsp;подберем
       программу питания для вашего кота</p>
   </header>
 
@@ -62,9 +62,8 @@
     <section class="program-selection">
       <h2 class="visually-hidden">Анкета</h2>
       <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="post">
-
-        <fieldset class="form__cat-info form__cat-info--line">
-          <div class="form__container">
+        <div class="program-selection__layout">
+          <fieldset class="form__cat-info form__cat-info--line">
             <legend class="visually-hidden">Введите информацию о коте
             </legend>
             <ul class="form__cat-info-list">
@@ -85,41 +84,37 @@
                 </label>
               </li>
             </ul>
-          </div>
-        </fieldset>
+          </fieldset>
 
-        <fieldset class="form__nutrition form__nutrition--line">
-          <div class="form__container">
-            <legend class="visually-hidden">Выберите цель диеты
-            </legend>
-            <ul class="form__nutrition-list">
-              <li class="form__nutrion-input-radio">
-                <label class="form__nutrion-label">
-                  <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="thinness" checked>
-                  <span class="form__radio-style"></span>
-                  <span class="form__nutrition-text">Похудение</span>
-                </label>
-              </li>
-              <li class="form__nutrion-input-radio">
-                <label class="form__nutrion-label">
-                  <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="weight">
-                  <span class="form__radio-style"></span>
-                  <span class="form__nutrition-text">Набор массы</span>
-                </label>
-              </li>
-              <li class="form__nutrion-input-radio">
-                <label class="form__nutrion-label">
-                  <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="unsure">
-                  <span class="form__radio-style"></span>
-                  <span class="form__nutrition-text">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-
+          <fieldset class="form__nutrition form__nutrition--line">
+              <legend class="visually-hidden">Выберите цель диеты
+              </legend>
+              <ul class="form__nutrition-list">
+                <li class="form__nutrion-input-radio">
+                  <label class="form__nutrion-label">
+                    <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="thinness" checked>
+                    <span class="form__radio-style"></span>
+                    <span class="form__nutrition-text">Похудение</span>
+                  </label>
+                </li>
+                <li class="form__nutrion-input-radio">
+                  <label class="form__nutrion-label">
+                    <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="weight">
+                    <span class="form__radio-style"></span>
+                    <span class="form__nutrition-text">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form__nutrion-input-radio">
+                  <label class="form__nutrion-label">
+                    <input class="form__nutrition-radio" type="radio" name="nutrition-type" value="unsure">
+                    <span class="form__radio-style"></span>
+                    <span class="form__nutrition-text">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+          </fieldset>
+        </div>
         <fieldset class="form__owner">
-          <div class="form__container">
             <legend class="form__owner-title form-title">Контактные данные (владельца кота)
             </legend>
             <ul class="form__owner-list">
@@ -135,11 +130,9 @@
                 </label>
               </li>
             </ul>
-          </div>
         </fieldset>
 
         <fieldset class="form__comments">
-          <div class="form__container">
             <legend class="form__comments-title form-title">
               Комментарий
             </legend>
@@ -149,7 +142,6 @@
         </fieldset>
 
         <fieldset class="form__extras">
-          <div class="form__container">
             <legend class="form__extras-title form-title">
               Дополнительно
             </legend>
@@ -186,10 +178,8 @@
         </fieldset>
 
         <div class="form__footer">
-          <div class="cat-info__container">
-            <button class="form__button basic-button" type="submit">Отправить заявку</button>
-            <p class="form__notice">* — Обязательные поля</p>
-          </div>
+          <button class="form__button basic-button" type="submit">Отправить заявку</button>
+          <p class="form__notice">* — Обязательные поля</p>
         </div>
       </form>
 
@@ -203,13 +193,13 @@
     <!--Контакты-->
 
     <section class="page-footer__contacts contacts">
-      <div class="contacts-wrapper">
-        <div class="contacts__text-container">
+      <div class="contacts__wrapper contacts__wrapper--index">
+        <div class="contacts__text-container position-container">
           <h2 class="contacts__title visually-hidden">Контакты</h2>
-          <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__invitation">Приглашаем к&nbsp;сотрудничеству дилеров! </p>
           <address class="contacts__address">
-            <span class="contacts__street">ул. Большая Конюшенная, д. 19/8</span>
-            <span class="contacts__city"> Санкт-Петербург</span>
+            <span class="contacts__street">ул. Большая Конюшенная, д.&nbsp;19/8</span>
+            <span class="contacts__city"> Санкт-Петербург </span>
           </address>
         </div>
       </div>
@@ -217,56 +207,60 @@
       </div>
     </section>
 
-    <!-- Логотип -->
+    <div class="page-footer__container position-container">
 
-    <div class="page-footer__logo">
-      <a href="index.html" class="page-footer__link-logo">
-        <svg class="page-footer__text-logo text-logo" width="101" height="18" role="img" aria-label="Cat Energy">
-          <use href="img/sprite.svg#secondary-logo"></use>
-        </svg>
-      </a>
+      <!-- Логотип -->
+
+      <div class="page-footer__logo">
+        <a href="index.html" class="page-footer__link-logo">
+          <svg class="page-footer__text-logo text-logo" width="101" height="18" role="img" aria-label="Cat Energy">
+            <use href="img/sprite.svg#secondary-logo"></use>
+          </svg>
+        </a>
+      </div>
+
+      <!--Социальные сети-->
+
+      <section class="page-footer__social-media page-footer__social-media--border social-media">
+        <h2 class="social-media__title visually-hidden">Социальные сети</h2>
+        <ul class="social-media__list social-media__list--border">
+          <li class="social-media__item">
+            <a class="social-media__link" href="#">
+              <svg class="social-media__icon" width="28" height="22" role="img" aria-label="Vkontakte">
+                <use href="img/sprite.svg#vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__link" href="#">
+              <svg class="social-media__icon" width="28" height="22" role="img" aria-label="YouTube">
+                <use href="img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media__item">
+            <a class="social-media__link" href="#">
+              <svg class="social-media__icon" width="28" height="22" role="img" aria-label="Telegram">
+                <use href="img/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!--Разработчики-->
+
+      <section class="page-footer__developers developers">
+        <h2 class="developers__title visually-hidden">Разработчики сайта</h2>
+        <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="developers__text">HTML Academy</span>
+          <svg class="developers__logo" width="27" height="34" role="img" aria-label="HTML Academy">
+            <use href="img/sprite.svg#academy"></use>
+          </svg>
+        </a>
+      </section>
+
     </div>
-
-    <!--Социальные сети-->
-
-    <section class="page-footer__social-media page-footer__social-media--border social-media">
-      <h2 class="social-media__title visually-hidden">Социальные сети</h2>
-      <ul class="social-media__list social-media__list--border">
-        <li class="social-media__item">
-          <a class="social-media__link" href="#">
-            <svg class="social-media__icon" width="28" height="22" role="img" aria-label="Vkontakte">
-              <use href="img/sprite.svg#vkontakte"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-media__item">
-          <a class="social-media__link" href="#">
-            <svg class="social-media__icon" width="28" height="22" role="img" aria-label="YouTube">
-              <use href="img/sprite.svg#youtube"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-media__item">
-          <a class="social-media__link" href="#">
-            <svg class="social-media__icon" width="28" height="22" role="img" aria-label="Telegram">
-              <use href="img/sprite.svg#telegram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </section>
-
-    <!--Разработчики-->
-
-    <section class="page-footer__developers developers">
-      <h2 class="developers__title visually-hidden">Разработчики сайта</h2>
-      <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="developers__text">HTML Academy</span>
-        <svg class="developers__logo" width="27" height="34" role="img" aria-label="HTML Academy">
-          <use href="img/sprite.svg#academy"></use>
-        </svg>
-      </a>
-    </section>
 
   </footer>
 
