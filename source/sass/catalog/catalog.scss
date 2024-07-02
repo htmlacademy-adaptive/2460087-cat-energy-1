@@ -62,6 +62,7 @@
   }
 
   .page-main__catalog {
+    margin: 0 0 70px;
 
     &::before {
       border: none;
@@ -101,6 +102,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__catalog {
+    margin: 0 0 76px;
+  }
+
   .catalog__container {
     grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
   }
