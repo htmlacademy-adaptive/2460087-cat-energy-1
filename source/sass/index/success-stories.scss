@@ -2,31 +2,42 @@
   background-color: #eaeaea;
 }
 
-.success-stories-container {
-  padding: 25px 20px 40px;
+.success-stories__container {
+  padding: 25px var(--page-indentation) 40px;
+  box-sizing: border-box;
 }
+
 
 .success-stories__title {
-  margin: 0;
+  margin: 0 0 40px;
 }
 
-.success-stories__progress {
-  display: grid;
-  grid-template-columns: 124px 124px;
-  grid-template-rows: auto auto;
-  column-gap: 32px;
-  row-gap: 8px;
+.success-stories__description {
+  margin: 0 0 20px;
 }
 
 .success-stories__progress-container {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.success-stories__progress-wrapper {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.success-stories__progress-item {
+  display: grid;
+  grid-template-columns: 124px 124px;
+  grid-column-gap: 32px;
+  text-align: center;
+  align-items: flex-start;
+  margin: 0 10px 19px;
+  padding: 0;
+}
+
+.success-stories__progress-list {
+  outline: 1px solid #cdcdcd;
+  border-radius: 5px;
+  list-style: none;
 }
 
 .success-stories__metrics {
@@ -36,7 +47,7 @@
   font-weight: 400;
   text-transform: uppercase;
   display: block;
-  text-align: center;
+  padding: 8px 19px;
 }
 
 .success-stories__options {
@@ -44,14 +55,150 @@
   font-weight: 400;
   line-height: 100%;
   display: block;
-  text-align: center;
+  width: fit-content;
+  transform: translateY(5px);
+  background-color: #eaeaea;
+  margin: 0 auto;
+  padding: 0 5px;
 }
 
-.success-stories-accent-text {
+.success-stories__accent-text {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 0 20px;
+}
+
+.success-stories__slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__dummy {
+  display: block;
+  width: 280px;
+  height: 256px;
+}
+
+@media (min-width: 600px) {
+  .success-stories {
+    background-image: linear-gradient(to bottom, #ffffff 60%, #eaeaea 0);
+  }
+
+  .success-stories__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 60px;
+  }
+
+  .success-stories__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 55px;
+  }
+
+  .success-stories__progress-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 99px;
+  }
+
+  .success-stories__progress-item {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    gap: 32px;
+    text-align: center;
+    margin: 0 0 19px;
+  }
+
+  .success-stories__metrics {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .success-stories__options {
+    font-size: 14px;
+    background: #ffffff;
+  }
+
+  .success-stories__accent-text {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: end;
+    margin: 0;
+  }
+
+  .success-stories__accent-content {
+    display: block;
+    padding: 0 0 9px;
+  }
+
+  .slider__dummy {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .success-stories {
+    background-image: linear-gradient(to bottom, #ffffff 24%, #eaeaea 0);
+  }
+
+  .success-stories__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 90px;
+  }
+
+  .success-stories__progress-item {
+    grid-column-gap: 60px;
+    grid-template-rows: auto;
+  }
+
+  .success-stories__progress-list {
+    margin: 0 0 60px;
+  }
+
+  .success-stories__options {
+    background-color: #eaeaea;
+  }
+
+  .success-stories__title {
+    grid-column: 1 / 2;
+    margin: 0 0 146px;
+  }
+
+  .success-stories__description {
+    grid-column: 1 / 2;
+    margin: 0 0 69px;
+    padding: 0 130px 0 0;
+    box-sizing: border-box;
+  }
+
+  .success-stories__progress-container {
+    grid-column: 1 / 2;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .success-stories__slider {
+    grid-column: 2 / 3;
+    grid-row: 1 / span 4;
+    justify-content: flex-end;
+  }
+
+  .success-stories__accent-text {
+    display: grid;
+    grid-template-columns: 180px 180px;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
 }

@@ -6,13 +6,22 @@ $base-font: "Lato", "Arial", sans-serif;
 $secondary-font: "Oswald", "Arial", sans-serif;
 
 // Вьюпорты
-$width-xs: 320px;
-$width-m: 768px;
-$width-xl: 1440px;
-
+$tablet-width: 768px;
+$desktop-width: 1440px;
 
 :root {
-  --padding-xs: 20px;
-  --padding-m: 30px;
-  --padding-xl: 110px;
+  --page-indentation: 20px;
+}
+
+//Отвечает за паддинги
+@media (min-width: $tablet-width) {
+  :root {
+    --page-indentation: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  :root {
+    --page-indentation: 110px;
+  }
 }

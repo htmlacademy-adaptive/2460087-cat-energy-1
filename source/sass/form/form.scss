@@ -5,12 +5,37 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .form {
+    font-size: 20px;
+  }
+
+  .program-selection {
+    padding: 0 var(--page-indentation);
+  }
+
+  .form-title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .program-selection__layout {
+    display: grid;
+    grid-template-columns: 572px 572px;
+    grid-template-rows: 1fr;
+    gap: 60px;
+  }
+}
 
 // Информация о коте
 
 .form__cat-info {
   margin: 0 0 23px;
-  padding: 0 20px 26px;
+  padding: 0 var(--page-indentation) 26px;
   border: none;
 
   &--line {
@@ -18,30 +43,50 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .form__cat-info {
+    padding: 0 40px;
+    margin: 0 0 72px;
+
+    &--line {
+      border: none;
+    }
+  }
+}
+
 .form__cat-info-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 14px;
 }
+
 
 .form__cat-info-item {
   list-style: none;
   margin: 0 0 14px;
 }
 
+
 .form__cat-info-label {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .form__cat-info-description {
   font-family: inherit;
+  font-size: inherit;
   border: none;
   color: inherit;
   text-transform: inherit;
   margin: 0 0 0 13px;
   padding: 14px 15px 13px;
-  flex: 1;
   outline: solid 1px #e7e7e7;
+  flex: 1;
+  box-sizing: border-box;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -53,20 +98,54 @@
   }
 }
 
+
 // Цель диеты
 
 .form__nutrition {
   border: none;
   margin: 0;
+  padding: 0 var(--page-indentation);
 
   &--line {
     border-bottom: solid 1px #d9d9d9;
   }
 }
 
+@media (min-width: $tablet-width) {
+  .form__nutrition {
+    padding: 0 40px;
+    margin: 0 0 65px;
+    box-sizing: border-box;
+
+    &--line {
+      border: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__nutrition {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: stretch;
+  }
+}
+
 .form__nutrition-list {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .form__nutrition-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 36px 0 36px 30px;
+    outline: 1px #e7e7e7 solid;
+  }
 }
 
 .form__nutrion-input-radio {
@@ -83,7 +162,16 @@
 .form__owner {
   border: none;
   margin: 0 0 10px;
+  padding: 0 var(--page-indentation);
 }
+
+@media (min-width: $tablet-width) {
+  .form__owner {
+    margin: 0 0 65px;
+    padding: 0 40px;
+  }
+}
+
 
 .form__owner-title {
   text-transform: none;
@@ -91,10 +179,26 @@
   padding: 26px 0 0;
 }
 
+@media (min-width: $tablet-width) {
+  .form__owner-title {
+    margin: 0 0 76px;
+  }
+}
+
 .form__owner-list {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+@media (min-width: $desktop-width) {
+  .form__owner-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
 
 .form__owner-item {
   list-style: none;
@@ -108,6 +212,7 @@
 
 .form__owner-input {
   font-family: inherit;
+  font-size: inherit;
   border: none;
   color: inherit;
   text-transform: inherit;
@@ -115,21 +220,38 @@
   padding: 14px 15px 13px;
   flex: 1;
   outline: solid 1px #cdcdcd;
+  box-sizing: border-box;
 }
+
 
 // Комментарий
 
 .form__comments {
   border: none;
   margin: 0 0 23px;
-  padding: 0 20px;
+  padding: 0 var(--page-indentation);
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .form__comments {
+    margin: 0 0 65px;
+    padding: 0 40px;
+  }
 }
 
 .form__comments-title {
   text-transform: none;
   margin: 0 0 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .form__comments-title {
+    margin: 0 0 87px;
+  }
 }
 
 .form__comments-textarea {
@@ -141,16 +263,28 @@
   border: none;
   outline: 1px solid #e7e7e7;
   resize: vertical;
-  flex: 1;
   min-width: 280px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 // Дополнительно
 
 .form__extras {
   margin: 0 0 34px;
-  padding: 0 20px;
+  padding: 0 var(--page-indentation);
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form__extras {
+    padding: 0 40px;
+    margin: 0;
+  }
+
+  .form__container {
+    margin: 0 0 52px;
+  }
 }
 
 .form__extras-title {
@@ -158,9 +292,30 @@
   margin: 0 0 36px;
 }
 
+@media (min-width: $tablet-width) {
+  .form__extras-title {
+    margin: 0 0 67px;
+  }
+}
+
 .form__extras-list {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .form__extras-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 32px 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__extras-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .form__extras-item {
@@ -172,9 +327,17 @@
 
 .form__footer {
   margin: 0 auto 32px;
-  padding: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
+  padding: 0 var(--page-indentation);
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+@media (min-width: $tablet-width) {
+  .form__footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 60px;
+  }
 }
 
 .form__button {
@@ -184,7 +347,15 @@
   padding: 10px 78px;
   margin: 0 0 21px;
   display: block;
-  width: object-fit;
+  width: fit-content;
+  grid-row: 1 / 2;
+}
+
+@media (min-width: $tablet-width) {
+  .form__button {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 }
 
 .form__notice {
@@ -193,5 +364,14 @@
   font-size: 14px;
   line-height: 16px;
   color: #000000;
-  text-align: center;
+  padding: 0 0 0 60px;
+  grid-row: 2 / 3;
+}
+
+@media (min-width: $tablet-width) {
+  .form__notice {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 0;
+  }
 }

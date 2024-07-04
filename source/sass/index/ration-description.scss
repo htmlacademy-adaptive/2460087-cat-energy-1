@@ -4,16 +4,28 @@
 }
 
 .page-main__ration-description {
-  margin: 0 20px 20px;
+  margin: 0 var(--page-indentation) 20px;
 }
 
 .ration-description__wrapper {
   background-color: #f2f2f2;
   padding: 30px 20px 22px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: $main-color;
+    border-radius: 50%;
+    left: 20px;
+    top: 24px;
+  }
 }
 
 .ration-description__title {
-  margin: 0;
+  margin: 0 0 0 90px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
@@ -35,4 +47,81 @@
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__ration-description {
+    margin: 0 var(--page-indentation) 45px;
+  }
+
+  .ration-description__wrapper {
+    padding: 77px 52px 53px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      left: auto;
+      right: 63px;
+      top: 92px;
+    }
+  }
+
+  .ration-description__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 200px 24px 0;
+  }
+
+  .ration-description__purpose {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 200px 48px 0;
+    padding: 0 53px 0 0;
+    color: #000000;
+
+    &--line {
+      border: none;
+    }
+  }
+
+  .ration-description__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 1270px) {
+  .ration-description {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+
+  .page-main__ration-description {
+    margin: 0 var(--page-indentation) 71px;
+  }
+
+  .ration-description__wrapper {
+    padding: 77px 61px 59px 52px;
+    flex: 1;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      right: auto;
+      top: 41px;
+      left: 52px;
+    }
+  }
+
+  .ration-description__title {
+    margin: 0 0 73px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .ration-description__purpose {
+    padding: 0;
+    margin: 0 0 27px;
+  }
 }

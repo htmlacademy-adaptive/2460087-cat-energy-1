@@ -3,7 +3,30 @@
   padding: 0 0 20px;
 }
 
+.page-footer__link-logo {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
 .page-footer__logo {
-  text-align: center;
   padding: 46px 0 17px;
+}
+
+@media (min-width: 600px) {
+  .page-footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    box-sizing: border-box;
+    padding: 29px var(--page-indentation);
+  }
+
+  .page-footer__link-logo {
+    justify-content: flex-start;
+  }
+
+  .page-footer__logo {
+    padding: 0;
+  }
 }
