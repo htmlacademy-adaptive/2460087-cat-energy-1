@@ -11,9 +11,8 @@ $desktop-width: 1440px;
 
 :root {
   --page-indentation: 20px;
-  --scale-factor: 1;
-
 }
+
 //Отвечает за паддинги
 @media (min-width: $tablet-width) {
   :root {

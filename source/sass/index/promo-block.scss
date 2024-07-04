@@ -22,7 +22,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 60px;
     height: 60px;
     background-color: $main-color;
@@ -63,7 +63,7 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       width: 80px;
       height: 80px;
       background-color: $main-color;
@@ -86,7 +86,6 @@
 }
 
 @media (min-width: 1237px) {
-
   .page-main__promo-block {
     margin: 0;
     border: none;

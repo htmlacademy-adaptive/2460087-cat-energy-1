@@ -184,6 +184,13 @@
   .extras__footer {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    min-width: 245px;
+    min-height: 286px;
+    align-content: end;
+
+    &::before {
+      background-image: url("../../img/cat-case.jpg");
+    }
   }
 
   .extras__subject {
@@ -206,16 +213,6 @@
     grid-column: 3 / 4;
     align-self: center;
     margin: 0;
-  }
-
-  .extras__footer {
-    min-width: 245px;
-    min-height: 286px;
-    align-content: end;
-
-    &::before {
-      background-image: url("../../img/cat-case.jpg");
-    }
   }
 
   .extras__text {

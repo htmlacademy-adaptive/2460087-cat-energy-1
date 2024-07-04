@@ -14,7 +14,6 @@
 }
 
 .user-menu__navigation-item {
-
   &--first-item {
     border-top: solid 1px #e6e6e6;
     border-bottom: solid 1px #e6e6e6;
@@ -38,7 +37,7 @@
 
 .user-menu__button-menu {
   position: absolute;
-  content: '';
+  content: "";
   width: 24px;
   height: 24px;
   background-color: #00f621;
