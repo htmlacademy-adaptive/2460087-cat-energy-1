@@ -81,7 +81,7 @@
     position: relative;
     margin: 0 auto;
     padding: 0;
-    width: 1110px;
+    max-width: $desktop-width;
   }
 
   .contacts__text-container {
