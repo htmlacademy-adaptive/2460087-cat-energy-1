@@ -37,7 +37,6 @@
 
 .user-menu__button-menu {
   position: absolute;
-  content: "";
   width: 24px;
   height: 24px;
   border: none;
@@ -49,8 +48,8 @@
   cursor: pointer;
 }
 
-.user-menu--closed,
-.user-menu__button-menu::before {
+//Открыть меню
+.user-menu--closed .user-menu__button-menu::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -59,19 +58,50 @@
   height: 2px;
   background-color: #000000;
   box-shadow: 0 6px #000000, 0 12px #000000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.user-menu__button-menu:hover::before {
+.user-menu--closed .user-menu__button-menu:hover::before {
   background-color: #3e3e3e;
   box-shadow: 0 6px #3e3e3e, 0 12px #3e3e3e;
 }
 
-.user-menu__button-menu:active::before {
+.user-menu--closed .user-menu__button-menu:active::before {
   background-color: #6b6b6b;
   box-shadow: 0 6px #6b6b6b, 0 12px #6b6b6b;
 }
 
+//Закрыть меню
+.user-menu--opened .user-menu__button-menu {
+  top: 17px;
+  right: 20px;
+  transition: background-color 0.3s ease;
 
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    width: 25px;
+    height: 2px;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.user-menu--opened .user-menu__button-menu:hover::before {
+  background-color: #3e3e3e;
+}
+
+.user-menu--opened .user-menu__button-menu:active::before {
+  background-color: #6b6b6b;
+}
 
 @media (min-width: $tablet-width) {
   .user-menu__navigation-list {
