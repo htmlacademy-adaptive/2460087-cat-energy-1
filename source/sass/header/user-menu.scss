@@ -80,42 +80,46 @@
   max-height: 100%;
 }
 
+.user-menu--opened .user-menu__navigation-list--is-opened {
+  display: none;
+}
+
 /* Открыть меню */
-.user-menu--closed .user-menu__button-menu::before {
+.user-menu--opened .user-menu__button-menu::before {
   box-shadow: 0 -8px #000000, 0 8px #000000;
   transition: background-color 0.5s ease, box-shadow 0.5s ease;
   opacity: 1;
 }
 
-.user-menu--closed .user-menu__button-menu:hover::before {
+.user-menu--opened .user-menu__button-menu:hover::before {
   background-color: #3e3e3e;
   box-shadow: 0 -8px #3e3e3e, 0 8px #3e3e3e;
 }
 
-.user-menu--closed .user-menu__button-menu:active::before {
+.user-menu--opened .user-menu__button-menu:active::before {
   background-color: #6b6b6b;
   box-shadow: 0 -8px #6b6b6b, 0 8px #6b6b6b;
 }
 
 //Закрыть меню
 
-.user-menu--opened .user-menu__button-menu::before {
+.user-menu--closed .user-menu__button-menu::before {
   transform: rotate(45deg);
   opacity: 1;
 }
 
-.user-menu--opened .user-menu__button-menu::after {
+.user-menu--closed .user-menu__button-menu::after {
   transform: rotate(-45deg);
   opacity: 1;
 }
 
-.user-menu--opened .user-menu__button-menu:hover::before,
-.user-menu--opened .user-menu__button-menu:hover::after {
+.user-menu--closed .user-menu__button-menu:hover::before,
+.user-menu--closed .user-menu__button-menu:hover::after {
   background-color: #3e3e3e;
 }
 
-.user-menu--opened .user-menu__button-menu:active::before,
-.user-menu--opened .user-menu__button-menu:active::after {
+.user-menu--closed .user-menu__button-menu:active::before,
+.user-menu--closed .user-menu__button-menu:active::after {
   background-color: #6b6b6b;
 }
 
