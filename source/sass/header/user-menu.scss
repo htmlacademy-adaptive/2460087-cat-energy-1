@@ -40,12 +40,38 @@
   content: "";
   width: 24px;
   height: 24px;
-  background-color: #00f621;
   border: none;
   display: block;
-  top: 33px;
-  right: 20px;
+  top: 23px;
+  right: 21px;
+  z-index: 2;
+  background-color: #ffffff;
+  cursor: pointer;
 }
+
+.user-menu--closed,
+.user-menu__button-menu::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 6px #000000, 0 12px #000000;
+}
+
+.user-menu__button-menu:hover::before {
+  background-color: #3e3e3e;
+  box-shadow: 0 6px #3e3e3e, 0 12px #3e3e3e;
+}
+
+.user-menu__button-menu:active::before {
+  background-color: #6b6b6b;
+  box-shadow: 0 6px #6b6b6b, 0 12px #6b6b6b;
+}
+
+
 
 @media (min-width: $tablet-width) {
   .user-menu__navigation-list {
