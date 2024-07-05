@@ -19,6 +19,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
+  visibility: hidden;
 }
 
 .user-menu__navigation-item {
@@ -71,55 +72,57 @@
   }
 }
 
-.user-menu--no-js .user-menu__button-menu {
-  display: none;
+.user-menu--no-js .user-menu__navigation-list {
+  max-height: 100vh;
+  visibility: visible;
 }
 
-.user-menu--no-js .user-menu__navigation-list--is-opened,
-.user-menu--closed .user-menu__navigation-list--is-opened {
-  max-height: 100%;
+.user-menu--opened .user-menu__navigation-list {
+  max-height: 100vh;
+  visibility: visible;
 }
 
-.user-menu--opened .user-menu__navigation-list--is-opened {
-  display: none;
+.user-menu--closed .user-menu__navigation-list {
+  max-height: 0;
+  visibility: hidden;
 }
 
-/* Открыть меню */
-.user-menu--opened .user-menu__button-menu::before {
+// Открыть меню
+.user-menu--closed .user-menu__button-menu::before {
   box-shadow: 0 -8px #000000, 0 8px #000000;
   transition: background-color 0.5s ease, box-shadow 0.5s ease;
   opacity: 1;
 }
 
-.user-menu--opened .user-menu__button-menu:hover::before {
+.user-menu--closed .user-menu__button-menu:hover::before {
   background-color: #3e3e3e;
   box-shadow: 0 -8px #3e3e3e, 0 8px #3e3e3e;
 }
 
-.user-menu--opened .user-menu__button-menu:active::before {
+.user-menu--closed .user-menu__button-menu:active::before {
   background-color: #6b6b6b;
   box-shadow: 0 -8px #6b6b6b, 0 8px #6b6b6b;
 }
 
-//Закрыть меню
+// Закрыть меню
 
-.user-menu--closed .user-menu__button-menu::before {
+.user-menu--opened .user-menu__button-menu::before {
   transform: rotate(45deg);
   opacity: 1;
 }
 
-.user-menu--closed .user-menu__button-menu::after {
+.user-menu--opened .user-menu__button-menu::after {
   transform: rotate(-45deg);
   opacity: 1;
 }
 
-.user-menu--closed .user-menu__button-menu:hover::before,
-.user-menu--closed .user-menu__button-menu:hover::after {
+.user-menu--opened .user-menu__button-menu:hover::before,
+.user-menu--opened .user-menu__button-menu:hover::after {
   background-color: #3e3e3e;
 }
 
-.user-menu--closed .user-menu__button-menu:active::before,
-.user-menu--closed .user-menu__button-menu:active::after {
+.user-menu--opened .user-menu__button-menu:active::before,
+.user-menu--opened .user-menu__button-menu:active::after {
   background-color: #6b6b6b;
 }
 
