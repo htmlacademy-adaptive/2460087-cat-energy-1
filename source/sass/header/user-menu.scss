@@ -48,7 +48,7 @@
   cursor: pointer;
 }
 
-//Открыть меню
+/* Открыть меню */
 .user-menu--closed .user-menu__button-menu::before {
   content: "";
   position: absolute;
@@ -71,28 +71,32 @@
   box-shadow: 0 6px #6b6b6b, 0 12px #6b6b6b;
 }
 
-//Закрыть меню
+/* Закрыть меню */
 .user-menu--opened .user-menu__button-menu {
   top: 17px;
   right: 20px;
   transition: background-color 0.3s ease;
+}
 
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    background-color: #000000;
-    width: 25px;
-    height: 2px;
-  }
+.user-menu--opened .user-menu__button-menu::before,
+.user-menu--opened .user-menu__button-menu::after {
+  content: "";
+  position: absolute;
+  background-color: #000000;
+  width: 25px;
+  height: 2px;
+}
 
-  &::before {
-    transform: rotate(45deg);
-  }
+.user-menu--opened .user-menu__button-menu::before {
+  transform: rotate(45deg);
+}
 
-  &::after {
-    transform: rotate(-45deg);
-  }
+.user-menu--opened .user-menu__button-menu::after {
+  transform: rotate(-45deg);
+}
+
+.user-menu--closed .user-menu__navigation-list--is-opened {
+  display: none;
 }
 
 .user-menu--opened .user-menu__button-menu:hover::before {
