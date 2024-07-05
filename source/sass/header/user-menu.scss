@@ -2,6 +2,7 @@
   margin: 0 0 0 auto;
 }
 
+
 .user-menu__navigation-list {
   text-align: center;
   list-style: none;
@@ -12,7 +13,7 @@
   flex-direction: column;
   background: #ffffff;
   overflow: hidden;
-  transition: max-height 0.5s ease;
+  transition: max-height 0.5s ease, visibility 0.5s ease;
   visibility: hidden;
 }
 
@@ -23,6 +24,10 @@
   width: 100%;
   z-index: 3;
   max-height: 0;
+}
+
+.user-menu--no-animation .user-menu__navigation-list {
+  transition: none;
 }
 
 .user-menu__navigation-item {
@@ -59,6 +64,7 @@
   background-color: #ffffff;
   cursor: pointer;
   transition: transform 0.5s ease;
+
 
   &::before,
   &::after {
@@ -97,7 +103,12 @@
   opacity: 1;
 }
 
-.user-menu--closed .user-menu__button-menu:hover::before {
+.user-menu--no-animation .user-menu__button-menu::before {
+  transition: none;
+}
+
+.user-menu--closed .user-menu__button-menu:hover::before,
+.user-menu--closed .user-menu__button-menu:focus::before {
   background-color: #3e3e3e;
   box-shadow: 0 -8px #3e3e3e, 0 8px #3e3e3e;
 }
@@ -120,7 +131,9 @@
 }
 
 .user-menu--opened .user-menu__button-menu:hover::before,
-.user-menu--opened .user-menu__button-menu:hover::after {
+.user-menu--opened .user-menu__button-menu:hover::after,
+.user-menu--opened .user-menu__button-menu:focus::before,
+.user-menu--opened .user-menu__button-menu:focus::after {
   background-color: #3e3e3e;
 }
 
