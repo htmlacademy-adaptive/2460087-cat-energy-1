@@ -10,7 +10,15 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  position: absolute;
+  background: #ffffff;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 3;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
 }
 
 .user-menu__navigation-item {
@@ -46,7 +54,7 @@
   z-index: 2;
   background-color: #ffffff;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 
   &::before,
   &::after {
@@ -59,14 +67,23 @@
     left: 0;
     width: 24px;
     height: 2px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
   }
+}
+
+.user-menu--no-js .user-menu__button-menu {
+  display: none;
+}
+
+.user-menu--no-js .user-menu__navigation-list--is-opened,
+.user-menu--closed .user-menu__navigation-list--is-opened {
+  max-height: 100%;
 }
 
 /* Открыть меню */
 .user-menu--closed .user-menu__button-menu::before {
   box-shadow: 0 -8px #000000, 0 8px #000000;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
   opacity: 1;
 }
 
@@ -100,11 +117,6 @@
 .user-menu--opened .user-menu__button-menu:active::before,
 .user-menu--opened .user-menu__button-menu:active::after {
   background-color: #6b6b6b;
-}
-
-//Открытие списка
-.user-menu--closed .user-menu__navigation-list--is-opened {
-  display: none;
 }
 
 @media (min-width: $tablet-width) {
