@@ -5,6 +5,15 @@
   text-transform: uppercase;
 }
 
+.page-header__subtitle {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 0 35px;
+}
+
 // Информация о коте
 
 .form__cat-info {
