@@ -10,7 +10,7 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__container">
+    <div class="page-header__container position-container">
 
       <!-- Шапка -->
 
@@ -51,10 +51,11 @@
     </div>
 
     <!--Заголовок страницы-->
-
-    <h1 class="page-header__title page-title page-title--form">Подбор программы</h1>
-    <p class="page-header__subtitle page-header__subtitle--form">Заполните анкету, и&nbsp;мы&nbsp;подберем
-      программу питания для вашего кота</p>
+    <div class="position-container position-container--form">
+      <h1 class="page-header__title page-title page-title--form">Подбор программы</h1>
+      <p class="page-header__subtitle page-header__subtitle--form">Заполните анкету, и&nbsp;мы&nbsp;подберем
+        программу питания для вашего кота</p>
+    </div>
   </header>
 
   <!--Форма-->
@@ -62,7 +63,7 @@
   <main class="page-main">
     <section class="program-selection">
       <h2 class="visually-hidden">Анкета</h2>
-      <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="post">
+      <form class="program-selection__form form position-container" action="https://echo.htmlacademy.ru/" method="post">
         <div class="program-selection__layout">
           <fieldset class="form__cat-info form__cat-info--line">
             <legend class="visually-hidden">Введите информацию о коте
@@ -71,7 +72,7 @@
               <li class="form__cat-info-item">
                 <label class="form__cat-info-label">Имя:*
                   <input class="form__cat-info-description" type="text" name="name" placeholder="Имя кота"
-                    value="Барсик" required>
+                    value="Барсик" required autocomplete="name">
                 </label>
               </li>
               <li class="form__cat-info-item">

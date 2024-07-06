@@ -155,7 +155,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .extras {
+  .extras__layout {
     display: grid;
     grid-template-columns: 1fr 245px;
     grid-template-rows: 1fr auto;

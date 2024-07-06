@@ -57,12 +57,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog {
-    padding: 0 var(--page-indentation);
-  }
 
   .page-main__catalog {
     margin: 0 0 70px;
+    padding: 0 var(--page-indentation);
 
     &::before {
       border: none;

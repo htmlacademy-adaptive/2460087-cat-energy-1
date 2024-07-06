@@ -35,9 +35,14 @@
 .position-container {
   max-width: $desktop-width;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .text-logo {
   display: block;
   padding: 10px 0;
+}
+
+.page-header__title-wrapper {
+  padding: 0 var(--page-indentation);
 }
