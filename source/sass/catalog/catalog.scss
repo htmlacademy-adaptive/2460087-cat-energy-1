@@ -14,6 +14,16 @@
     height: 1px;
     border-top: 1px solid #ebebeb;
   }
+
+  &::after {
+    position: absolute;
+    content: "";
+    border-bottom: #ebebeb 1px solid;
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .catalog__title {
@@ -24,16 +34,31 @@
 .catalog__additionally {
   text-align: center;
   position: relative;
-  padding: 0 0 20px;
+  padding: 75px 0 20px;
+  margin: 0 auto;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: tomato;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    top: 25px;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    margin-top: -0.5px;
+  }
 
   &::after {
-    position: absolute;
-    content: "";
-    border-bottom: #ebebeb 1px solid;
-    height: 1px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
+    top: 25px;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    margin-left: -0.5px;
   }
 }
 
@@ -55,10 +80,19 @@
 
 .catalog__additionally-button {
   background-color: #f2f2f2;
+  color: #444444;
   text-decoration: none;
   padding: 10px;
   margin: 0 20px;
   display: block;
+  transition: background-color 0.3s ease;
+
+&:hover,
+&:focus,
+&:active {
+  background-color: #ebebeb;
+  color: #444444;
+}
 }
 
 @media (min-width: 570px) {
@@ -66,7 +100,8 @@
     margin: 0 0 70px;
     padding: 0 var(--page-indentation);
 
-    &::before {
+    &::before,
+    &::after {
       border: none;
       width: 0%;
     }
@@ -114,17 +149,23 @@
 
 @media (min-width: $tablet-width) {
   .catalog__container {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
-    grid-template-rows: 1fr auto;
-    grid-auto-rows: auto;
-    margin: 0 auto;
-    grid-column-gap: 10px;
   }
 
-  .catalog-title {
+  .catalog__title {
     font-size: 60px;
     line-height: 60px;
     margin: 0 0 67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__container {
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+  }
+
+  .catalog__additionally {
+    max-width: 245px;
+    padding: 140px 32px 40px;
   }
 }
