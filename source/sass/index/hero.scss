@@ -47,10 +47,11 @@
 
 @media (max-width: 767px) {
   .hero {
+
     &::before {
       content: "";
       position: absolute;
-      background-image: url("../img/index-background.jpg");
+      background-image: url("../img/index-background-mobile.png");
       display: block;
       background-color: $main-color;
       background-size: cover;
@@ -136,7 +137,7 @@
 
 @media (min-width: 1000px) {
   .page-header__hero {
-    margin: 0 0 113px;
+    margin: 0 0 266px;
   }
 
   .hero__container {
@@ -157,7 +158,6 @@
       position: absolute;
       left: 390px;
       top: 0;
-      z-index: -1;
     }
   }
 
@@ -170,6 +170,41 @@
   }
 
   .hero__button {
-    margin: 0 0 0;
+    margin: 0;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .hero {
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/index-background.jpg");
+      display: block;
+      background-color: #ffffff;
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      height: 694px;
+      top: -143px;
+      right: -382px;
+      z-index: -3;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $main-color;
+      top: 0;
+      right: 0;
+      width: 1040px;
+      min-height: 694px;
+      top: -143px;
+      right: -382px;
+      opacity: 0.85;
+      z-index: -2;
+    }
   }
 }
