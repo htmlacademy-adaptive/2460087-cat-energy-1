@@ -84,18 +84,17 @@
   text-align: center;
 }
 
-
-@media (min-width: 600px) {
+@media (min-width: 570px) {
   .card {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     text-align: center;
     justify-self: center;
     background-image: linear-gradient(to bottom, #ffffff 24%, #f2f2f2 0);
-    padding: 30px;
-    max-width: 324px;
     width: 100%;
     box-sizing: border-box;
+    max-width: 250px;
+    padding: 15px;
   }
 
   .catalog__card {
@@ -111,7 +110,7 @@
     grid-row: 1 / 2;
     justify-self: center;
     align-self: center;
-    padding: 0 0 20px;
+    padding: 0 0 10px;
   }
 
   .card__img-min {
@@ -159,4 +158,18 @@
     justify-self: center;
     box-sizing: border-box;
   }
+}
+
+
+@media (min-width: $tablet-width) {
+  .card {
+    padding: 30px;
+    max-width: 324px;
+    width: 100%;
+  }
+
+  .card__img-link {
+    padding: 0 0 20px;
+  }
+
 }
