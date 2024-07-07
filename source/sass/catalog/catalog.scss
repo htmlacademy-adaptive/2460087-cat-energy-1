@@ -61,8 +61,7 @@
   display: block;
 }
 
-@media (min-width: $tablet-width) {
-
+@media (min-width: 600px) {
   .page-main__catalog {
     margin: 0 0 70px;
     padding: 0 var(--page-indentation);
@@ -76,23 +75,27 @@
   .catalog__container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
-    gap: 60px;
     grid-template-rows: 1fr auto;
     grid-auto-rows: auto;
     margin: 0 auto;
+    grid-column-gap: 10px;
   }
 
   .catalog__title {
     grid-column: 1 / -1;
-    padding: 0;
+    padding: 0 0 0 var(--page-indentation);
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 0 67px;
   }
 
   .catalog__additionally {
     text-align: center;
-    padding: 160px 32px 40px;
+    padding: 130px 32px 40px;
     outline: 1px solid #f2f2f2;
     margin: auto 0 0;
     max-width: 324px;
+    box-sizing: border-box;
 
     &::after {
       border: none;
