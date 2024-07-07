@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.page-header__container {
+  min-height: 60px;
+}
+
 .page-header__logo-wrapper {
   padding: 13px 0;
   margin: 0 0 0 20px;
@@ -58,11 +62,6 @@
     margin: 0 0 65px;
   }
 
-  .page-header__logo-wrapper {
-    margin: 25px 0 0;
-  }
-
-
   .page-header__primary-logo {
     &--mobile {
       display: none;
@@ -113,10 +112,6 @@
   .page-header__container {
     min-height: 143px;
     margin: 0;
-  }
-
-  .page-header__logo-wrapper {
-    margin: 57px 0 0;
   }
 
   .page-header__primary-logo {
