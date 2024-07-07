@@ -184,9 +184,20 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 1200px) {
   .user-menu__navigation-link {
     font-size: 20px;
     line-height: 30px;
+
+    &--accent {
+      color: #ffffff;
+
+    }
+  }
+
+  .user-menu__navigation-link--accent-active {
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 2px;
+    transition: opacity 0.5s ease;
   }
 }

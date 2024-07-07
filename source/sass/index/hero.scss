@@ -137,7 +137,7 @@
 
 @media (min-width: 1000px) {
   .page-header__hero {
-    margin: 0 0 266px;
+    margin: 0 0 133px;
   }
 
   .hero__container {
@@ -206,5 +206,9 @@
       opacity: 0.85;
       z-index: -2;
     }
+  }
+
+  .page-header__hero {
+    margin: 0 0 266px;
   }
 }
