@@ -54,10 +54,12 @@
     flex-wrap: wrap;
     align-items: center;
     padding: 0 var(--page-indentation);
+    min-height: 71px;
+    margin: 0 0 65px;
   }
 
   .page-header__logo-wrapper {
-    margin: 0;
+    margin: 25px 0 0;
   }
 
 
@@ -110,6 +112,11 @@
 
   .page-header__container {
     min-height: 143px;
+    margin: 0;
+  }
+
+  .page-header__logo-wrapper {
+    margin: 57px 0 0;
   }
 
   .page-header__primary-logo {

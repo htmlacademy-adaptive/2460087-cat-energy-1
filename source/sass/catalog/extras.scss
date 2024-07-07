@@ -67,7 +67,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../../img/cat-case.png");
+    background-image: url("../img/cat-case.png");
     background-color: $main-color;
     background-position: center;
     background-size: cover;
@@ -143,7 +143,7 @@
     grid-template-columns: 1fr 1fr;
 
     &::before {
-      background-image: url("../../img/cat-case-tablet.jpg");
+      background-image: url("../img/cat-case-tablet.jpg");
     }
   }
 
@@ -189,7 +189,7 @@
     align-content: end;
 
     &::before {
-      background-image: url("../../img/cat-case.jpg");
+      background-image: url("../img/cat-case.jpg");
     }
   }
 
