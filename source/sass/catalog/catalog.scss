@@ -124,9 +124,12 @@
     padding: 0 32px 0 32px;
     outline: 1px solid #f2f2f2;
     margin: auto 0 0;
-    padding: 154px 28px 0;
+    padding: 0 28px 0;
     min-width: 245px;
     min-height: 431px;
+    align-self: end;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 
     &::before,
     &::after {
@@ -149,21 +152,22 @@
     .catalog__additionally-title {
       font-size: 20px;
       line-height: 26px;
-      padding: 0 30px;
-      margin: 0 0 28px;
+      padding: 0;
+      margin: 0;
+      align-self: end;
     }
 
     .catalog__additionally-text {
       font-size: 16px;
       line-height: 18px;
-      margin: 0 0 85px;
-      padding: 0 30px;
+      margin: 26px 0 0;
+      padding: 0;
     }
 
     .catalog__additionally-button {
       margin: 0 0 18px;
       box-sizing: border-box;
-      margin: 0;
+      margin: 0 0 28px;
     }
   }
 }
