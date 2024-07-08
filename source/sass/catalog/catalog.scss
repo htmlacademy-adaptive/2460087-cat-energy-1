@@ -177,7 +177,7 @@
 @media (min-width: $tablet-width) {
   .catalog__container {
     grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
-    gap: 60px;
+    gap: 60px 40px;
   }
 
   .catalog__title {
@@ -200,7 +200,7 @@
 @media (min-width: 1100px) {
   .catalog__container {
     grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-    gap: 63px 80px;
+    gap: 63px 60px;
   }
 
   .catalog__additionally {
