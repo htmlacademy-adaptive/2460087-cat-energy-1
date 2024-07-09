@@ -163,23 +163,23 @@
   }
 }
 
-.form__nutrition-radio:checked + .form__radio-style::after {
+.form__nutrition-radio:checked+.form__radio-style::after {
   opacity: 1;
 }
 
-.form-label:hover .form__nutrition-radio:not(:disabled):not(:active) + .form__radio-style::before,
-.form-label:hover .form__nutrition-radio:not(:disabled):not(:active) + .form__radio-style + .form__nutrition-text {
+.form-label:hover .form__nutrition-radio:not(:disabled):not(:active)+.form__radio-style::before,
+.form-label:hover .form__nutrition-radio:not(:disabled):not(:active)+.form__radio-style+.form__nutrition-text {
   outline-color: #bababa;
   color: #222222;
   transition: outline-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.form-label .form__nutrition-radio:disabled + .form__radio-style::before,
-.form-label .form__nutrition-radio:disabled + .form__radio-style::after,
-.form-label .form__nutrition-radio:disabled + .form__radio-style + .form__nutrition-text,
-.form-label .form__extras-input:disabled + .form__checkbox-style::before,
-.form-label .form__extras-input:disabled + .form__checkbox-style::after,
-.form-label .form__extras-input:disabled + .form__checkbox-style + .form__extras-text {
+.form-label .form__nutrition-radio:disabled+.form__radio-style::before,
+.form-label .form__nutrition-radio:disabled+.form__radio-style::after,
+.form-label .form__nutrition-radio:disabled+.form__radio-style+.form__nutrition-text,
+.form-label .form__extras-input:disabled+.form__checkbox-style::before,
+.form-label .form__extras-input:disabled+.form__checkbox-style::after,
+.form-label .form__extras-input:disabled+.form__checkbox-style+.form__extras-text {
   opacity: 0.5;
   cursor: not-allowed;
 }
@@ -188,11 +188,11 @@
 
 .form__owner {
   border: none;
-  position: relative;
+  padding: 0 var(--page-indentation);
 }
 
 .form__owner-wrapper {
-  padding: 0 var(--page-indentation);
+  position: relative;
 }
 
 .form__owner-title {
@@ -283,39 +283,40 @@
   mask-image: url("../img/icon/phone-stroke.svg");
 }
 
-.form__owner-input:hover:not(:disabled):not(:focus):not(:invalid) + .icon::before {
+.form__owner-input:hover:not(:disabled):not(:focus):not(:invalid)+.icon::before {
   background-color: #222222;
 }
 
-.form__owner-input:focus + .icon::before,
-.form__owner-input:active + .icon::before {
+.form__owner-input:focus+.icon::before,
+.form__owner-input:active+.icon::before {
   background-color: $main-color;
 }
 
-.form__owner-input:invalid + .icon::before {
+.form__owner-input:invalid+.icon::before {
   background-color: #ff8282;
 }
 
-.form__owner-input:disabled + .icon::before {
+.form__owner-input:disabled+.icon::before {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
 // Комментарий
 
-.form__comments {
-  border: none;
+.form__comments-wrapper {
   position: relative;
-  margin: 0 0 38px;
 }
 
-.form__comments-wrapper {
+.form__comments {
+  border: none;
+  margin: 0 auto 38px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   box-sizing: border-box;
   padding: 0 var(--page-indentation);
 }
+
 
 .form__comments-title {
   text-transform: none;
@@ -371,14 +372,15 @@
 
 // Дополнительно
 
-.form__extras {
-  border: none;
+.form__extras-wrapper {
   position: relative;
 }
 
-.form__extras-wrapper {
+.form__extras {
+  border: none;
   padding: 0 var(--page-indentation) 21px;
 }
+
 
 .form__extras-title {
   text-transform: none;
@@ -435,19 +437,19 @@
   }
 }
 
-.form__extras-input:checked + .form__checkbox-style::before {
+.form__extras-input:checked+.form__checkbox-style::before {
   opacity: 0;
 }
 
-.form__extras-input:checked + .form__checkbox-style::after {
+.form__extras-input:checked+.form__checkbox-style::after {
   opacity: 1;
 }
 
-.form-label:hover .form__extras-input:not(:disabled):not(:active) + .form__checkbox-style {
+.form-label:hover .form__extras-input:not(:disabled):not(:active)+.form__checkbox-style {
   outline-color: #cdcdcd;
 }
 
-.form-label:hover .form__extras-input:not(:disabled):not(:active) + .form__checkbox-style + .form__extras-text {
+.form-label:hover .form__extras-input:not(:disabled):not(:active)+.form__checkbox-style+.form__extras-text {
   color: #222222;
   transition: color 0.2s ease-in-out;
 }
