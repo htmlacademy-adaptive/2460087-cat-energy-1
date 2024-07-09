@@ -121,70 +121,75 @@
             </ul>
           </fieldset>
         </div>
-        <fieldset class="form__owner position-container">
-          <legend class="form__owner-title form-title">Контактные&nbsp;данные (владельца&nbsp;кота)
-          </legend>
-          <ul class="form__owner-list">
-            <li class="form__owner-item">
-              <label class="form__owner-label">E-mail:*
-                <input class="form__owner-input" type="email" name="owner-mail" placeholder="Введите E-mail"
-                  value="kuklachev@gmail.com" required>
-                <span class="icon icon--mail"></span>
-              </label>
-            </li>
-            <li class="form__owner-item">
-              <label class="form__owner-label">Телефон:*
-                <input class="form__owner-input" type="tel" name="owner-tel" placeholder="Введите телефон"
-                  value="8 (960) 900-60-90" required>
-                <span class="icon icon--phone"></span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <fieldset class="form__comments position-container">
-          <legend class="form__comments-title form-title">
-            Комментарий
-          </legend>
-          <textarea class="form__comments-textarea" name="commetns" cols="20" rows="10"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
+        <fieldset class="form__owner">
+          <div class="position-container">
+            <legend class="form__owner-title form-title">Контактные&nbsp;данные (владельца&nbsp;кота)
+            </legend>
+            <ul class="form__owner-list">
+              <li class="form__owner-item">
+                <label class="form__owner-label">E-mail:*
+                  <input class="form__owner-input" type="email" name="owner-mail" placeholder="Введите E-mail"
+                    value="kuklachev@gmail.com" required>
+                  <span class="icon icon--mail"></span>
+                </label>
+              </li>
+              <li class="form__owner-item">
+                <label class="form__owner-label">Телефон:*
+                  <input class="form__owner-input" type="tel" name="owner-tel" placeholder="Введите телефон"
+                    value="8 (960) 900-60-90" required>
+                  <span class="icon icon--phone"></span>
+                </label>
+              </li>
+            </ul>
           </div>
         </fieldset>
 
-        <fieldset class="form__extras position-container">
-          <legend class="form__extras-title form-title">
-            Дополнительно
-          </legend>
-          <ul class="form__extras-list">
-            <li class="form__extras-item">
-              <label class="form-label">
-                <input class="form__extras-input visually-hidden" type="checkbox" name="sugar-substitute" checked>
-                <span class="form__checkbox-style"></span>
-                <span class="form__extras-text">Cахарозаменитель</span>
-              </label>
-            </li>
-            <li class="form__extras-item">
-              <label class="form-label">
-                <input class="form__extras-input visually-hidden" type="checkbox" name="water">
-                <span class="form__checkbox-style"></span>
-                <span class="form__extras-text">Питьевая вода</span>
-              </label>
-            </li>
-            <li class="form__extras-item">
-              <label class="form-label">
-                <input class="form__extras-input visually-hidden" type="checkbox" name="milk">
-                <span class="form__checkbox-style"></span>
-                <span class="form__extras-text">Молоко</span>
-              </label>
-            </li>
-            <li class="form__extras-item">
-              <label class="form-label">
-                <input class="form__extras-input visually-hidden" type="checkbox" name="vitamins">
-                <span class="form__checkbox-style"></span>
-                <span class="form__extras-text">Витамины</span>
-              </label>
-            </li>
-          </ul>
+        <fieldset class="form__comments">
+          <div class="form__comments-wrapper position-container">
+            <legend class="form__comments-title form-title">
+              Комментарий
+            </legend>
+            <textarea class="form__comments-textarea" name="commetns" cols="20" rows="10"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+        </fieldset>
+
+        <fieldset class="form__extras">
+          <div class="position-container">
+            <legend class="form__extras-title form-title">
+              Дополнительно
+            </legend>
+            <ul class="form__extras-list">
+              <li class="form__extras-item">
+                <label class="form-label">
+                  <input class="form__extras-input visually-hidden" type="checkbox" name="sugar-substitute" checked>
+                  <span class="form__checkbox-style"></span>
+                  <span class="form__extras-text">Cахарозаменитель</span>
+                </label>
+              </li>
+              <li class="form__extras-item">
+                <label class="form-label">
+                  <input class="form__extras-input visually-hidden" type="checkbox" name="water">
+                  <span class="form__checkbox-style"></span>
+                  <span class="form__extras-text">Питьевая вода</span>
+                </label>
+              </li>
+              <li class="form__extras-item">
+                <label class="form-label">
+                  <input class="form__extras-input visually-hidden" type="checkbox" name="milk">
+                  <span class="form__checkbox-style"></span>
+                  <span class="form__extras-text">Молоко</span>
+                </label>
+              </li>
+              <li class="form__extras-item">
+                <label class="form-label">
+                  <input class="form__extras-input visually-hidden" type="checkbox" name="vitamins">
+                  <span class="form__checkbox-style"></span>
+                  <span class="form__extras-text">Витамины</span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </fieldset>
         <div class="form__footer position-container">
           <div class="form__footer-wrapper">
