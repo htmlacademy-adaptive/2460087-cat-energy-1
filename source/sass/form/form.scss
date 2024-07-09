@@ -188,8 +188,11 @@
 
 .form__owner {
   border: none;
-  padding: 0 var(--page-indentation);
   position: relative;
+}
+
+.form__owner-wrapper {
+  padding: 0 var(--page-indentation);
 }
 
 .form__owner-title {
@@ -305,7 +308,6 @@
 .form__comments {
   border: none;
   position: relative;
-  padding: 0 var(--page-indentation);
   margin: 0 0 38px;
 }
 
@@ -314,6 +316,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   box-sizing: border-box;
+  padding: 0 var(--page-indentation);
 }
 
 .form__comments-title {
@@ -371,9 +374,12 @@
 // Дополнительно
 
 .form__extras {
-  padding: 0 var(--page-indentation) 21px;
   border: none;
   position: relative;
+}
+
+.form__extras-wrapper {
+  padding: 0 var(--page-indentation) 21px;
 }
 
 .form__extras-title {
@@ -562,17 +568,8 @@
 
   .form__owner-title {
     width: fit-content;
-    padding: 0 40px 75px 0;
-    margin: 0 40px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      background-color: #ffffff;
-      width: 40px;
-      height: 40px;
-      left: 30px;
-    }
+    padding: 0 40px 75px;
+    margin: 0 -40px 0 0;
 
     &::after {
       top: 20px;
@@ -593,17 +590,8 @@
 
   .form__comments-title {
     width: fit-content;
-    padding: 0 40px 75px 0;
-    margin: 0 40px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      background-color: #ffffff;
-      width: 40px;
-      height: 40px;
-      left: 30px;
-    }
+    padding: 0 40px 75px;
+    margin: 0 -40px 0 0;
 
     &::after {
       top: 20px;
@@ -620,17 +608,8 @@
 
   .form__extras-title {
     width: fit-content;
-    padding: 0 40px 75px 0;
-    margin: 0 40px;
-
-    &::before {
-      position: absolute;
-      content: "";
-      background-color: #ffffff;
-      width: 40px;
-      height: 40px;
-      left: 30px;
-    }
+    padding: 0 40px 75px;
+    margin: 0 -40px 0 0;
 
     &::after {
       top: 20px;
@@ -641,8 +620,8 @@
 
   .form__extras-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(1fr, auto));
     margin: 0 40px 52px;
     gap: 32px 60px;
     max-width: 700px;
@@ -650,13 +629,16 @@
 
   // Форма отправки
 
+  .form__footer {
+    padding: 0 var(--page-indentation);
+  }
+
   .form__footer-wrapper {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     gap: 10px 60px;
     margin: 0 40px 60px;
     max-width: 700px;
-    padding: 0 var(--page-indentation);
   }
 
   .form__button {
@@ -680,13 +662,22 @@
     padding: 0;
   }
 
+  .program-selection__title {
+    margin: 0 0 55px;
+  }
+
+  .program-selection__subtitle {
+    margin: 0 0 66px;
+  }
+
   // Инфо о коте + цель диеты
   .form__layout-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 var(--page-indentation);
-    gap: 60px;
+    gap: 80px;
+    margin: 0 auto 70px;
   }
 
   .form__cat-info {
@@ -708,5 +699,56 @@
   .form__nutrition-list {
     margin: 0;
     padding: 30px 28px;
+  }
+
+  // Контактные данные
+
+  .form__owner-title {
+    margin: 0 0 0 -40px;
+  }
+
+  .form__owner-list {
+    margin: 0 0 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+
+  .form__owner-item {
+    margin: 0;
+    flex: 1;
+  }
+
+  //Комментарий
+  .form__comments-title {
+    margin: 0 0 0 -40px;
+  }
+
+  .form__comments-textarea {
+    margin: 0 0 70px;
+  }
+
+  //Дополнительно
+  .form__extras-title {
+    margin: 0 0 0 -40px;
+  }
+
+  .form__extras-list {
+    margin: 0 0 60px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    max-width: 100%;
+  }
+
+  // Форма отправки
+
+  .form__footer-wrapper {
+    margin: 0 0 80px;
+    max-width: 100%;
+    gap: 10px 80px;
+  }
+
+  .form__button {
+    padding: 14px 188px;
   }
 }

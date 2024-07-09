@@ -126,12 +126,14 @@
   .extras__title {
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 80px 37px;
+    width: fit-content;
+    padding: 0 40px 75px;
+    margin: 0 -40px 0 0;
 
     &::after {
-      width: 100%;
-      top: 18px;
+      top: 20px;
       left: 0;
+      width: 100%;
     }
   }
 
@@ -196,7 +198,7 @@
 
   .extras__title {
     grid-column: 1 / -1;
-    margin: 0 0 79px;
+    margin: 0 0 0 -40px;
   }
 
   .extras__catalog {
