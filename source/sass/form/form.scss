@@ -183,13 +183,36 @@
 
 .form__owner {
   border: none;
-  padding: 0;
+  padding: 26px var(--page-indentation) 24px;
 }
 
 .form__owner-title {
   text-transform: none;
-  margin: 0 0 35px;
-  padding: 26px 0 0;
+  margin: 0;
+  padding: 26px 0 35px;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: calc(70% + 20px);
+    height: 100%;
+    background-color: #ffffff;
+    z-index: -1;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: $main-color;
+    top: 40px;
+    left: 20px;
+    z-index: -2;
+  }
 }
 
 
