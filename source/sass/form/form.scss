@@ -163,23 +163,23 @@
   }
 }
 
-.form__nutrition-radio:checked+.form__radio-style::after {
+.form__nutrition-radio:checked + .form__radio-style::after {
   opacity: 1;
 }
 
-.form-label:hover .form__nutrition-radio:not(:disabled):not(:active)+.form__radio-style::before,
-.form-label:hover .form__nutrition-radio:not(:disabled):not(:active)+.form__radio-style+.form__nutrition-text {
+.form-label:hover .form__nutrition-radio:not(:disabled):not(:active) + .form__radio-style::before,
+.form-label:hover .form__nutrition-radio:not(:disabled):not(:active) + .form__radio-style + .form__nutrition-text {
   outline-color: #bababa;
   color: #222222;
   transition: outline-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.form-label .form__nutrition-radio:disabled+.form__radio-style::before,
-.form-label .form__nutrition-radio:disabled+.form__radio-style::after,
-.form-label .form__nutrition-radio:disabled+.form__radio-style+.form__nutrition-text,
-.form-label .form__extras-input:disabled+.form__checkbox-style::before,
-.form-label .form__extras-input:disabled+.form__checkbox-style::after,
-.form-label .form__extras-input:disabled+.form__checkbox-style+.form__extras-text {
+.form-label .form__nutrition-radio:disabled + .form__radio-style::before,
+.form-label .form__nutrition-radio:disabled + .form__radio-style::after,
+.form-label .form__nutrition-radio:disabled + .form__radio-style + .form__nutrition-text,
+.form-label .form__extras-input:disabled + .form__checkbox-style::before,
+.form-label .form__extras-input:disabled + .form__checkbox-style::after,
+.form-label .form__extras-input:disabled + .form__checkbox-style + .form__extras-text {
   opacity: 0.5;
   cursor: not-allowed;
 }
@@ -283,20 +283,20 @@
   mask-image: url("../img/icon/phone-stroke.svg");
 }
 
-.form__owner-input:hover:not(:disabled):not(:focus):not(:invalid)+.icon::before {
+.form__owner-input:hover:not(:disabled):not(:focus):not(:invalid) + .icon::before {
   background-color: #222222;
 }
 
-.form__owner-input:focus+.icon::before,
-.form__owner-input:active+.icon::before {
+.form__owner-input:focus + .icon::before,
+.form__owner-input:active + .icon::before {
   background-color: $main-color;
 }
 
-.form__owner-input:invalid+.icon::before {
+.form__owner-input:invalid + .icon::before {
   background-color: #ff8282;
 }
 
-.form__owner-input:disabled+.icon::before {
+.form__owner-input:disabled + .icon::before {
   opacity: 0.5;
   cursor: not-allowed;
 }
@@ -437,19 +437,19 @@
   }
 }
 
-.form__extras-input:checked+.form__checkbox-style::before {
+.form__extras-input:checked + .form__checkbox-style::before {
   opacity: 0;
 }
 
-.form__extras-input:checked+.form__checkbox-style::after {
+.form__extras-input:checked + .form__checkbox-style::after {
   opacity: 1;
 }
 
-.form-label:hover .form__extras-input:not(:disabled):not(:active)+.form__checkbox-style {
+.form-label:hover .form__extras-input:not(:disabled):not(:active) + .form__checkbox-style {
   outline-color: #cdcdcd;
 }
 
-.form-label:hover .form__extras-input:not(:disabled):not(:active)+.form__checkbox-style+.form__extras-text {
+.form-label:hover .form__extras-input:not(:disabled):not(:active) + .form__checkbox-style + .form__extras-text {
   color: #222222;
   transition: color 0.2s ease-in-out;
 }
@@ -482,7 +482,6 @@
   width: fit-content;
   grid-row: 1 / 2;
 }
-
 
 .form__notice {
   font-family: $base-font;
@@ -666,7 +665,7 @@
     margin: 0 0 66px;
   }
 
-  // Инфо о коте + цель диеты
+  // Инфо о коте   +   цель диеты
   .form__layout-wrapper {
     display: flex;
     flex-wrap: wrap;
