@@ -60,6 +60,10 @@
     padding: 0 var(--page-indentation);
     min-height: 71px;
     margin: 0 0 65px;
+
+    &--form {
+      margin: 0;
+    }
   }
 
   .page-header__primary-logo {
