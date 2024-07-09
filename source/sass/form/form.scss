@@ -458,7 +458,6 @@
 .form__footer-wrapper {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  padding: 0 var(--page-indentation);
   justify-content: center;
 }
 
@@ -612,6 +611,9 @@
   }
 
   // Дополнительно
+
+
+
   .form__extras-title {
     width: fit-content;
     padding: 0 40px 75px 0;
@@ -639,5 +641,33 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr auto;
     margin: 0 0 52px;
+    gap: 32px 60px;
+    max-width: 700px;
+  }
+
+  // Форма отправки
+
+  .form__footer-wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 10px 60px;
+    margin: 0 0 60px;
+    max-width: 700px;
+    padding: 0 var(--page-indentation);
+  }
+
+  .form__button {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 45px;
+    align-self: start;
+  }
+
+  .form__notice {
+    grid-column: 2 / -1;
+    grid-row: 1;
+    padding: 0;
+    align-self: end;
   }
 }
