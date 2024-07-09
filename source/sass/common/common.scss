@@ -4,9 +4,26 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #ffffff;
-  color: var(--accent-color);
+  background-color: $main-color;
+  color: #ffffff;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(#ffffff, 0.7);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 }
 
 .page-main {
@@ -24,9 +41,22 @@
 .position-container {
   max-width: $desktop-width;
   margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.position-container--catalog {
+  padding: 0 var(--page-indentation);
 }
 
 .text-logo {
   display: block;
   padding: 10px 0;
+}
+
+.icon::before {
+  position: absolute;
+  content: "";
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  background-color: #000000;
 }

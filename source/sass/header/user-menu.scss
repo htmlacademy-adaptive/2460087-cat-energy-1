@@ -10,10 +10,11 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 .user-menu__navigation-item {
+  padding: 13px 0;
+
   &--first-item {
     border-top: solid 1px #e6e6e6;
     border-bottom: solid 1px #e6e6e6;
@@ -32,28 +33,141 @@
   text-decoration: none;
   color: #000000;
   display: block;
-  padding: 23px 17px;
+  padding: 11px 0;
+  width: fit-content;
+  margin: 0 auto;
+
+  &--active {
+    border-bottom: 2px solid $main-color;
+    margin-bottom: 2px;
+    transition: opacity 0.5s ease;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
-.user-menu__button-menu {
-  position: absolute;
-  content: "";
-  width: 24px;
-  height: 24px;
-  background-color: #00f621;
-  border: none;
-  display: block;
-  top: 33px;
-  right: 20px;
+@media (max-width: 767px) {
+  .user-menu__navigation-list {
+    background: #ffffff;
+    overflow: hidden;
+    transition: max-height 0.5s ease, visibility 0.5s ease;
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 3;
+    max-height: 0;
+  }
+
+  .user-menu__button-menu {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border: none;
+    display: block;
+    top: 23px;
+    right: 21px;
+    z-index: 2;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+
+
+    &::before,
+    &::after {
+      opacity: 0;
+      transform: rotate(0deg);
+      content: "";
+      position: absolute;
+      background-color: #000000;
+      top: 8px;
+      left: 0;
+      width: 24px;
+      height: 2px;
+      transition: transform 0.5s ease;
+    }
+  }
+
+  //Управление видимостью списка с JS и без
+  .user-menu--no-js .user-menu__navigation-list {
+    position: relative;
+    max-height: 100vh;
+    visibility: visible;
+  }
+
+  .user-menu--opened .user-menu__navigation-list {
+    max-height: 100vh;
+    visibility: visible;
+  }
+
+  .user-menu--closed .user-menu__navigation-list {
+    max-height: 0;
+    visibility: hidden;
+  }
+
+  .user-menu--no-animation .user-menu__navigation-list {
+    transition: none;
+  }
+
+  // Открытое меню
+  .user-menu--closed .user-menu__button-menu::before {
+    box-shadow: 0 -8px #000000, 0 8px #000000;
+    transition: background-color 0.5s ease, box-shadow 0.5s ease;
+    opacity: 1;
+  }
+
+  .user-menu--no-animation .user-menu__button-menu::before {
+    transition: none; //Отключает анимацию при первой загрузке
+  }
+
+  .user-menu--closed .user-menu__button-menu:hover::before,
+  .user-menu--closed .user-menu__button-menu:focus::before {
+    background-color: #3e3e3e;
+    box-shadow: 0 -8px #3e3e3e, 0 8px #3e3e3e;
+  }
+
+  .user-menu--closed .user-menu__button-menu:active::before {
+    background-color: #6b6b6b;
+    box-shadow: 0 -8px #6b6b6b, 0 8px #6b6b6b;
+  }
+
+  // Закрытое меню
+
+  .user-menu--opened .user-menu__button-menu::before {
+    transform: rotate(45deg);
+    opacity: 1;
+  }
+
+  .user-menu--opened .user-menu__button-menu::after {
+    transform: rotate(-45deg);
+    opacity: 1;
+  }
+
+  .user-menu--opened .user-menu__button-menu:hover::before,
+  .user-menu--opened .user-menu__button-menu:hover::after,
+  .user-menu--opened .user-menu__button-menu:focus::before,
+  .user-menu--opened .user-menu__button-menu:focus::after {
+    background-color: #3e3e3e;
+  }
+
+  .user-menu--opened .user-menu__button-menu:active::before,
+  .user-menu--opened .user-menu__button-menu:active::after {
+    background-color: #6b6b6b;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .user-menu__navigation-list {
     flex-direction: row;
-  }
-
-  .user-menu__navigation-item {
-    border: none;
+    column-gap: 33px;
   }
 
   .user-menu__navigation-link {
@@ -61,14 +175,28 @@
     line-height: 24px;
   }
 
+  .user-menu__navigation-item {
+    border: none;
+  }
+
   .user-menu__button-menu {
     display: none;
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: 1200px) {
   .user-menu__navigation-link {
     font-size: 20px;
     line-height: 30px;
+
+    &--accent {
+      color: #ffffff;
+    }
+  }
+
+  .user-menu__navigation-link--accent-active {
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 2px;
+    transition: opacity 0.5s ease;
   }
 }

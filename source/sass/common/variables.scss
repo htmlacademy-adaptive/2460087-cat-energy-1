@@ -11,6 +11,7 @@ $desktop-width: 1440px;
 
 :root {
   --page-indentation: 20px;
+  --scale-factor: 1;
 }
 
 //Отвечает за паддинги
@@ -23,5 +24,24 @@ $desktop-width: 1440px;
 @media (min-width: $desktop-width) {
   :root {
     --page-indentation: 110px;
+  }
+}
+
+//Отвечает за поведение карточек
+@media (min-width: 375px) {
+  :root {
+    --scale-factor: 1.1;
+  }
+}
+
+@media (min-width: 425px) {
+  :root {
+    --scale-factor: 1.2;
+  }
+}
+
+@media (min-width: 500px) {
+  :root {
+    --scale-factor: 1.5;
   }
 }
