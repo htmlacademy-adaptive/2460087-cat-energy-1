@@ -40,7 +40,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     background-color: #d3d3d3;
     transform: translate(-50%, -50%);
@@ -124,7 +124,6 @@
     padding: 0 32px 0 32px;
     outline: 1px solid #f2f2f2;
     margin: auto auto 0;
-    padding: 0 28px;
     min-width: 250px;
     min-height: 431px;
     align-self: end;

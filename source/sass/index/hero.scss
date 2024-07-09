@@ -47,7 +47,6 @@
 
 @media (max-width: 767px) {
   .hero {
-
     &::before {
       content: "";
       position: absolute;
@@ -197,8 +196,6 @@
       position: absolute;
       content: "";
       background-color: $main-color;
-      top: 0;
-      right: 0;
       width: 1040px;
       min-height: 694px;
       top: -143px;
