@@ -7,7 +7,7 @@
 
 .program-selection__title {
   padding: 0 var(--page-indentation);
-  margin: 42px 0 37px;
+  margin: 32px 0 37px;
 }
 
 .program-selection__subtitle {
@@ -84,6 +84,11 @@
 
   &:invalid {
     outline: #ff8282 solid 2px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 }
 
@@ -245,6 +250,11 @@
   &:invalid {
     outline: #ff8282 solid 2px;
   }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 }
 
 .icon--mail::before,
@@ -260,10 +270,12 @@
 
 .icon--mail::before {
   mask-image: url("../img/icon/email-stroke.svg");
+  -webkit-mask-image: url("../img/icon/email-stroke.svg");
 }
 
 .icon--phone::before {
   mask-image: url("../img/icon/phone-stroke.svg");
+  -webkit-mask-image: url("../img/icon/phone-stroke.svg");
 }
 
 .form__owner-input:hover:not(:disabled):not(:focus):not(:invalid)+.icon::before {
@@ -279,22 +291,39 @@
   background-color: #ff8282;
 }
 
+.form__owner-input:disabled+.icon::before {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 // Комментарий
 
 .form__comments {
   border: none;
-  padding: 0;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  position: relative;
+  padding: 0 var(--page-indentation) 23px;
 }
 
 .form__comments-title {
   text-transform: none;
-  margin: 0 0 38px;
-}
+  margin: 0;
+  background-color: #ffffff;
+  padding: 0 20px 38px 0;
 
+  &::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: calc(100% - 30px);
+    background-color: $main-color;
+    top: 13px;
+    left: 30px;
+    z-index: -2;
+  }
+}
 
 .form__comments-textarea {
   font-family: inherit;
@@ -308,6 +337,25 @@
   min-width: 280px;
   width: 100%;
   box-sizing: border-box;
+  margin: 0;
+
+  &:hover {
+    outline: #cdcdcd solid 1px;
+  }
+
+  &:focus,
+  &:active {
+    outline: #444444 solid 2px;
+  }
+
+  &:invalid {
+    outline: #ff8282 solid 2px;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 }
 
 // Дополнительно
@@ -339,8 +387,6 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
-
-
 
 .form__button {
   background-color: $main-color;
