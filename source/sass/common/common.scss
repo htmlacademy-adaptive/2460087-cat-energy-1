@@ -43,6 +43,14 @@
   padding: 10px 0;
 }
 
-  .position-container--catalog {
-    padding: 0 var(--page-indentation);
-  }
+.position-container--catalog {
+  padding: 0 var(--page-indentation);
+}
+
+.icon::before {
+  position: absolute;
+  content: "";
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  background-color: #000000;
+}
