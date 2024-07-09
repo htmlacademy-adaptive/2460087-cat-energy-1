@@ -104,8 +104,7 @@
   padding: 0;
 }
 
-.form__nutrion-label,
-.form__extras-label {
+.form-label {
   display: inline-flex;
   align-items: center;
   cursor: pointer;
@@ -117,11 +116,6 @@
 .form__nutrion-input-radio {
   list-style: none;
   margin: 0;
-}
-
-.form__nutrition-text {
-  margin: 0;
-  color: inherit;
 }
 
 .form__radio-style,
@@ -165,16 +159,16 @@
   opacity: 1;
 }
 
-.form__nutrion-label:hover .form__nutrition-radio:not(:disabled):not(:active)+.form__radio-style::before,
-.form__nutrion-label:hover .form__nutrition-radio:not(:disabled):not(:active)+.form__radio-style+.form__nutrition-text {
+.form-label:hover .form__nutrition-radio:not(:disabled):not(:active)+.form__radio-style::before,
+.form-label:hover .form__nutrition-radio:not(:disabled):not(:active)+.form__radio-style+.form__nutrition-text {
   outline-color: #bababa;
   color: #222222;
   transition: outline-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.form__nutrion-label .form__nutrition-radio:disabled+.form__radio-style::before,
-.form__nutrion-label .form__nutrition-radio:disabled+.form__radio-style::after,
-.form__nutrion-label .form__nutrition-radio:disabled+.form__radio-style+.form__nutrition-text {
+.form-label .form__nutrition-radio:disabled+.form__radio-style::before,
+.form-label .form__nutrition-radio:disabled+.form__radio-style::after,
+.form-label .form__nutrition-radio:disabled+.form__radio-style+.form__nutrition-text {
   opacity: 0.5;
   cursor: not-allowed;
 }
