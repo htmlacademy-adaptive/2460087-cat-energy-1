@@ -364,7 +364,7 @@
 // Дополнительно
 
 .form__extras {
-  padding: 0 var(--page-indentation);
+  padding: 0 var(--page-indentation) 21px;
   border: none;
   position: relative;
 }
@@ -454,9 +454,11 @@
 
 // Форма отправки
 
-.form__footer {
+.form__footer-wrapper {
   display: grid;
   grid-template-rows: 1fr 1fr;
+  padding: 0 var(--page-indentation);
+  justify-content: center;
 }
 
 .form__button {
