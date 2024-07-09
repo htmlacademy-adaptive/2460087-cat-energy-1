@@ -5,21 +5,27 @@
   text-transform: uppercase;
 }
 
+.program-selection__title {
+  padding: 0 var(--page-indentation);
+  margin: 42px 0 37px;
+}
+
 .program-selection__subtitle {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
-  margin: 0 0 35px;
+  margin: 0 0 39px;
+  padding: 0 var(--page-indentation);
 }
 
 // Информация о коте
 
 .form__cat-info {
-  margin: 0 0 23px;
+  margin: 0;
   border: none;
-  padding: 0;
+  padding: 0 var(--page-indentation) 24px;
 
   &--line {
     border-bottom: solid 1px #d9d9d9;
@@ -35,12 +41,10 @@
   gap: 14px;
 }
 
-
 .form__cat-info-item {
   list-style: none;
   margin: 0 0 14px;
 }
-
 
 .form__cat-info-label {
   display: flex;
@@ -68,8 +72,20 @@
   &[type="number"] {
     appearance: textfield;
   }
-}
 
+  &:hover {
+    outline: #cdcdcd solid 1px;
+  }
+
+  &:focus,
+  &:active {
+    outline: #444444 solid 2px;
+  }
+
+  &:invalid {
+    outline: #ff8282 solid 2px;
+  }
+}
 
 // Цель диеты
 
