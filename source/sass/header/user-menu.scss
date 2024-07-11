@@ -52,13 +52,12 @@
     background: #ffffff;
     overflow: hidden;
     transition: max-height 0.5s ease, visibility 0.5s ease;
-    visibility: hidden;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
     z-index: 3;
-    max-height: 0;
+    display: none;
   }
 
   .user-menu__button-menu {
@@ -73,45 +72,39 @@
     background-color: #ffffff;
     cursor: pointer;
     transition: transform 0.5s ease;
-
-
-    &::before,
-    &::after {
-      opacity: 0;
-      transform: rotate(0deg);
-      content: "";
-      position: absolute;
-      background-color: #000000;
-      top: 8px;
-      left: 0;
-      width: 24px;
-      height: 2px;
-      transition: transform 0.5s ease;
-    }
   }
 
-  //Управление видимостью списка с JS и без
+  .user-menu__button-menu::before,
+  .user-menu__button-menu::after {
+    opacity: 0;
+    transform: rotate(0deg);
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    top: 8px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    transition: transform 0.5s ease;
+  }
+
+  /* Управление видимостью списка с JS и без */
   .user-menu--no-js .user-menu__navigation-list {
     position: relative;
-    max-height: 100vh;
     visibility: visible;
+    display: block;
   }
 
   .user-menu--opened .user-menu__navigation-list {
-    max-height: 100vh;
     visibility: visible;
-  }
-
-  .user-menu--closed .user-menu__navigation-list {
-    max-height: 0;
-    visibility: hidden;
+    display: block;
   }
 
   .user-menu--no-animation .user-menu__navigation-list {
     transition: none;
   }
 
-  // Открытое меню
+  /* Открытое меню */
   .user-menu--closed .user-menu__button-menu::before {
     box-shadow: 0 -8px #000000, 0 8px #000000;
     transition: background-color 0.5s ease, box-shadow 0.5s ease;
@@ -119,7 +112,7 @@
   }
 
   .user-menu--no-animation .user-menu__button-menu::before {
-    transition: none; //Отключает анимацию при первой загрузке
+    transition: none;
   }
 
   .user-menu--closed .user-menu__button-menu:hover::before,
@@ -133,8 +126,7 @@
     box-shadow: 0 -8px #6b6b6b, 0 8px #6b6b6b;
   }
 
-  // Закрытое меню
-
+  /* Закрытое меню */
   .user-menu--opened .user-menu__button-menu::before {
     transform: rotate(45deg);
     opacity: 1;
@@ -167,6 +159,12 @@
   .user-menu__navigation-link {
     font-size: 18px;
     line-height: 24px;
+
+    &--active {
+      border-bottom: 2px solid $main-color;
+      margin-bottom: 2px;
+      transition: opacity 0.5s ease;
+    }
   }
 
   .user-menu__navigation-item {
