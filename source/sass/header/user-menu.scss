@@ -51,7 +51,6 @@
   .user-menu__navigation-list {
     background: #ffffff;
     overflow: hidden;
-    transition: max-height 0.5s ease, visibility 0.5s ease;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -91,12 +90,10 @@
   /* Управление видимостью списка с JS и без */
   .user-menu--no-js .user-menu__navigation-list {
     position: relative;
-    visibility: visible;
     display: block;
   }
 
   .user-menu--opened .user-menu__navigation-list {
-    visibility: visible;
     display: block;
   }
 
