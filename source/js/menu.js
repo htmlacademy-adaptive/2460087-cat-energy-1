@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const button = document.querySelector('.user-menu__button-menu');
   const nav = document.querySelector('.user-menu');
+  const navList = nav.querySelector('.user-menu__navigation-list');
 
-  if (button && nav) {
+  if (button && nav && navList) {
     nav.classList.remove('user-menu--no-js');
     nav.classList.add('user-menu--closed');
 
@@ -13,8 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 10);
 
     button.addEventListener('click', () => {
+      const isOpened = nav.classList.toggle('user-menu--opened');
       nav.classList.toggle('user-menu--closed');
-      nav.classList.toggle('user-menu--opened');
+      button.setAttribute('aria-expanded', isOpened);
+      navList.setAttribute('aria-hidden', !isOpened);
     });
   }
 });
