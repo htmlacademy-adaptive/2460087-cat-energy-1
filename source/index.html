@@ -63,12 +63,13 @@
           <h1 class="hero__primary-title primary-title hero__text-width">Функциональное питание для&nbsp;котов
           </h1>
           <p class="hero__slogan hero__text-width">Занялся собой? Займись котом! </p>
-          <img class="hero__advertising-banner hero__advertising-banner--mobile" src="img/cat-energy-chicken.png"
-            width="280" height="270" alt="Cat Energy с курицей.">
-          <img class="hero__advertising-banner hero__advertising-banner--tablet" src="img/cat-energy-chicken-tablet.png"
-            width="709" height="609" alt="Cat Energy с курицей.">
-          <img class="hero__advertising-banner hero__advertising-banner--desktop"
-            src="img/cat-energy-chicken-desktop.png" width="552" height="499" alt="Cat Energy с курицей.">
+          <picture>
+            <source media="(min-width: 1000px)" srcset="img/hero/cat-energy-promo--desktop.png 1x, cat-energy-promo--desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/hero/cat-energy-promo--tablet.jpg 1x, cat-energy-promo--tablet@2x.jpg 2x">
+            <img class="hero__advertising-banner" src="img/hero/cat-energy-promo--mobile.png"
+              srcset="img/hero/cat-energy-promo--mobile@2x.png 2x" width="280" height="270" alt="Cat Energy с курицей.">
+          </picture>
           <a class="hero__button basic-button" href="form.html">подобрать программу</a>
         </div>
       </section>

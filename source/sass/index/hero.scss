@@ -27,14 +27,8 @@
 .hero__advertising-banner {
   display: block;
   margin: 0 auto;
-
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
+  width: 280px;
+  height: 270px;
 }
 
 .hero__button {
@@ -93,19 +87,12 @@
   }
 
   .hero__advertising-banner {
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: block;
       position: absolute;
       width: 709px;
       height: 609px;
       object-fit: cover;
       z-index: -1;
       left: -87px;
-    }
   }
 
   .hero__primary-title {
@@ -145,19 +132,12 @@
   }
 
   .hero__advertising-banner {
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
       object-fit: cover;
       width: 552px;
       height: 499px;
       position: absolute;
       left: 390px;
       top: 0;
-    }
   }
 
   .hero__primary-title {
