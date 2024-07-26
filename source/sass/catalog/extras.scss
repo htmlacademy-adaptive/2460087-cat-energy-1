@@ -82,7 +82,8 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("../img/cat-case.png");
+    background-image: -webkit-image-set(url("../img/catalog/cat-case--small.jpg") 1x, url("../img/catalog/cat-case--small@2x.jpg") 2x);
+    background-image: image-set("../img/catalog/cat-case--small.jpg" 1x, "../img/catalog/cat-case--small@2x.jpg" 2x);
     background-color: $main-color;
     background-position: center;
     background-size: cover;
@@ -166,7 +167,8 @@
     grid-template-columns: 1fr 1fr;
 
     &::before {
-      background-image: url("../img/cat-case-tablet.jpg");
+      background-image: -webkit-image-set(url("../img/catalog/cat-case--medium.jpg") 1x, url("../img/catalog/cat-case--medium@2x.jpg") 2x);
+      background-image: image-set("../img/catalog/cat-case--medium.jpg" 1x, "../img/catalog/cat-case--medium@2x.jpg" 2x);
     }
   }
 
@@ -213,7 +215,8 @@
     align-content: end;
 
     &::before {
-      background-image: url("../img/cat-case.jpg");
+      background-image: -webkit-image-set(url("../img/catalog/cat-case--large.jpg") 1x, url("../img/catalog/cat-case--large@2x.jpg") 2x);
+      background-image: image-set("../img/catalog/cat-case--large.jpg" 1x, "../img/catalog/cat-case--large@2x.jpg" 2x);
     }
   }
 
