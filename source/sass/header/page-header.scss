@@ -89,26 +89,32 @@
     &::before {
       position: absolute;
       content: "";
-      background-image: linear-gradient(to left, $main-color 50%, #ffffff 50%);
-      background-color: $main-color;
+      background-image:
+        url("../img/index/hero-background--large.jpg");
+      background-repeat: no-repeat;
+      background-position: right;
+      background-color: #494848;
       top: 0;
-      right: 0;
-      width: 100%;
+      left: 50%;
+      width: 50%;
       min-height: 694px;
-      opacity: 0.85;
-      z-index: -10;
+      z-index: -3;
+
+      @media (min-resolution: 2dpx) {
+        background-image: url("../img/hero-background--large@2x.jpg");
+      }
     }
 
     &::after {
       position: absolute;
       content: "";
-      background-image: linear-gradient(to right, #ffffff 50%, #4b4b4b 50%);
+      background-color: $main-color;
       top: 0;
-      left: 0;
-      width: 100%;
+      left: 50%;
+      right: 0;
       min-height: 694px;
-      z-index: -520;
-      opacity: 1;
+      opacity: 0.85;
+      z-index: -2;
     }
   }
 

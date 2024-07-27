@@ -156,42 +156,6 @@
 
 
 @media (min-width: 1200px) {
-  .hero {
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/index/hero-background--large.jpg");
-      display: block;
-      background-color: #ffffff;
-      background-position: top left;
-      background-repeat: no-repeat;
-      background-size: cover;
-      min-width: 50%;
-      max-width: 100%;
-      height: 694px;
-      top: -143px;
-      right: 0;
-      z-index: -3;
-
-      @media (min-resolution: 2dpx) {
-        background-image: url("../img/index/hero-background--large@2x.jpg");
-      }
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      background-color: $main-color;
-      min-width: 50%;
-      max-width: 100%;
-      min-height: 694px;
-      top: -143px;
-      right: -0;
-      opacity: 0.85;
-      z-index: -2;
-    }
-  }
-
   .page-header__hero {
     margin: 0 0 266px;
   }
