@@ -145,7 +145,11 @@
       opacity: 1;
     }
 
-    &:hover::before,
+    &:hover::before {
+      background-color: #3e3e3e;
+      box-shadow: 0 -8px #3e3e3e, 0 8px #3e3e3e;
+    }
+
     &:focus::before {
       background-color: #3e3e3e;
       box-shadow: 0 -8px #3e3e3e, 0 8px #3e3e3e;

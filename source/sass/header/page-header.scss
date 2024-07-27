@@ -74,7 +74,10 @@
   width: fit-content;
   transition: opacity 0.3s;
 
-  &:hover,
+  &:hover {
+    opacity: 0.8;
+  }
+
   &:focus {
     opacity: 0.8;
   }
