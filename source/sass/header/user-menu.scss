@@ -112,7 +112,6 @@
     z-index: 2;
     background-color: #ffffff;
     cursor: pointer;
-    transition: transform 0.5s ease;
 
     &::before,
     &::after {
@@ -125,15 +124,14 @@
       left: 0;
       width: 24px;
       height: 2px;
-      transition: transform 0.5s ease;
     }
   }
 
   // Управление видимостью списка с JS и без
   .user-menu--no-js .user-menu__navigation-list,
   .user-menu--opened .user-menu__navigation-list {
-    position: relative;
     display: block;
+    animation: 0.3s ease-in-out 0s 1 forwards running opacity-nav;
   }
 
   .user-menu--no-animation .user-menu__navigation-list {
@@ -144,7 +142,6 @@
   .user-menu--closed .user-menu__button-menu {
     &::before {
       box-shadow: 0 -8px #000000, 0 8px #000000;
-      transition: background-color 0.5s ease, box-shadow 0.5s ease;
       opacity: 1;
     }
 
@@ -167,6 +164,12 @@
   // Закрыть меню
   .user-menu--opened {
     .user-menu__button-menu {
+
+      &::before,
+      &::after {
+        transition: transform 0.3s ease;
+      }
+
       &::before {
         opacity: 1;
         transform: rotate(45deg);
@@ -200,5 +203,15 @@
 @media (min-width: $tablet-width) {
   .user-menu__button-menu {
     display: none;
+  }
+}
+
+@keyframes opacity-nav {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

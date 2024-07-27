@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 10);
 
     button.addEventListener('click', () => {
-      const isOpened = nav.classList.toggle('user-menu--opened');
+      nav.classList.toggle('user-menu--opened');
       nav.classList.toggle('user-menu--closed');
     });
   }
