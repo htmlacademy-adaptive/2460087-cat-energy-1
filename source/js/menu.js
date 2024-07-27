@@ -16,8 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     button.addEventListener('click', () => {
       const isOpened = nav.classList.toggle('user-menu--opened');
       nav.classList.toggle('user-menu--closed');
-      button.setAttribute('aria-expanded', isOpened);
-      navList.setAttribute('aria-hidden', !isOpened);
     });
   }
 });

@@ -160,8 +160,7 @@
     &::before {
       position: absolute;
       content: "";
-      background-image: -webkit-image-set(url("../img/index/hero-background--large.jpg") 1x, url("../img/index/hero-background--large@2x.jpg") 2x);
-      background-image: image-set("../img/index/hero-background--large.jpg" 1x, "../img/index/hero-background--large@2x.jpg" 2x);
+      background-image: url("../img/index/hero-background--large.jpg");
       display: block;
       background-color: #ffffff;
       background-position: top left;
@@ -173,6 +172,10 @@
       top: -143px;
       right: 0;
       z-index: -3;
+
+      @media (min-resolution: 2dpx) {
+        background-image: url("../img/index/hero-background--large@2x.jpg");
+      }
     }
 
     &::after {
