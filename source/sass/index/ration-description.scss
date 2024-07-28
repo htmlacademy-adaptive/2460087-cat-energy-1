@@ -162,6 +162,17 @@
   position: relative;
   padding: 0 47px 0 0;
 
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    width: 8px;
+    height: 2px;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -178,11 +189,19 @@
     height: 12px;
     top: 50%;
     transform: translate(15px, -50%);
-    transition: width 0.3s;
+    transition: transform 0.3s;
   }
 
   &:hover::after {
-    width: 32px;
+    transform: translate(23px, -50%);
+  }
+
+  &:focus::after {
+    transform: translate(23px, -50%);
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
