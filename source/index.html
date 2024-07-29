@@ -107,23 +107,23 @@
         <h2 class="promo-block__title basic-title">Как это работает</h2>
         <ol class="promo-block__list">
           <li class="promo-block__item">
-            <img class="promo-block__icon promo-block__icon--healthy" src="./img/icon/promo-healthy.svg" width="30" height="32"
-              alt="Полезное питание.">Функциональное питание содержит только полезные
+            <img class="promo-block__icon promo-block__icon--healthy" src="./img/icon/promo-healthy.svg" width="30"
+              height="32" alt="Полезное питание.">Функциональное питание содержит только полезные
             питательные вещества.
           </li>
           <li class="promo-block__item">
-            <img class="promo-block__icon promo-block__icon--powder" src="./img/icon/promo-powder.svg" width="26" height="29"
-              alt="Экономичное питание.">Выпускается в&nbsp;виде порошка, который нужно лишь залить
+            <img class="promo-block__icon promo-block__icon--powder" src="./img/icon/promo-powder.svg" width="26"
+              height="29" alt="Экономичное питание.">Выпускается в&nbsp;виде порошка, который нужно лишь залить
             кипятком и&nbsp;готово.
           </li>
           <li class="promo-block__item">
-            <img class="promo-block__icon promo-block__icon--economy" src="./img/icon/promo-economy.svg" width="27" height="31"
-              alt="Экономичное питание.">Замените один-два приема обычной еды на&nbsp;наше
+            <img class="promo-block__icon promo-block__icon--economy" src="./img/icon/promo-economy.svg" width="27"
+              height="31" alt="Экономичное питание.">Замените один-два приема обычной еды на&nbsp;наше
             функциональное питание.
           </li>
           <li class="promo-block__item">
-            <img class="promo-block__icon promo-block__icon--quick" src="./img/icon/promo-quick.svg" width="27" height="31"
-              alt="Быстрый результат.">
+            <img class="promo-block__icon promo-block__icon--quick" src="./img/icon/promo-quick.svg" width="27"
+              height="31" alt="Быстрый результат.">
             Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему
             вашего&nbsp;питомца!
           </li>
@@ -161,10 +161,17 @@
           </p>
         </div>
         <div class="success-stories__slider slider">
-          <img class="slider__dummy" src="./img/cat-slider-mobile.png" width="280" height="256"
-            alt="Заглушка для слайдера">
-          <button class="slider__switch visually-hidden" type="button"><span
-              class="visually-hidden">Переключатель</span></button>
+          <div class="slider__container">
+            <div class="slider__image-container">
+              <img class="slider__image slider__image--before " src="./img/index/before--small.png"
+                alt="Толстый котик." />
+              <img class="slider__image slider__image--after" src="./img/index/after--small.png" alt="Худой котик." />
+            </div>
+            <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+              class="slider__input" />
+            <div class="slider__line" aria-hidden="true"></div>
+            <div class="slider__button" aria-hidden="true"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -252,6 +259,7 @@
 
   <script src="./js/menu.js"></script>
   <script src="./js/mapbasics.js"></script>
+  <script src="./js/slider.js"></script>
 
 </body>
 
