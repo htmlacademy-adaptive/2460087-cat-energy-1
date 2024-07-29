@@ -7,26 +7,34 @@
   display: flex;
   justify-content: center;
   justify-items: center;
+
+  @media (min-width: 600px) {
+    justify-content: flex-start;
+  }
 }
 
 .page-footer__logo {
   padding: 46px 0 17px;
+
+&:hover {
+  opacity: 0.8;
 }
 
-@media (min-width: 600px) {
-  .page-footer__container {
+&:active {
+  opacity: 0.6;
+}
+
+  @media (min-width: 600px) {
+    padding: 0;
+  }
+}
+
+.page-footer__container {
+  @media (min-width: 600px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     box-sizing: border-box;
     padding: 29px var(--page-indentation);
-  }
-
-  .page-footer__link-logo {
-    justify-content: flex-start;
-  }
-
-  .page-footer__logo {
-    padding: 0;
   }
 }
