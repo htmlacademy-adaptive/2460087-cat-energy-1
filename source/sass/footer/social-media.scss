@@ -3,6 +3,12 @@
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
   }
+
+  @media (min-width: 600px) {
+    &--border {
+      border: none;
+    }
+  }
 }
 
 .social-media__list {
@@ -17,14 +23,59 @@
   list-style: none;
 }
 
-.social-media__icon {
+.social-media__link {
   display: block;
-}
+  width: fit-content;
+  min-width: 28px;
+  min-height: 22px;
+  position: relative;
 
-@media (min-width: 600px) {
-  .page-footer__social-media {
-    &--border {
-      border: none;
+  &::before {
+    content: "";
+    position: absolute;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    width: 28px;
+    height: 22px;
+    background-color: #666666;
+    transition: opacity 0.3s, background-color 0.3s ease-in;
+  }
+
+  &--vk {
+    &::before {
+      -webkit-mask-image: url("../img/sprite.svg#vkontakte");
+      mask-image: url("../img/sprite.svg#vkontakte");
     }
+  }
+
+  &--yt {
+    &::before {
+      -webkit-mask-image: url("../img/sprite.svg#youtube");
+      mask-image: url("../img/sprite.svg#youtube");
+    }
+  }
+
+  &--tg {
+    &::before {
+      -webkit-mask-image: url("../img/sprite.svg#telegram");
+      mask-image: url("../img/sprite.svg#telegram");
+    }
+  }
+
+  &:hover::before {
+    background-color: $main-color;
+  }
+
+  &:focus::before {
+    background-color: $main-color;
+  }
+
+  &:active::before {
+    background-color: $main-color;
+    opacity: 0.3;
   }
 }

@@ -164,20 +164,22 @@
   width: fit-content;
   padding: 0 47px 0 0;
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     background-color: #000000;
-    width: 8px;
-    height: 2px;
     right: 0;
     top: 50%;
+  }
+
+  &::before {
+    width: 8px;
+    height: 2px;
     transform: translate(-24px, -50%);
   }
 
   &::after {
-    content: "";
-    position: absolute;
     -webkit-mask-image: url("../img/sprite.svg#arrow");
     mask-image: url("../img/sprite.svg#arrow");
     mask-position: right center;
@@ -186,11 +188,8 @@
     -webkit-mask-repeat: no-repeat;
     mask-size: contain;
     -webkit-mask-size: contain;
-    background-color: #000000;
     width: 24px;
     height: 12px;
-    top: 50%;
-    right: 0;
     transform: translate(-8px, -50%);
     transition: transform 0.3s;
   }

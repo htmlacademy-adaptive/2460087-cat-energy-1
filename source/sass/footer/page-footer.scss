@@ -7,6 +7,7 @@
   display: flex;
   justify-content: center;
   justify-items: center;
+  width: fit-content;
 
   @media (min-width: 600px) {
     justify-content: flex-start;
@@ -15,14 +16,15 @@
 
 .page-footer__logo {
   padding: 46px 0 17px;
+  transition: opacity 0.3s ease-in;
 
-&:hover {
-  opacity: 0.8;
-}
+  &:hover {
+    opacity: 0.8;
+  }
 
-&:active {
-  opacity: 0.6;
-}
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: 600px) {
     padding: 0;
