@@ -1,6 +1,10 @@
 .developers {
   position: relative;
   padding: 30px 20px;
+
+  @media (min-width: 600px) {
+    padding: 0;
+  }
 }
 
 .developers__link {
@@ -10,47 +14,54 @@
   text-decoration: none;
   color: inherit;
   width: fit-content;
-  margin: 0 0 0 auto;
-}
+  margin: 0 50px 0 auto;
+  transition: opacity 0.3s ease-in;
 
-.developers__text {
-  position: absolute;
-  left: var(--page-indentation);
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.developers__logo {
-  display: block;
-  width: 27px;
-  height: 34px;
-}
-
-@media (min-width: 600px) {
-  .developers {
-    position: static;
-    text-decoration: none;
-    color: inherit;
-    padding: 0;
-  }
-
-  .developers__link {
-    font-size: 16px;
-    line-height: 20px;
-    display: block;
-    position: relative;
-  }
-
-  .developers__text {
+  &::before {
+    content: "";
     position: absolute;
-    width: max-content;
-    left: initial;
-    right: 50px;
-  }
-
-  .developers__logo {
-    display: block;
+    mask-position: center;
+    -webkit-mask-position: center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: contain;
+    -webkit-mask-size: contain;
     width: 27px;
     height: 34px;
+    background-color: #666666;
+    -webkit-mask-image: url("../img/sprite.svg#academy");
+    mask-image: url("../img/sprite.svg#academy");
+    right: 27px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity 0.3s, background-color 0.3s ease-in;
   }
+
+  &:hover::before {
+    background-color: $main-color;
+  }
+
+  &:focus::before {
+    background-color: $main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active::before {
+    background-color: $main-color;
+    opacity: 0.3;
+  }
+
+  @media (min-width: 600px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+ &::before {
+  right: -50px;
+ }
 }
+
+
