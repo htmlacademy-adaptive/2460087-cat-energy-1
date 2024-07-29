@@ -66,6 +66,10 @@
   padding: 13px 0;
   margin: 0 0 0 20px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 131px 0 0;
+  }
 }
 
 .page-header__logo {
