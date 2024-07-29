@@ -163,9 +163,15 @@
         <div class="success-stories__slider slider">
           <div class="slider__container">
             <div class="slider__image-container">
-              <img class="slider__image slider__image--before " src="./img/index/before--small.png"
-                alt="Толстый котик." />
-              <img class="slider__image slider__image--after" src="./img/index/after--small.png" alt="Худой котик." />
+              <picture>
+
+                <img class="slider__image slider__image--before" src="./img/index/before--small.png" srcset="./img/index/before--small@2x.png" width="280"
+                  height="256" alt="Толстый котик.">
+
+              </picture>
+              <img class="slider__image slider__image--after" src="./img/index/after--small.png" srcset="./img/index/after--small@2x.png" width="280"
+                height="256" alt="Худой котик." />
+
             </div>
             <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
               class="slider__input" />
