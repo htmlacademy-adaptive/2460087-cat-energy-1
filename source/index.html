@@ -173,7 +173,7 @@
               <source media="(min-width: 600px)"
                 srcset="./img/index/after--medium.png 1x, ./img/index/after--medium@2x.png 2x">
               <img class="slider__image slider__image--after" src="./img/index/after--small.png"
-                srcset="./img/index/after--small@2x.png" width="280" height="256" alt="Худой котик." />
+                srcset="./img/index/after--small@2x.png" width="280" height="256" alt="Худой котик.">
 
             </div>
             <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
@@ -205,6 +205,12 @@
         </div>
       </div>
       <div class="contacts__map no-js" id="map">
+        <picture>
+          <source media="(min-width: 1100px)" srcset="./img/map/map--large.jpg 1x, ./img/map/map--large@2x.jpg 2x">
+          <source media="(min-width: 600px)" srcset="./img/map/map--medium.jpg 1x, ./img/map/map--medium@2x.jpg 2x">
+          <img class="contacts__map-image" src="./img/map/map--small.jpg" srcset="./img/map/map--small@2x.jpg"
+            width="320" height="362" alt="Карта." loading="lazy">
+        </picture>
       </div>
     </section>
 
