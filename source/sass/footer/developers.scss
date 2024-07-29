@@ -7,6 +7,14 @@
   }
 }
 
+.page-footer__developers {
+  @media (min-width: 600px) {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+  }
+}
+
 .developers__link {
   font-size: 16px;
   line-height: 20px;
@@ -14,7 +22,6 @@
   text-decoration: none;
   color: inherit;
   width: fit-content;
-  margin: 0 50px 0 auto;
   transition: opacity 0.3s ease-in;
 
   &::before {
@@ -31,7 +38,7 @@
     background-color: #666666;
     -webkit-mask-image: url("../img/sprite.svg#academy");
     mask-image: url("../img/sprite.svg#academy");
-    right: 27px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     transition: opacity 0.3s, background-color 0.3s ease-in;
@@ -54,14 +61,16 @@
     opacity: 0.3;
   }
 
+
   @media (min-width: 600px) {
     font-size: 16px;
     line-height: 20px;
+    margin: 0 50px 0 0;
   }
 
- &::before {
-  right: -50px;
- }
+  &::before {
+    @media (min-width: 600px) {
+      right: 0;
+    }
+  }
 }
-
-
