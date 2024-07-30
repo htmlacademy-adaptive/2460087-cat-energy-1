@@ -108,7 +108,6 @@
     margin: 0 auto 50px;
   }
 
-
   &::before,
   &::after {
     content: "";
@@ -137,6 +136,22 @@
     @media (min-width: 570px) {
       height: 60px;
     }
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #cdcdcd;
+  }
+
+  &:focus::before,
+  &:focus::after {
+    background-color: #cdcdcd;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: #cdcdcd;
+    opacity: 0.6;
   }
 }
 
