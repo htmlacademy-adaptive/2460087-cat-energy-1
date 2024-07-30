@@ -20,10 +20,11 @@
 
   .contacts__text-container {
     box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    justify-content: space-between;
     padding: 0 var(--page-indentation);
     margin: 0 auto;
 
@@ -35,14 +36,12 @@
       position: absolute;
       background-color: #ffffff;
       width: 565px;
-      height: 199px;
+      min-height: 199px;
       z-index: 1;
       left: 110px;
       top: 65px;
       padding: 60px 80px;
-      box-sizing: border-box;
     }
-
   }
 
   .contacts__invitation {
@@ -67,7 +66,6 @@
     line-height: 20px;
     font-style: normal;
     justify-self: end;
-    align-self: start;
     width: 140px;
 
     @media (min-width: 600px) {
@@ -95,25 +93,11 @@
     }
   }
 
-.contacts__map-image {
-  width: 100%;
-  height: 100%;
-}
+  .contacts__map-image {
+    width: 100%;
+    height: 100%;
+  }
 
   .contacts__map.js .contacts__map-image {
     display: none;
-  }
-
-  .contacts__text-container {
-    @media (min-width: 1100px) {
-      position: absolute;
-      background-color: #ffffff;
-      width: 565px;
-      height: 199px;
-      z-index: 1;
-      left: 110px;
-      top: 65px;
-      padding: 60px 80px;
-      box-sizing: border-box;
-    }
   }
