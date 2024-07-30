@@ -11,10 +11,6 @@
 .catalog__card {
   border-bottom: 1px solid #ebebeb;
 
-  &:nth-last-child(n) {
-    margin: 0 0 20px;
-  }
-
   &--first {
     border-top: 1px solid #ebebeb;
   }
