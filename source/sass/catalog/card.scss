@@ -15,12 +15,11 @@
     width: 100%;
     min-width: 250px;
     min-height: 511px;
-    padding: 0 37px 40px;
+    padding: 0 37px 40px;;
   }
 
   @media (min-width: 756px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
     padding: 0 28px 40px;
   }
 

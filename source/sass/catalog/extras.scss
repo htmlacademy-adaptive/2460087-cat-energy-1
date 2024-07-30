@@ -133,6 +133,11 @@
   }
 }
 
+.extras__definition,
+.extras__term {
+  max-width: 50%;
+}
+
 .extras__button {
   display: block;
   background-color: $main-color;
