@@ -73,6 +73,23 @@
 .catalog__additionally {
   text-align: center;
   padding: 26px 0;
+  box-sizing: border-box;
+
+  @media (min-width: 570px) {
+    outline: 1px solid #f2f2f2;
+    height: min-content;
+    align-self: end;
+    padding: 50px 37px 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 324px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1100px) {
+    max-width: 245px;
+  }
 }
 
 .catalog__additionally-more {
@@ -84,6 +101,13 @@
   border: none;
   position: relative;
   cursor: pointer;
+
+  @media (min-width: 570px) {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 50px;
+  }
+
 
   &::before,
   &::after {
@@ -99,12 +123,20 @@
     height: 2px;
     width: 30px;
     margin-top: -1px;
+
+    @media (min-width: 570px) {
+      width: 60px;
+    }
   }
 
   &::after {
     width: 2px;
     height: 30px;
     margin-left: -1px;
+
+    @media (min-width: 570px) {
+      height: 60px;
+    }
   }
 }
 
@@ -119,6 +151,7 @@
   @media (min-width: 570px) {
     font-size: 20px;
     line-height: 26px;
+    margin: 0 0 23px;
   }
 }
 
@@ -130,6 +163,7 @@
   @media (min-width: 570px) {
     font-size: 16px;
     line-height: 18px;
+    margin: 0 0 82px;
   }
 }
 
@@ -147,5 +181,9 @@
   &:active {
     background-color: #ebebeb;
     color: #444444;
+  }
+
+  @media (min-width: 570px) {
+    width: 100%;
   }
 }
