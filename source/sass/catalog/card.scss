@@ -26,6 +26,19 @@
   display: block;
   justify-self: center;
   align-self: center;
+  transition: filter 0.3s ease-in, opacity 0.3s ease-in;
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+
+  &:focus {
+    filter: brightness(1.1);
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .card__img-min {
@@ -277,3 +290,4 @@
     height: 196px;
   }
 }
+
