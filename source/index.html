@@ -5,50 +5,46 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat Energy | Функциональное питание для котов </title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons//apple.png">
+  <link rel="manifest" href="./manifest.webmanifest">
 </head>
 
 <body>
   <header class="page-header page-header--index">
-    <div class="page-header__position-container position-container">
+    <div class="position-container">
       <div class="page-header__container">
 
         <!-- Шапка -->
 
         <div class="page-header__logo-wrapper">
-          <a href="index.html" class="page-header__logo" aria-current="page">
-            <svg class="page-header__primary-logo page-header__primary-logo--mobile" width="33" height="38" role="img"
-              aria-label="Логотип Cat Energy" tabindex="0">
-              <use href="img/sprite.svg#primary-logo"></use>
-            </svg>
-            <svg class="page-header__primary-logo page-header__primary-logo--tablet" width="60" height="50" role="img"
-              aria-label="Логотип Cat Energy">
-              <use href="img/sprite.svg#primary-logo-tablet"></use>
-            </svg>
-            <svg class="page-header__primary-logo page-header__primary-logo--desktop" width="70" height="59" role="img"
-              aria-label="Логотип Cat Energy">
-              <use href="img/sprite.svg#primary-logo-desktop"></use>
-            </svg>
-            <svg class="page-header__secondary-logo text-logo" width="101" height="18" role="img"
-              aria-label="Cat Energy">
-              <use href="img/sprite.svg#secondary-logo"></use>
-            </svg>
+          <a href="./index.html" class="page-header__logo" aria-current="page">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/icon/logo--large.svg">
+              <source media="(min-width: 768px)" srcset="./img/icon/logo--medium.svg">
+              <img src="./img/icon/logo--small.svg" class="page-header__primary-logo" width="33" height="38"
+                alt="Логотип Cat Energy">
+            </picture>
+            <img src="./img/icon/text-logo.svg" class="page-header__secondary-logo text-logo" width="101" height="18"
+              alt="Cat Energy">
           </a>
         </div>
 
         <nav class="page-header__user-menu user-menu user-menu--no-js">
           <button class="user-menu__button-menu" type="button"><span class="visually-hidden">Меню</span></button>
-          <ul class="user-menu__navigation-list">
+          <ul class="user-menu__navigation-list" aria-hidden="true">
             <li class="user-menu__navigation-item user-menu__navigation-item--first-item">
               <a class="user-menu__navigation-link user-menu__navigation-link--accent user-menu__navigation-link--active
-              user-menu__navigation-link--accent-active" href="index.html" aria-current="page">Главная</a>
+              user-menu__navigation-link--accent-active" href="./index.html" aria-current="page">Главная</a>
             </li>
             <li class="user-menu__navigation-item user-menu__navigation-item--other-item">
-              <a class="user-menu__navigation-link user-menu__navigation-link--accent" href="catalog.html">Каталог
+              <a class="user-menu__navigation-link user-menu__navigation-link--accent" href="./catalog.html">Каталог
                 продукции</a>
             </li>
             <li class="user-menu__navigation-item user-menu__navigation-item--other-item">
-              <a class="user-menu__navigation-link user-menu__navigation-link--accent" href="form.html">Подбор
+              <a class="user-menu__navigation-link user-menu__navigation-link--accent" href="./form.html">Подбор
                 программы</a>
             </li>
           </ul>
@@ -56,19 +52,23 @@
       </div>
 
       <!--Блок герой-->
-
       <section class="page-header__hero hero">
         <div class="hero__container">
           <h1 class="hero__primary-title primary-title hero__text-width">Функциональное питание для&nbsp;котов
           </h1>
-          <p class="hero__slogan hero__text-width">Занялся собой? Займись котом! </p>
-          <img class="hero__advertising-banner hero__advertising-banner--mobile" src="img/cat-energy-chicken.png"
-            width="280" height="270" alt="Cat Energy с курицей.">
-          <img class="hero__advertising-banner hero__advertising-banner--tablet" src="img/cat-energy-chicken-tablet.png"
-            width="709" height="609" alt="Cat Energy с курицей.">
-          <img class="hero__advertising-banner hero__advertising-banner--desktop"
-            src="img/cat-energy-chicken-desktop.png" width="552" height="499" alt="Cat Energy с курицей.">
-          <a class="hero__button basic-button" href="form.html">подобрать программу</a>
+          <p class="hero__slogan hero__text-width">Занялся собой? Займись котом!</p>
+          <picture>
+            <source media="(min-width: 1000px)"
+              srcset="./img/index/cat-energy-promo--large.png 1x, ./img/index/cat-energy-promo--large@2x.png 2x"
+              width="552" height="449">
+            <source media="(min-width: 768px)"
+              srcset="img/index/cat-energy-promo--medium.jpg 1x, ./img/index/cat-energy-promo--medium@2x.jpg 2x"
+              width="709" height="609">
+            <img class="hero__advertising-banner" src="./img/index/cat-energy-promo--small.png"
+              srcset="./img/index/cat-energy-promo--small@2x.png 2x" width="280" height="270"
+              alt="Cat Energy с курицей.">
+          </picture>
+          <a class="hero__button basic-button" href="./form.html">подобрать программу</a>
         </div>
       </section>
     </div>
@@ -81,6 +81,8 @@
       <section class="page-main__ration-description ration-description">
         <h2 class="visually-hidden">Программа питания</h2>
         <div class="ration-description__wrapper">
+          <img class="ration-description__icon ration-description__icon--slim" src="./img/icon/cat-slim.svg" width="36"
+            height="50" alt="Худой котик.">
           <h3 class="ration-description__title">
             Похудение
           </h3>
@@ -89,13 +91,15 @@
             Cat Energy
             Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a class="ration-description__link" href="catalog.html">Каталог slim</a>
+          <a class="ration-description__link" href="./catalog.html">Каталог slim</a>
         </div>
         <div class="ration-description__wrapper">
+          <img class="ration-description__icon ration-description__icon--muskular" src="./img/icon/cat-muscular.svg"
+            width="67" height="28" alt="Худой котик.">
           <h3 class="ration-description__title">Набор массы</h3>
           <p class="ration-description__purpose ration-description__purpose--line">Заработать авторитет среди дворовых
             котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="ration-description__link" href="catalog.html">Каталог pro</a>
+          <a class="ration-description__link" href="./catalog.html">Каталог pro</a>
         </div>
       </section>
 
@@ -104,21 +108,26 @@
       <section class="page-main__promo-block promo-block">
         <h2 class="promo-block__title basic-title">Как это работает</h2>
         <ol class="promo-block__list">
-          <li class="promo-block__item">Функциональное питание содержит только полезные
+          <li class="promo-block__item">
+            <img class="promo-block__icon promo-block__icon--healthy" src="./img/icon/promo-healthy.svg" width="30"
+              height="32" alt="Полезное питание.">Функциональное питание содержит только полезные
             питательные вещества.
-            <span class="promo-block__item-number">1</span>
           </li>
-          <li class="promo-block__item">Выпускается в&nbsp;виде порошка, который нужно лишь залить
+          <li class="promo-block__item">
+            <img class="promo-block__icon promo-block__icon--powder" src="./img/icon/promo-powder.svg" width="26"
+              height="29" alt="Экономичное питание.">Выпускается в&nbsp;виде порошка, который нужно лишь залить
             кипятком и&nbsp;готово.
-            <span class="promo-block__item-number">2</span>
           </li>
-          <li class="promo-block__item">Замените один-два приема обычной еды на&nbsp;наше
+          <li class="promo-block__item">
+            <img class="promo-block__icon promo-block__icon--economy" src="./img/icon/promo-economy.svg" width="27"
+              height="31" alt="Экономичное питание.">Замените один-два приема обычной еды на&nbsp;наше
             функциональное питание.
-            <span class="promo-block__item-number">3</span>
           </li>
-          <li class="promo-block__item">Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему
+          <li class="promo-block__item">
+            <img class="promo-block__icon promo-block__icon--quick" src="./img/icon/promo-quick.svg" width="27"
+              height="31" alt="Быстрый результат.">
+            Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему
             вашего&nbsp;питомца!
-            <span class="promo-block__item-number">4</span>
           </li>
         </ol>
       </section>
@@ -154,10 +163,26 @@
           </p>
         </div>
         <div class="success-stories__slider slider">
-          <img class="slider__dummy" src="img/cat-slider-mobile.png" width="280" height="256"
-            alt="Заглушка для слайдера">
-          <button class="slider__switch visually-hidden" type="button"><span
-              class="visually-hidden">Переключатель</span></button>
+          <div class="slider__container">
+            <div class="slider__image-container">
+              <picture>
+                <source media="(min-width: 600px)"
+                  srcset="./img/index/before--medium.png 1x, ./img/index/before--medium@2x.png 2x">
+                <img class="slider__image slider__image--before" src="./img/index/before--small.png"
+                  srcset="./img/index/before--small@2x.png" width="280" height="256" alt="Толстый котик.">
+
+              </picture>
+              <source media="(min-width: 600px)"
+                srcset="./img/index/after--medium.png 1x, ./img/index/after--medium@2x.png 2x">
+              <img class="slider__image slider__image--after" src="./img/index/after--small.png"
+                srcset="./img/index/after--small@2x.png" width="280" height="256" alt="Худой котик.">
+
+            </div>
+            <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+              class="slider__input" />
+            <div class="slider__line" aria-hidden="true"></div>
+            <div class="slider__button" aria-hidden="true"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -181,7 +206,13 @@
           </address>
         </div>
       </div>
-      <div id="map" class="contacts__map">
+      <div class="contacts__map no-js" id="map">
+        <picture>
+          <source media="(min-width: 1100px)" srcset="./img/map/map--large.jpg 1x, ./img/map/map--large@2x.jpg 2x" width="1440" height="400">
+          <source media="(min-width: 600px)" srcset="./img/map/map--medium.jpg 1x, ./img/map/map--medium@2x.jpg 2x" width="768" height="400">
+          <img class="contacts__map-image" src="./img/map/map--small.jpg" srcset="./img/map/map--small@2x.jpg"
+            width="320" height="362" alt="Карта." loading="lazy">
+        </picture>
       </div>
     </section>
 
@@ -191,9 +222,8 @@
 
       <div class="page-footer__logo">
         <a href="index.html" class="page-footer__link-logo" aria-current="page">
-          <svg class="page-footer__text-logo text-logo" width="101" height="18" role="img" aria-label="Cat Energy">
-            <use href="img/sprite.svg#secondary-logo"></use>
-          </svg>
+          <img src="./img/icon/text-logo.svg" class="page-footer__text-logo text-logo" width="101" height="18"
+            alt="Cat Energy">
         </a>
       </div>
 
@@ -203,24 +233,15 @@
         <h2 class="social-media__title visually-hidden">Социальные сети</h2>
         <ul class="social-media__list social-media__list--border">
           <li class="social-media__item">
-            <a class="social-media__link" href="#">
-              <svg class="social-media__icon" width="28" height="22" role="img" aria-label="Vkontakte">
-                <use href="img/sprite.svg#vkontakte"></use>
-              </svg>
+            <a class="social-media__link social-media__link--vk" href="#" aria-label="Vkontakte">
             </a>
           </li>
           <li class="social-media__item">
-            <a class="social-media__link" href="#">
-              <svg class="social-media__icon" width="28" height="22" role="img" aria-label="YouTube">
-                <use href="img/sprite.svg#youtube"></use>
-              </svg>
+            <a class="social-media__link social-media__link--yt" href="#" aria-label="YouTube">
             </a>
           </li>
           <li class="social-media__item">
-            <a class="social-media__link" href="#">
-              <svg class="social-media__icon" width="28" height="22" role="img" aria-label="Telegram">
-                <use href="img/sprite.svg#telegram"></use>
-              </svg>
+            <a class="social-media__link social-media__link--tg" href="#" aria-label="Telegram">
             </a>
           </li>
         </ul>
@@ -231,10 +252,7 @@
       <section class="page-footer__developers developers">
         <h2 class="developers__title visually-hidden">Разработчики сайта</h2>
         <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="developers__text">HTML Academy</span>
-          <svg class="developers__logo" width="27" height="34" role="img" aria-label="HTML Academy">
-            <use href="img/sprite.svg#academy"></use>
-          </svg>
+          HTML Academy
         </a>
       </section>
 
@@ -244,8 +262,9 @@
   <script
     src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=748c05f5-b923-40a4-87ff-c372433ecd66"></script>
 
-  <script src="js/menu.js"></script>
-  <script src="js/mapbasics.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="./js/mapbasics.js"></script>
+  <script src="./js/slider.js"></script>
 
 </body>
 

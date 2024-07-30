@@ -1,10 +1,23 @@
 .ration-description {
   display: grid;
   gap: 20px;
+
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .page-main__ration-description {
   margin: 0 var(--page-indentation) 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 var(--page-indentation) 45px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0 var(--page-indentation) 71px;
+  }
 }
 
 .ration-description__wrapper {
@@ -12,24 +25,111 @@
   padding: 30px 20px 22px;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    padding: 77px 52px 53px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 77px 61px 59px 52px;
+  }
+
   &::before {
     content: "";
-    position: absolute;
     width: 50px;
     height: 50px;
     background-color: $main-color;
     border-radius: 50%;
     left: 20px;
     top: 24px;
+    float: left;
+    margin: 0 20px 0 0;
+
+    @media (min-width: $tablet-width) {
+      width: 200px;
+      height: 200px;
+      left: auto;
+      right: 63px;
+      top: 92px;
+      float: right;
+      margin: 0;
+    }
+
+    @media (min-width: 1200px) {
+      width: 100px;
+      height: 100px;
+      top: 41px;
+      left: 52px;
+      float: left;
+      margin: 0 25px 0 0;
+    }
+  }
+}
+
+.ration-description__icon {
+  position: absolute;
+
+  &--slim {
+    width: 36px;
+    height: 50px;
+    left: 27px;
+    top: 25px;
+
+    @media (min-width: $tablet-width) {
+      width: 140px;
+      height: 194px;
+      right: 92px;
+      top: 81px;
+      left: auto;
+    }
+
+    @media (min-width: 1200px) {
+      width: 70px;
+      height: 97px;
+      top: 71px;
+      left: 67px;
+    }
+  }
+
+  &--muskular {
+    width: 67px;
+    height: 28px;
+    left: 10px;
+    top: 42px;
+
+    @media (min-width: $tablet-width) {
+      width: 268px;
+      height: 172px;
+      top: 135px;
+      right: 30px;
+      left: auto;
+    }
+
+    @media (min-width: 1200px) {
+      width: 134px;
+      height: 56px;
+      top: 97px;
+      left: 34px;
+    }
   }
 }
 
 .ration-description__title {
-  margin: 0 0 0 90px;
+  margin: 0 0 29px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 24px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0 0 73px
+;
+  }
 }
 
 .ration-description__purpose {
@@ -37,6 +137,23 @@
 
   &--line {
     border-bottom: 1px solid #d9d9d9;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 200px 48px 0;
+    padding: 0 53px 0 0;
+    color: #000000;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0;
+    margin: 0 0 27px;
   }
 }
 
@@ -47,81 +164,56 @@
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-}
+  position: relative;
+  display: block;
+  width: fit-content;
+  padding: 0 47px 0 0;
 
-@media (min-width: $tablet-width) {
-  .page-main__ration-description {
-    margin: 0 var(--page-indentation) 45px;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    right: 0;
+    top: 50%;
+
   }
 
-  .ration-description__wrapper {
-    padding: 77px 52px 53px;
-
-    &::before {
-      width: 200px;
-      height: 200px;
-      left: auto;
-      right: 63px;
-      top: 92px;
-    }
+  &::before {
+    width: 8px;
+    height: 2px;
+    transform: translate(-24px, -50%);
   }
 
-  .ration-description__title {
-    font-size: 36px;
-    line-height: 36px;
-    margin: 0 200px 24px 0;
+  &::after {
+    -webkit-mask-image: url("../img/sprite.svg#arrow");
+    mask-image: url("../img/sprite.svg#arrow");
+    mask-position: right center;
+    -webkit-mask-position: right center;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    width: 24px;
+    height: 12px;
+    transform: translate(-8px, -50%);
+    transition: transform 0.3s;
   }
 
-  .ration-description__purpose {
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0 200px 48px 0;
-    padding: 0 53px 0 0;
-    color: #000000;
-
-    &--line {
-      border: none;
-    }
+  &:hover::after {
+    transform: translate(0, -50%);
   }
 
-  .ration-description__link {
+  &:focus::after {
+    transform: translate(0, -50%);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-  }
-}
-
-@media (min-width: 1270px) {
-  .ration-description {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 80px;
-  }
-
-  .page-main__ration-description {
-    margin: 0 var(--page-indentation) 71px;
-  }
-
-  .ration-description__wrapper {
-    padding: 77px 61px 59px 52px;
-    flex: 1;
-
-    &::before {
-      width: 100px;
-      height: 100px;
-      right: auto;
-      top: 41px;
-      left: 52px;
-    }
-  }
-
-  .ration-description__title {
-    margin: 0 0 73px;
-    text-align: center;
-    padding: 0;
-  }
-
-  .ration-description__purpose {
-    padding: 0;
-    margin: 0 0 27px;
   }
 }

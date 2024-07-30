@@ -40,7 +40,7 @@ $desktop-width: 1440px;
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 500px) and (max-width: 569px) {
   :root {
     --scale-factor: 1.5;
   }

@@ -5,7 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat Energy | Функциональное питание для котов </title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons//apple.png">
+  <link rel="manifest" href="./manifest.webmanifest">
 </head>
 
 <body>
@@ -16,36 +20,28 @@
         <!-- Шапка -->
 
         <div class="page-header__logo-wrapper">
-          <a href="index.html" class="page-header__logo" aria-current="page">
-            <svg class="page-header__primary-logo page-header__primary-logo--mobile" width="33" height="38" role="img"
-              aria-label="Логотип Cat Energy">
-              <use href="img/sprite.svg#primary-logo"></use>
-            </svg>
-            <svg class="page-header__primary-logo page-header__primary-logo--tablet" width="60" height="50" role="img"
-              aria-label="Логотип Cat Energy">
-              <use href="img/sprite.svg#primary-logo-tablet"></use>
-            </svg>
-            <svg class="page-header__primary-logo page-header__primary-logo--desktop" width="70" height="59" role="img"
-              aria-label="Логотип Cat Energy">
-              <use href="img/sprite.svg#primary-logo-desktop"></use>
-            </svg>
-            <svg class="page-header__secondary-logo text-logo" width="101" height="18" role="img"
-              aria-label="Cat Energy">
-              <use href="img/sprite.svg#secondary-logo"></use>
-            </svg>
+          <a href="./index.html" class="page-header__logo" aria-current="page">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./img/icon/logo--large.svg">
+              <source media="(min-width: 768px)" srcset="./img/icon/logo--medium.svg">
+              <img src="./img/icon/logo--small.svg" class="page-header__primary-logo" width="33" height="38"
+                alt="Логотип Cat Energy">
+            </picture>
+            <img src="./img/icon/text-logo.svg" class="page-header__secondary-logo text-logo" width="101" height="18"
+              alt="Cat Energy">
           </a>
         </div>
         <nav class="page-header__user-menu user-menu user-menu--no-js">
           <button class="user-menu__button-menu" type="button"><span class="visually-hidden">Меню</span></button>
           <ul class="user-menu__navigation-list">
             <li class="user-menu__navigation-item user-menu__navigation-item--first-item">
-              <a class="user-menu__navigation-link" href="index.html">Главная</a>
+              <a class="user-menu__navigation-link" href="./index.html">Главная</a>
             </li>
             <li class="user-menu__navigation-item user-menu__navigation-item--other-item">
-              <a class="user-menu__navigation-link" href="catalog.html">Каталог продукции</a>
+              <a class="user-menu__navigation-link" href="./catalog.html">Каталог продукции</a>
             </li>
             <li class="user-menu__navigation-item user-menu__navigation-item--other-item">
-              <a class="user-menu__navigation-link user-menu__navigation-link--active" href="form.html"
+              <a class="user-menu__navigation-link user-menu__navigation-link--active" href="./form.html"
                 aria-current="page">Подбор программы</a>
             </li>
           </ul>
@@ -220,7 +216,16 @@
           </address>
         </div>
       </div>
-      <div id="map" class="contacts__map">
+      <div class="contacts__map no-js" id="map">
+        <picture>
+          <source media="(min-width: 1100px)" srcset="./img/map/map--large.jpg 1x, ./img/map/map--large@2x.jpg 2x"
+            width="1440" height="400">
+          <source media="(min-width: 600px)" srcset="./img/map/map--medium.jpg 1x, ./img/map/map--medium@2x.jpg 2x"
+            width="768" height="400">
+          <img class="contacts__map-image" src="./img/map/map--small.jpg" srcset="./img/map/map--small@2x.jpg" width="320"
+            height="362" alt="Карта." loading="lazy">
+        </picture>
+      </div>
       </div>
     </section>
 
@@ -229,10 +234,9 @@
       <!-- Логотип -->
 
       <div class="page-footer__logo">
-        <a href="index.html" class="page-footer__link-logo">
-          <svg class="page-footer__text-logo text-logo" width="101" height="18" role="img" aria-label="Cat Energy">
-            <use href="img/sprite.svg#secondary-logo"></use>
-          </svg>
+        <a href="./index.html" class="page-footer__link-logo">
+          <img src="./img/icon/text-logo.svg" class="page-footer__text-logo text-logo" width="101" height="18"
+            alt="Cat Energy">
         </a>
       </div>
 
@@ -242,24 +246,15 @@
         <h2 class="social-media__title visually-hidden">Социальные сети</h2>
         <ul class="social-media__list social-media__list--border">
           <li class="social-media__item">
-            <a class="social-media__link" href="#">
-              <svg class="social-media__icon" width="28" height="22" role="img" aria-label="Vkontakte">
-                <use href="img/sprite.svg#vkontakte"></use>
-              </svg>
+            <a class="social-media__link social-media__link--vk" href="#" aria-label="Vkontakte">
             </a>
           </li>
           <li class="social-media__item">
-            <a class="social-media__link" href="#">
-              <svg class="social-media__icon" width="28" height="22" role="img" aria-label="YouTube">
-                <use href="img/sprite.svg#youtube"></use>
-              </svg>
+            <a class="social-media__link social-media__link--yt" href="#" aria-label="YouTube">
             </a>
           </li>
           <li class="social-media__item">
-            <a class="social-media__link" href="#">
-              <svg class="social-media__icon" width="28" height="22" role="img" aria-label="Telegram">
-                <use href="img/sprite.svg#telegram"></use>
-              </svg>
+            <a class="social-media__link social-media__link--tg" href="#" aria-label="Telegram">
             </a>
           </li>
         </ul>
@@ -270,10 +265,7 @@
       <section class="page-footer__developers developers">
         <h2 class="developers__title visually-hidden">Разработчики сайта</h2>
         <a class="developers__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="developers__text">HTML Academy</span>
-          <svg class="developers__logo" width="27" height="34" role="img" aria-label="HTML Academy">
-            <use href="img/sprite.svg#academy"></use>
-          </svg>
+          HTML Academy
         </a>
       </section>
 
