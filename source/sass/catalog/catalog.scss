@@ -83,12 +83,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    max-width: 324px;
+    min-width: 324px;
     margin: 0 auto;
   }
 
   @media (min-width: 1100px) {
-    max-width: 245px;
+    min-width: 245px;
   }
 }
 
