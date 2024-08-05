@@ -80,7 +80,7 @@
   grid-template-rows: auto;
   text-align: center;
   align-items: stretch;
-  margin: 0 10px 19px;
+  margin: 0 0 11px;
   padding: 0;
 
   @media (min-width: 600px) {
@@ -96,10 +96,6 @@
 }
 
 .success-stories__progress-list {
-  outline: 1px solid #cdcdcd;
-  border-radius: 5px;
-  list-style: none;
-
   @media (min-width: 1100px) {
     margin: 0 0 60px;
   }
@@ -109,10 +105,12 @@
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
-  font-weight: 400;
   text-transform: uppercase;
   display: block;
-  padding: 8px 19px;
+  padding: 13px 0 17px;
+  outline: 1px solid #cdcdcd;
+  border-radius: 5px;
+  list-style: none;
 
   @media (min-width: 600px) {
     font-size: 30px;
@@ -122,14 +120,13 @@
 
 .success-stories__options {
   font-size: 12px;
-  font-weight: 400;
   line-height: 100%;
   display: block;
   width: fit-content;
-  transform: translateY(5px);
+  transform: translateY(-8px);
   background-color: #eaeaea;
-  margin: 0 auto;
   padding: 0 5px;
+  margin: 0 20px;
 
   @media (min-width: 600px) {
     font-size: 14px;
@@ -147,8 +144,7 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  text-align: center;
-  margin: 0 0 20px;
+  margin: 0 0 20px -2px;
 
   @media (min-width: 600px) {
     font-size: 20px;

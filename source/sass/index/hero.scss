@@ -68,7 +68,7 @@
 
 .hero__primary-title {
   margin: 0;
-  padding: 23px 10px 25px;
+  padding: 28px 10px 25px;
   color: #ffffff;
   text-align: center;
 
@@ -107,6 +107,7 @@
 .hero__advertising-banner {
   display: block;
   margin: 0 auto;
+  padding: 0 0 3px;
   width: 280px;
   height: 270px;
   object-fit: contain;
@@ -129,7 +130,10 @@
 
 .hero__button {
   display: block;
-  padding: 10px 58px;
+  box-sizing: border-box;
+  min-height: 40px;
+  min-width: 280px;
+  padding: 10px;
   text-align: center;
   margin: 0 auto;
   width: fit-content;

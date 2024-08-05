@@ -1,18 +1,15 @@
 .page-footer__social-media {
   &--border {
+  @media (max-width: 599px) {
+
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
   }
-
-  @media (min-width: 600px) {
-    &--border {
-      border: none;
-    }
-  }
+}
 }
 
 .social-media__list {
-  padding: 20px 0;
+  padding: 5px 0;
   display: flex;
   flex-wrap: wrap;
   column-gap: 26px;

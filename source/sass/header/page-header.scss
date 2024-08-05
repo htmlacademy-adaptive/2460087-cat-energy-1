@@ -74,9 +74,11 @@
 
 .page-header__logo {
   text-decoration: none;
-  display: block;
   width: fit-content;
   transition: opacity 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 
   &:hover {
     opacity: 0.8;
@@ -96,7 +98,7 @@
   width: 33px;
   height: 38px;
 
-  @media (min-width: $tablet-width) and (max-width: 1199px) {
+  @media (min-width: $tablet-width) {
     width: 60px;
     height: 50px;
   }
@@ -108,16 +110,17 @@
 }
 
 .page-header__secondary-logo {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   width: 101px;
   height: 18px;
 
+  @media (max-width: 767px) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-60%, -50%);
+  }
+
   @media (min-width: $tablet-width) {
-    left: 90px;
-    transform: translate(0, -50%);
   }
 
   @media (min-width: 1200px) {

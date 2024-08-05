@@ -22,7 +22,7 @@
 
 .ration-description__wrapper {
   background-color: #f2f2f2;
-  padding: 30px 20px 22px;
+  padding: 29px 20px 22px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -34,6 +34,7 @@
   }
 
   &::before {
+    position: absolute;
     content: "";
     width: 50px;
     height: 50px;
@@ -72,7 +73,7 @@
     width: 36px;
     height: 50px;
     left: 27px;
-    top: 25px;
+    top: 21px;
 
     @media (min-width: $tablet-width) {
       width: 140px;
@@ -93,8 +94,8 @@
   &--muskular {
     width: 67px;
     height: 28px;
-    left: 10px;
-    top: 42px;
+    left: 12px;
+    top: 35px;
 
     @media (min-width: $tablet-width) {
       width: 268px;
@@ -114,11 +115,14 @@
 }
 
 .ration-description__title {
-  margin: 0 0 29px;
+  margin: 0 0 30px 71px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #000000;
+  word-spacing: 0.1em;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -127,19 +131,17 @@
   }
 
   @media (min-width: 1200px) {
-    margin: 0 0 73px
-;
+    margin: 0 0 73px;
   }
 }
 
 .ration-description__purpose {
   padding: 0 0 23px;
+  margin: 0 0 18px;
 
   &--line {
-    border-bottom: 1px solid #d9d9d9;
-
-    @media (min-width: $tablet-width) {
-      border: none;
+    @media (max-width: 767px) {
+      border-bottom: 1px solid #d9d9d9;
     }
   }
 
@@ -174,9 +176,8 @@
     content: "";
     position: absolute;
     background-color: #000000;
-    right: 0;
+    right: -2px;
     top: 50%;
-
   }
 
   &::before {
