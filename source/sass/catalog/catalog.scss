@@ -39,8 +39,8 @@
   @media (min-width: 570px) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-template-rows: 1fr auto;
-    grid-auto-rows: auto;
+    grid-auto-rows: minmax(auto, max-content);
+    align-items: start;
     gap: 20px;
     padding: 0 var(--page-indentation);
   }
