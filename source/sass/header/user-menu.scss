@@ -2,6 +2,10 @@
   @media (min-width: $tablet-width) {
     margin: 2px 8px 0 0;
   }
+
+  @media (min-width: 1200px) {
+    margin: 4px 2px 0 0;
+  }
 }
 
 .user-menu__navigation-list {
