@@ -59,6 +59,7 @@
   @media (min-width: $tablet-width) {
     width: 515px;
     position: relative;
+    margin: 0 0 0 90px;
   }
 
   @media (min-width: 1000px) {
@@ -77,7 +78,7 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    margin: 0 0 40px;
+    margin: 0 0 42px;
     padding: 0;
     max-width: 440px;
   }
@@ -117,7 +118,8 @@
     width: 709px;
     height: 609px;
     z-index: -1;
-    left: -87px;
+    top: 202px;
+    left: -89px;
   }
 
   @media (min-width: 1000px) {
@@ -129,20 +131,23 @@
 }
 
 .hero__button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   box-sizing: border-box;
   min-height: 40px;
   min-width: 280px;
   padding: 10px;
-  text-align: center;
   margin: 0 auto;
   width: fit-content;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 18px 26px;
     font-size: 20px;
     line-height: 26px;
+    min-width: 244px;
+    min-height: 54px;
     max-width: 350px;
   }
 }

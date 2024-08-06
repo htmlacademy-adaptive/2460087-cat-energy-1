@@ -47,7 +47,7 @@
     align-items: center;
     padding: 0 var(--page-indentation);
     min-height: 71px;
-    margin: 0 0 65px;
+    margin: 13px 0 50px;
   }
 
   @media (min-width: 1200px) {
@@ -68,7 +68,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 0 131px 0 0;
+    margin: 0 auto 0 0;
   }
 }
 
@@ -101,6 +101,7 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 50px;
+    margin: 0 12px 0 0;
   }
 
   @media (min-width: 1200px) {

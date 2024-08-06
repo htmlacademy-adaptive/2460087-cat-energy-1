@@ -7,7 +7,7 @@
     }
 
     @media (min-width: 600px) {
-      padding: 60px 40px;
+      padding: 63px 42px 60px 40px;
     }
 
     @media (min-width: 1100px) {
@@ -70,6 +70,7 @@
     @media (min-width: 600px) {
       width: 165px;
       font-size: 16px;
+      text-align: end;
     }
   }
 
@@ -80,7 +81,7 @@
 
   .contacts__street {
     @media (min-width: 600px) {
-      margin: 0 0 1em;
+      margin: 0 0 19px 0;
     }
   }
 

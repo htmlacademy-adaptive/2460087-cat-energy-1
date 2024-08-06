@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
       balloonContent: '<b>ул. Большая Конюшенная, д. 19/8,</b></br>' + ' Санкт-Петербург'
     }, {
       iconLayout: 'default#image',
-      iconImageHref: '../img/map/map-pin.svg',
+      iconImageHref: './img/map/map-pin.svg',
       iconImageSize: window.innerWidth <= 600 ? sizePlacemark[0] : sizePlacemark[1],
       iconImageOffset: window.innerWidth <= 600 ? offsetPlacemark[0] : offsetPlacemark[1]
     });
