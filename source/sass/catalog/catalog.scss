@@ -10,6 +10,7 @@
 
 .catalog__card-container {
   @media (max-width: 569px) {
+
     &::before,
     &::after {
       position: absolute;
@@ -71,7 +72,7 @@
     outline: 1px solid #f2f2f2;
     height: min-content;
     align-self: end;
-    padding: 124px 37px 40px;
+    padding: 48px 37px 40px;
   }
 
   @media (min-width: $tablet-width) {
@@ -97,7 +98,7 @@
   @media (min-width: 570px) {
     width: 60px;
     height: 60px;
-    margin: 0 auto 45px;
+    margin: 0 auto 46px;
   }
 
   &::before,
@@ -159,7 +160,7 @@
   @media (min-width: 570px) {
     font-size: 20px;
     line-height: 26px;
-    margin: 0 0 23px;
+    margin: 0 0 18px;
     padding: 0 50px;
   }
 }
