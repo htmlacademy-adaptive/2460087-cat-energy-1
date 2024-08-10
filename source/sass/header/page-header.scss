@@ -18,7 +18,7 @@
         min-height: 694px;
         z-index: -3;
 
-        @media (min-resolution: 2dpx) {
+        @media (min-resolution: 2dppx) {
           background-image: url("../img/hero-background--large@2x.jpg");
         }
       }
@@ -119,9 +119,6 @@
     left: 50%;
     top: 50%;
     transform: translate(-60%, -50%);
-  }
-
-  @media (min-width: $tablet-width) {
   }
 
   @media (min-width: 1200px) {

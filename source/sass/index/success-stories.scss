@@ -3,8 +3,12 @@
   box-sizing: border-box;
 
   @media (min-width: 600px) {
-    background-image: linear-gradient(to bottom, #ffffff 0, #eaeaea 462px);
+    background-image: linear-gradient(to top, #eaeaea 462px, #ffffff 0);
   }
+}
+
+.page-main__success-stories {
+  margin: 0 auto;
 }
 
 .success-stories__container {
@@ -179,7 +183,6 @@
   @media (min-width: $tablet-width) {
     padding: 0 0 55px 0;
   }
-
 }
 
 .success-stories__slider {
@@ -269,7 +272,7 @@
   }
 
   &:focus-visible ~ .slider__button {
-    outline: 5px solid black;
+    outline: 5px solid #000000;
     outline-offset: 3px;
   }
 }
@@ -302,7 +305,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
