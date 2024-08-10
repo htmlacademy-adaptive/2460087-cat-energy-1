@@ -1,19 +1,13 @@
 .success-stories {
   background-color: #eaeaea;
-  box-sizing: border-box;
 
   @media (min-width: 600px) {
     background-image: linear-gradient(to top, #eaeaea 462px, #ffffff 0);
   }
 }
 
-.page-main__success-stories {
-  margin: 0 auto;
-}
-
 .success-stories__container {
   padding: 25px var(--page-indentation) 40px;
-  box-sizing: border-box;
 
   @media (min-width: 600px) {
     padding: 45px var(--page-indentation);
@@ -24,8 +18,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-column-gap: 90px;
-    padding: 0 var(--page-indentation);
-    margin: 0 0 32px;
+    padding: 0 var(--page-indentation) 32px;
   }
 }
 
