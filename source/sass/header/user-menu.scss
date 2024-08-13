@@ -1,5 +1,11 @@
 .page-header__user-menu {
-  margin: 0 0 0 auto;
+  @media (min-width: $tablet-width) {
+    margin: 2px 8px 0 0;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 4px 2px 0 0;
+  }
 }
 
 .user-menu__navigation-list {
@@ -37,16 +43,16 @@
   padding: 13px 0;
 
   &--first-item {
-    border-top: solid 1px #e6e6e6;
-    border-bottom: solid 1px #e6e6e6;
+    @media (max-width: 767px) {
+      border-top: solid 1px #e6e6e6;
+      border-bottom: solid 1px #e6e6e6;
+    }
   }
 
-  &--other-item {
-    border-bottom: solid 1px #e6e6e6;
-  }
-
-  @media (min-width: $tablet-width) {
-    border: none;
+  @media (max-width: 767px) {
+    &--other-item {
+      border-bottom: solid 1px #e6e6e6;
+    }
   }
 }
 
@@ -58,7 +64,7 @@
   text-decoration: none;
   color: #000000;
   display: block;
-  padding: 11px 0;
+  padding: 8px 0;
   width: fit-content;
   margin: 0 auto;
 
@@ -75,7 +81,6 @@
   &--active {
     @media (min-width: $tablet-width) {
       border-bottom: 2px solid $main-color;
-      margin: 0 0 2px;
       transition: opacity 0.3s ease;
     }
   }
@@ -112,8 +117,8 @@
     height: 24px;
     border: none;
     display: block;
-    top: 23px;
-    right: 21px;
+    top: 21px;
+    right: 20px;
     z-index: 2;
     background-color: #ffffff;
     cursor: pointer;

@@ -6,10 +6,11 @@
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     border-bottom: 1px solid #e6e6e6;
+    padding: 0 var(--page-indentation) 45px;
   }
 
   @media (min-width: 1200px) {
-    margin: 0;
+    margin: 0 0 25px 0;
     border: none;
   }
 }
@@ -18,7 +19,7 @@
   margin: 0 0 40px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 32px;
+    margin: 0 0 33px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -36,7 +37,7 @@
     grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
     grid-template-rows: auto;
     grid-auto-rows: auto;
-    gap: 37px 60px;
+    gap: 40px 60px;
     align-items: center;
     margin: 0 auto;
     box-sizing: border-box;
@@ -44,20 +45,25 @@
   }
 
   @media (min-width: 1200px) {
-    margin: 0;
+    gap: 40px 80px;
   }
 }
 
 .promo-block__item {
   list-style: none;
   position: relative;
-  padding: 0 0 0 80px;
+  padding: 2px 0 0 80px;
 
   @media (min-width: $tablet-width) {
-    padding: 151px 0 57px;
+    padding: 150px 0 57px;
     width: 245px;
-    margin: 0 auto;
     align-self: start;
+    font-size: 16px;
+    line-height: 24px;
+
+    &:first-child {
+      width: 230px;
+    }
   }
 
   &::before {
@@ -99,8 +105,9 @@
 .promo-block__icon {
   position: absolute;
   background-repeat: no-repeat;
-  left: 15px;
-  top: 15px;
+  top: 14px;
+  left: 17px;
+
 
   &--healthy {
     width: 30px;

@@ -18,7 +18,7 @@
         min-height: 694px;
         z-index: -3;
 
-        @media (min-resolution: 2dpx) {
+        @media (min-resolution: 2dppx) {
           background-image: url("../img/hero-background--large@2x.jpg");
         }
       }
@@ -47,12 +47,12 @@
     align-items: center;
     padding: 0 var(--page-indentation);
     min-height: 71px;
-    margin: 0 0 65px;
+    margin: 13px 0 50px;
   }
 
   @media (min-width: 1200px) {
     min-height: 143px;
-    margin: 0;
+    margin: 13px 0 0;
   }
 
   &--form {
@@ -68,15 +68,17 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 0 131px 0 0;
+    margin: 0 auto 0 0;
   }
 }
 
 .page-header__logo {
   text-decoration: none;
-  display: block;
   width: fit-content;
   transition: opacity 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 
   &:hover {
     opacity: 0.8;
@@ -96,9 +98,10 @@
   width: 33px;
   height: 38px;
 
-  @media (min-width: $tablet-width) and (max-width: 1199px) {
+  @media (min-width: $tablet-width) {
     width: 60px;
     height: 50px;
+    margin: 0 12px 0 0;
   }
 
   @media (min-width: 1200px) {
@@ -108,16 +111,14 @@
 }
 
 .page-header__secondary-logo {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   width: 101px;
   height: 18px;
 
-  @media (min-width: $tablet-width) {
-    left: 90px;
-    transform: translate(0, -50%);
+  @media (max-width: 767px) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-60%, -50%);
   }
 
   @media (min-width: 1200px) {

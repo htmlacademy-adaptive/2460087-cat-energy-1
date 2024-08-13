@@ -11,7 +11,11 @@
     grid-template-rows: auto;
     align-items: center;
     box-sizing: border-box;
-    padding: 29px var(--page-indentation);
+    padding: 43px var(--page-indentation);
+  }
+
+  @media (min-width: 1100px) {
+    padding: 52px var(--page-indentation);
   }
 }
 
@@ -20,7 +24,7 @@
   flex-wrap: wrap;
   gap: 5px;
   justify-content: center;
-  padding: 46px 0 17px;
+  padding: 29px 0 9px;
 
   @media (min-width: 600px) {
     padding: 0;
@@ -37,6 +41,11 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  .page-footer__text-logo {
+    width: 128px;
+    height: 24px;
   }
 
   @media (min-width: 600px) {
