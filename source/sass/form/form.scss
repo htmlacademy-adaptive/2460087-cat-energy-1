@@ -9,7 +9,7 @@
   }
 
   @media (min-width: 1100px) {
-    margin: 0 0 55px;
+    margin: 33px 0 55px;
   }
 }
 
@@ -25,13 +25,14 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 40px 66px;
-    width: 50%;
+    max-width: 50%;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: 1100px) {
     margin: 0 0 66px;
+    max-width: 25%;
   }
 }
 
@@ -61,7 +62,7 @@
     justify-content: space-between;
     padding: 0 var(--page-indentation);
     gap: 80px;
-    margin: 0 auto 70px;
+    margin: 0 auto 55px;
   }
 }
 
@@ -195,7 +196,7 @@
 
   @media (min-width: 1100px) {
     margin: 0;
-    padding: 30px 28px;
+    padding: 21px 28px;
   }
 }
 
@@ -293,6 +294,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 0 25px;
   }
+
+  @media (min-width: 1100px) {
+    margin: 0 0 2px;
+  }
 }
 
 .form__owner-wrapper {
@@ -314,7 +319,7 @@
   }
 
   @media (min-width: 1100px) {
-    margin: 0 0 0 -40px;
+    margin: 0 0 78px -40px;
   }
 
   &::after {
@@ -474,6 +479,7 @@
 
     @media (min-width: 1100px) {
       margin: 0 0 0 -40px;
+      padding: 0 40px 77px;
     }
   }
 
@@ -519,7 +525,7 @@
 
 
   @media (min-width: 1100px) {
-    margin: 0 0 70px;
+    margin: 0 0 75px;
   }
 
   &:hover {
@@ -572,7 +578,7 @@
   }
 
   @media (min-width: 1100px) {
-    margin: 0 0 0 -40px;
+    margin: 0 0 56px -40px;
   }
 
   &::after {
@@ -653,12 +659,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 0 36px 40px;
-    gap: 17px 60px;
+    gap: 17px 20px;
     max-width: 700px;
   }
 
   @media (min-width: 1100px) {
-    margin: 0 0 60px;
+    margin: 0 0 44px;
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
     max-width: 100%;
@@ -719,6 +725,7 @@
 
   @media (min-width: 1100px) {
     padding: 14px 188px;
+    width: 100%;
   }
 }
 
