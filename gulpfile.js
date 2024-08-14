@@ -35,10 +35,11 @@ const html = () => {
 }
 
 // Скрипты
-const scripts = () => {
+export const scripts = () => {
   return gulp.src('source/js/*.js')
-  .pipe(terser())
-  .pipe(gulp.dest('build/js'))
+    .pipe(terser())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('build/js'))
 }
 
 // Server
