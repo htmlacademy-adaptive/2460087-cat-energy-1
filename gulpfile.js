@@ -5,11 +5,12 @@ import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 //Установленные
-import csso from 'postcss-csso'; //минимизирует файлы
+import csso from 'postcss-csso'; //минифицирует css
 import rename from 'gulp-rename'; //переименовывает
+import htmlmin from 'gulp-htmlmin'; //минифицирует html
 
 
-// Styles
+// Стили
 
 export const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
@@ -20,8 +21,16 @@ export const styles = () => {
       csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
+}
+
+// HTML
+
+export const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'))
 }
 
 // Server
@@ -29,7 +38,7 @@ export const styles = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -47,5 +56,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  html, styles, server, watcher
 );
