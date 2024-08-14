@@ -22,7 +22,15 @@
       z-index: -2;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/hero-background--small@2x.jpg");
+        background-image: url("../img/index/hero-background--small@2x.jpg");
+      }
+
+      @supports (background-image: url("../img/index/hero-background--small.webp")) {
+        background-image: url("../img/index/hero-background--small.webp");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/index/hero-background--small@2x.webp");
+        }
       }
     }
 

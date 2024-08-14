@@ -47,13 +47,22 @@ const scripts = () => {
 // Изображения
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-  .pipe(squoosh())
-  .pipe(gulp.dest('build/img'))
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'))
 }
-
+//копирует изображения без оптимизации
 const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'))
+}
+
+//WebP
+export const createWebp = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(squoosh({
+      webp: {}
+    }))
+    .pipe(gulp.dest('build/img'));
 }
 
 // Server
@@ -78,5 +87,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  html, styles, scripts, server, watcher
+  html, styles, scripts, copyImages, server, watcher
 );
