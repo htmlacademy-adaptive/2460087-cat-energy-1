@@ -8,11 +8,12 @@ import browser from 'browser-sync';
 import csso from 'postcss-csso'; //минифицирует css
 import rename from 'gulp-rename'; //переименовывает
 import htmlmin from 'gulp-htmlmin'; //минифицирует html
+import terser from 'gulp-terser'; //минифицирует js
 
 
 // Стили
 
-export const styles = () => {
+const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
@@ -27,10 +28,17 @@ export const styles = () => {
 
 // HTML
 
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'))
+}
+
+// Скрипты
+const scripts = () => {
+  return gulp.src('source/js/*.js')
+  .pipe(terser())
+  .pipe(gulp.dest('build/js'))
 }
 
 // Server
@@ -56,5 +64,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  html, styles, server, watcher
+  html, styles, scripts, server, watcher
 );
