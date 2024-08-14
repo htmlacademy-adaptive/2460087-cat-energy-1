@@ -9,6 +9,7 @@ import csso from 'postcss-csso'; //минифицирует css
 import rename from 'gulp-rename'; //переименовывает
 import htmlmin from 'gulp-htmlmin'; //минифицирует html
 import terser from 'gulp-terser'; //минифицирует js
+import squoosh from 'gulp-libsquoosh'; //оптимизирует изображения
 
 
 // Стили
@@ -35,15 +36,27 @@ const html = () => {
 }
 
 // Скрипты
-export const scripts = () => {
+const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('build/js'))
 }
 
-// Server
 
+// Изображения
+const optimizeImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+  .pipe(squoosh())
+  .pipe(gulp.dest('build/img'))
+}
+
+const copyImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(gulp.dest('build/img'))
+}
+
+// Server
 const server = (done) => {
   browser.init({
     server: {
