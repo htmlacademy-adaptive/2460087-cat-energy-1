@@ -196,14 +196,10 @@
   }
 
   &::after {
-    -webkit-mask-image: url("../img/sprite.svg#arrow");
     mask-image: url("../img/sprite.svg#arrow");
     mask-position: right center;
-    -webkit-mask-position: right center;
     mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
     mask-size: contain;
-    -webkit-mask-size: contain;
     width: 24px;
     height: 12px;
     transform: translate(-8px, -50%);

@@ -29,20 +29,20 @@
     content: "";
     position: absolute;
     mask-position: center;
-    -webkit-mask-position: center;
     mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
     mask-size: contain;
-    -webkit-mask-size: contain;
     width: 27px;
     height: 34px;
     background-color: #666666;
-    -webkit-mask-image: url("../img/sprite.svg#academy");
     mask-image: url("../img/sprite.svg#academy");
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
     transition: opacity 0.3s, background-color 0.3s ease-in;
+
+    @media (min-width: 600px) {
+      right: 0;
+    }
   }
 
   &:hover::before {
@@ -67,11 +67,5 @@
     font-size: 16px;
     line-height: 20px;
     margin: 0 50px 0 0;
-  }
-
-  &::before {
-    @media (min-width: 600px) {
-      right: 0;
-    }
   }
 }

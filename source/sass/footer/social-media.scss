@@ -32,11 +32,8 @@
     content: "";
     position: absolute;
     mask-position: center;
-    -webkit-mask-position: center;
     mask-repeat: no-repeat;
-    -webkit-mask-repeat: no-repeat;
     mask-size: contain;
-    -webkit-mask-size: contain;
     width: 28px;
     height: 22px;
     background-color: #666666;
@@ -45,21 +42,18 @@
 
   &--vk {
     &::before {
-      -webkit-mask-image: url("../img/sprite.svg#vkontakte");
       mask-image: url("../img/sprite.svg#vkontakte");
     }
   }
 
   &--yt {
     &::before {
-      -webkit-mask-image: url("../img/sprite.svg#youtube");
       mask-image: url("../img/sprite.svg#youtube");
     }
   }
 
   &--tg {
     &::before {
-      -webkit-mask-image: url("../img/sprite.svg#telegram");
       mask-image: url("../img/sprite.svg#telegram");
     }
   }
