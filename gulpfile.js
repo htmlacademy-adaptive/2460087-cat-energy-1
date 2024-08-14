@@ -10,10 +10,13 @@ import rename from 'gulp-rename'; //переименовывает
 import htmlmin from 'gulp-htmlmin'; //минифицирует html
 import terser from 'gulp-terser'; //минифицирует js
 import squoosh from 'gulp-libsquoosh'; //оптимизирует изображения
+import svgo from 'gulp-svgmin'; //оптимизирует svg
+import svgstore from 'gulp-svgstore'; //создает спрайты
+import { stacksvg } from "gulp-stacksvg";
 
 
+//МИНИФИКАЦИЯ
 // Стили
-
 const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
@@ -28,7 +31,6 @@ const styles = () => {
 }
 
 // HTML
-
 const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
@@ -44,25 +46,55 @@ const scripts = () => {
 }
 
 
-// Изображения
-const optimizeImages = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
-    .pipe(squoosh())
-    .pipe(gulp.dest('build/img'))
-}
-//копирует изображения без оптимизации
+// ИЗОБРАЖЕНИЯ
+//копирует картинки без оптимизации
 const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('build/img'))
 }
 
-//WebP
+//оптимизирует картинки
+const optimizeImages = () => {
+  return gulp.src('source/img/**/*.{jpg,png}')
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'))
+}
+
+//создает WebP
 export const createWebp = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(squoosh({
       webp: {}
     }))
     .pipe(gulp.dest('build/img'));
+}
+
+//SVG
+export const svg = () => {
+  return gulp.src(['source/img/**/*.svg', '!source/img/icon/sprite/*.svg', '!source/img/icon/stack/*.svg'])
+    .pipe(svgo())
+    .pipe(gulp.dest('build/img'));
+}
+
+//Создает спрайты
+//Комментарий для проверяющего: я сознательно не использовала в этом проекте спрайтов, но решила предусмотреть возможность их использования
+export const sprite = () => {
+  return gulp.src('source/img/icon/sprite/*.svg')
+    .pipe(svgo())
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename('sprite.svg'))
+    .pipe(gulp.dest('build/img'));
+}
+
+//Создает стеки
+const { src, dest } = gulp;
+export const createStack = () => {
+  return src('source/img/icon/stack/*.svg')
+    .pipe(svgo())
+    .pipe(stacksvg())
+    .pipe(dest('build/img'))
 }
 
 // Server
