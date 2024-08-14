@@ -151,23 +151,31 @@
   // Открыть меню
   .user-menu--closed .user-menu__button-menu {
     &::before {
-      box-shadow: 0 -8px #000000, 0 8px #000000;
+      box-shadow:
+        0 -8px #000000,
+        0 8px #000000;
       opacity: 1;
     }
 
     &:hover::before {
       background-color: #3e3e3e;
-      box-shadow: 0 -8px #3e3e3e, 0 8px #3e3e3e;
+      box-shadow:
+        0 -8px #3e3e3e,
+        0 8px #3e3e3e;
     }
 
     &:focus::before {
       background-color: #3e3e3e;
-      box-shadow: 0 -8px #3e3e3e, 0 8px #3e3e3e;
+      box-shadow:
+        0 -8px #3e3e3e,
+        0 8px #3e3e3e;
     }
 
     &:active::before {
       background-color: #6b6b6b;
-      box-shadow: 0 -8px #6b6b6b, 0 8px #6b6b6b;
+      box-shadow:
+        0 -8px #6b6b6b,
+        0 8px #6b6b6b;
     }
   }
 
@@ -178,7 +186,6 @@
   // Закрыть меню
   .user-menu--opened {
     .user-menu__button-menu {
-
       &::before,
       &::after {
         transition: transform 0.3s ease;
@@ -196,7 +203,6 @@
 
       &:hover,
       &:focus {
-
         &::before,
         &::after {
           background-color: #3e3e3e;
@@ -204,7 +210,6 @@
       }
 
       &:active {
-
         &::before,
         &::after {
           background-color: #6b6b6b;
