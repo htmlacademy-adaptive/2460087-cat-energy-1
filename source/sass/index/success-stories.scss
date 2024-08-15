@@ -223,6 +223,18 @@
   object-position: right;
 }
 
+.slider__line {
+  position: absolute;
+  inset: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  left: var(--position);
+  transform: translateX(-50%);
+  pointer-events: none;
+  transition: background-color 0.3s;
+}
+
 .slider__input {
   position: absolute;
   inset: 0;
@@ -268,18 +280,6 @@
     outline: 5px solid #000000;
     outline-offset: 3px;
   }
-}
-
-.slider__line {
-  position: absolute;
-  inset: 0;
-  width: 4px;
-  height: 100%;
-  background-color: #666666;
-  left: var(--position);
-  transform: translateX(-50%);
-  pointer-events: none;
-  transition: background-color 0.3s;
 }
 
 .slider__button {

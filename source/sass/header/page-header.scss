@@ -21,6 +21,14 @@
         @media (min-resolution: 2dppx) {
           background-image: url("../img/hero-background--large@2x.jpg");
         }
+
+        @supports (background-image: url("../img/index/hero-background--large.webp")) {
+          background-image: url("../img/index/hero-background--large.webp");
+
+          @media (min-resolution: 2dppx) {
+            background-image: url("../img/index/hero-background--large@2x.webp");
+          }
+        }
       }
 
       &::after {

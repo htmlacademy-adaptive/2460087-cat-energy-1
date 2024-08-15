@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat Energy | Функциональное питание для котов </title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons//apple.png">
@@ -218,13 +218,21 @@
       </div>
       <div class="contacts__map no-js" id="map">
         <picture>
+          <source type="image/webp" media="(min-width: 1100px)"
+            srcset="./img/map/map--large.webp 1x, ./img/map/map--large@2x.webp 2x" width="1440" height="400">
+          <source type="image/webp" media="(min-width: 600px)"
+            srcset="./img/map/map--medium.webp 1x, ./img/map/map--medium@2x.webp 2x" width="768" height="400">
+          <source type="image/webp" srcset="./img/map/map--small.webp 1x, ./img/map/map--small@2x.webp 2x" width="320"
+            height="362">
+
           <source media="(min-width: 1100px)" srcset="./img/map/map--large.jpg 1x, ./img/map/map--large@2x.jpg 2x"
             width="1440" height="400">
           <source media="(min-width: 600px)" srcset="./img/map/map--medium.jpg 1x, ./img/map/map--medium@2x.jpg 2x"
             width="768" height="400">
-          <img class="contacts__map-image" src="./img/map/map--small.jpg" srcset="./img/map/map--small@2x.jpg" width="320"
-            height="362" alt="Карта." loading="lazy">
+          <img class="contacts__map-image" src="./img/map/map--small.jpg" srcset="./img/map/map--small@2x.jpg"
+            width="320" height="362" alt="Карта." loading="lazy">
         </picture>
+
       </div>
       </div>
     </section>
@@ -276,8 +284,8 @@
   <script
     src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=748c05f5-b923-40a4-87ff-c372433ecd66"></script>
 
-  <script src="js/menu.js"></script>
-  <script src="js/mapbasics.js"></script>
+  <script src="./js/menu.min.js"></script>
+  <script src="./js/mapbasics.min.js"></script>
 
 </body>
 

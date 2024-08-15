@@ -14,7 +14,6 @@
 
 .catalog__card-container {
   @media (max-width: 569px) {
-
     &::before,
     &::after {
       position: absolute;
@@ -74,22 +73,26 @@
   text-align: center;
   padding: 26px 0 23px;
   box-sizing: border-box;
+  display: grid;
 
   @media (min-width: 570px) {
     outline: 1px solid #f2f2f2;
-    height: min-content;
+    height: 86%;
     align-self: end;
-    padding: 48px 37px 40px;
+    padding: 48px 0 40px;
   }
 
   @media (min-width: $tablet-width) {
     min-width: 324px;
     margin: 0 auto;
+    padding: 53px 0 36px;
+    max-width: 354px;
   }
 
   @media (min-width: 1100px) {
     min-width: 245px;
-    padding: 50px 0 40px;
+    max-width: 294px;
+    padding: 50px 0 36px;
   }
 }
 
@@ -106,11 +109,11 @@
   @media (min-width: 570px) {
     width: 60px;
     height: 60px;
-    margin: 0 auto 46px;
+    margin: 0 auto 4px;
   }
 
   @media (min-width: 1100px) {
-    margin: 0 auto 37px;
+    margin: 0 auto -12px;
   }
 
   &::before,
@@ -121,12 +124,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition:
+      opacity 0.3s ease-in,
+      background-color 0.3s ease-in;
   }
 
   &::before {
     height: 2px;
     width: 30px;
-    margin-top: -1px;
+    margin: -1px 0 0 0;
 
     @media (min-width: 570px) {
       width: 60px;
@@ -136,7 +142,7 @@
   &::after {
     width: 2px;
     height: 30px;
-    margin-left: -1px;
+    margin: 0 0 0 -1px;
 
     @media (min-width: 570px) {
       height: 60px;
@@ -166,21 +172,21 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
-  margin: 0 0 9px;
   letter-spacing: -0.5px;
+  margin: 0 0 9px;
 
   @media (min-width: 570px) {
     font-size: 20px;
     line-height: 26px;
-    margin: 0 0 18px;
-  }
-
-  @media (min-width: $tablet-width) {
     padding: 0 50px;
   }
 
+  @media (min-width: $tablet-width) {
+    padding: 0 80px;
+    margin: 0 0 -22px;
+  }
+
   @media (min-width: 1100px) {
-    margin: 0 0 23px;
     padding: 0 40px;
   }
 }
@@ -188,20 +194,21 @@
 .catalog__additionally-text {
   font-size: 12px;
   line-height: 16px;
-  margin: 0 0 20px;
+  margin: 0 0 21px;
 
   @media (min-width: 570px) {
     font-size: 16px;
     line-height: 18px;
-    margin: 0 0 96px;
+    padding: 0 50px;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    padding: 0 50px;
+    margin: 0;
   }
 
   @media (min-width: 1100px) {
-    margin: 0 0 90px;
+    padding: 0 38px;
   }
 }
 
@@ -213,6 +220,8 @@
   transition: background-color 0.3s ease;
   min-height: 40px;
   width: calc(100% - 40px);
+  margin: 0 auto;
+  align-self: flex-end;
 
   &:hover,
   &:focus,
@@ -222,6 +231,7 @@
   }
 
   @media (min-width: 570px) {
-    width: 100%;
+    margin: 0 auto;
+    width: calc(100% - 74px);
   }
 }
