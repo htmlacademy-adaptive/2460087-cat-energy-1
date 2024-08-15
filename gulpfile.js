@@ -96,6 +96,19 @@ export const createStack = () => {
     .pipe(dest('build/img'))
 }
 
+//Копирует файлы
+export const copy = (done) => {
+  gulp.src([
+    'source/fonts/**/*.{woff2, woff}',
+    'source/*.ico',
+    'source/*.webmanifest'
+  ], {
+    base: 'source'
+  })
+    .pipe(gulp.dest("build"))
+  done();
+}
+
 // Server
 const server = (done) => {
   browser.init({
