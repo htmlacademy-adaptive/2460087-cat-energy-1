@@ -9,7 +9,6 @@
 
   @media (min-width: 570px) {
     grid-auto-rows: minmax(auto, max-content);
-    justify-self: center;
     background-image: linear-gradient(to top, #f2f2f2 86%, #ffffff 0);
     padding: 0 37px 40px;
   }
@@ -17,6 +16,7 @@
   @media (min-width: 756px) {
     grid-template-columns: 1fr;
     padding: 0 28px 40px;
+    justify-self: center;
   }
 
   @media (min-width: $tablet-width) {
@@ -33,10 +33,6 @@
 .catalog__card {
   border-bottom: 1px solid #ebebeb;
 
-  // &--first {
-  //border-top: 1px solid #ebebeb;
-  //}
-
   @media (min-width: 570px) {
     border: none;
   }
@@ -48,7 +44,9 @@
   display: block;
   justify-self: center;
   align-self: center;
-  transition: filter 0.3s ease-in, opacity 0.3s ease-in;
+  transition:
+    filter 0.3s ease-in,
+    opacity 0.3s ease-in;
   margin: 0 0 16px;
 
   @media (min-width: 570px) {
@@ -102,7 +100,6 @@
   hyphens: auto;
   overflow-wrap: break-word;
   letter-spacing: -0.5px;
-
 
   @media (max-width: 569px) {
     width: calc(80px * var(--scale-factor));
