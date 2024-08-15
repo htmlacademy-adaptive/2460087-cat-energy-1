@@ -69,6 +69,7 @@
 
 .ration-description__icon {
   position: absolute;
+  object-fit: contain;
 
   &--slim {
     width: 36px;
@@ -127,7 +128,6 @@
   @media (max-width: 767px) {
     word-spacing: 0.1em;
   }
-
 
   @media (min-width: $tablet-width) {
     font-size: 36px;

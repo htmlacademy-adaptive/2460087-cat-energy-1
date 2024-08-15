@@ -92,10 +92,10 @@
 }
 
 .contacts__map {
-  min-height: 362px;
+  height: 362px;
 
   @media (min-width: 600px) {
-    min-height: 400px;
+    height: 400px;
   }
 }
 
