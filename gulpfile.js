@@ -12,7 +12,8 @@ import terser from 'gulp-terser'; //минифицирует js
 import squoosh from 'gulp-libsquoosh'; //оптимизирует изображения
 import svgo from 'gulp-svgmin'; //оптимизирует svg
 import svgstore from 'gulp-svgstore'; //создает спрайты
-import { stacksvg } from "gulp-stacksvg";
+import { stacksvg } from "gulp-stacksvg"; //создает стеки
+import del from 'del'; //очистка
 
 
 //МИНИФИКАЦИЯ
@@ -108,6 +109,11 @@ export const copy = (done) => {
     .pipe(gulp.dest("build"))
   done();
 }
+
+//Очистка
+export const clean = () => {
+  return del('build');
+};
 
 // Server
 const server = (done) => {
