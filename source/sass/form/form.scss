@@ -421,11 +421,11 @@
 }
 
 .icon--mail::before {
-  mask-image: url("../img/icon/decorative/email-stroke.svg");
+  mask-image: url("../img/stack.svg#email-stroke");
 }
 
 .icon--phone::before {
-  mask-image: url("../img/icon/decorative/phone-stroke.svg");
+  mask-image: url("../img/stack.svg#phone-stroke");
 }
 
 .form__owner-input:hover:not(:disabled):not(:focus):not(:invalid) + .icon::before {
@@ -619,7 +619,7 @@
     position: absolute;
     content: "";
     background-color: $main-color;
-    mask-image: url("../img/icon/decorative/check.svg");
+    mask-image: url("../img/stack.svg#check");
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: contain;
