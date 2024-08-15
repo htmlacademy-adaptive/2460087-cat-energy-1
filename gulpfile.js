@@ -115,6 +115,12 @@ const clean = () => {
   return del('build');
 };
 
+// Удаление карты стилей из сборки
+export const cleanMaps = () => {
+  return del('build/css/style.min.css.map');
+};
+
+
 // Сервер
 const server = (done) => {
   browser.init({
@@ -156,7 +162,8 @@ export const build = gulp.series(
     sprite,
     createStack,
     createWebp
-  )
+  ),
+  cleanMaps
 );
 
 // Разработка
