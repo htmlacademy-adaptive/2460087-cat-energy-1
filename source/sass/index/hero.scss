@@ -132,8 +132,12 @@
   @media (min-width: 1000px) {
     width: 552px;
     height: 499px;
-    left: 366px;
+    left: 323px;
     top: -82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 366px;
   }
 }
 
