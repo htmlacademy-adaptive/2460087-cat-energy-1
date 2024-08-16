@@ -13,36 +13,27 @@ $desktop-width: 1440px;
 :root {
   --page-indentation: 20px;
   --scale-factor: 1;
-}
 
-//Отвечает за паддинги
-@media (min-width: $tablet-width) {
-  :root {
+  //Отвечает за паддинги
+  @media (min-width: $tablet-width) {
     --page-indentation: 30px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  :root {
+  @media (min-width: $desktop-width) {
     --page-indentation: 110px;
   }
-}
 
-//Отвечает за поведение карточек
-@media (min-width: 375px) {
-  :root {
+  //Отвечает за поведение карточек
+
+  @media (min-width: 375px) {
     --scale-factor: 1.1;
   }
-}
 
-@media (min-width: 425px) {
-  :root {
+  @media (min-width: 425px) {
     --scale-factor: 1.2;
   }
-}
 
-@media (min-width: 500px) and (max-width: 569px) {
-  :root {
+  @media (min-width: 500px) and (max-width: 569px) {
     --scale-factor: 1.5;
   }
 }
