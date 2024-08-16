@@ -85,10 +85,6 @@
 .contacts__street,
 .contacts__city {
   display: block;
-
-  @media (max-width: 599px) {
-    margin: 0 0 0 -5px;
-  }
 }
 .contacts__street {
   @media (min-width: 600px) {
