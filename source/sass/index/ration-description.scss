@@ -194,7 +194,7 @@
     width: 32px;
     height: 12px;
     transform: translateY(-50%);
-    transition: mask-position 0.3s;
+    transition: mask-position 0.25s ease-in;
 
     @media (min-width: $tablet-width) {
       right: -13px;

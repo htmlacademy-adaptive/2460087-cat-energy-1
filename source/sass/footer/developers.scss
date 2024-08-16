@@ -23,7 +23,7 @@
   color: inherit;
   width: fit-content;
   padding: 10px 0;
-  transition: opacity 0.3s ease-in;
+  transition: opacity 0.25s ease-in;
 
   &::before {
     content: "";
@@ -38,7 +38,7 @@
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    transition: opacity 0.3s, background-color 0.3s ease-in;
+    transition: opacity 0.25s, background-color 0.25s ease-in;
 
     @media (min-width: 600px) {
       right: 0;

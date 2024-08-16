@@ -210,7 +210,7 @@
   left: 0;
   width: var(--position);
   object-position: left;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.25s ease;
 }
 
 .hidden {
@@ -232,7 +232,7 @@
   left: var(--position);
   transform: translateX(-50%);
   pointer-events: none;
-  transition: background-color 0.3s;
+  transition: background-color 0.25s ease;
 }
 
 .slider__input {
@@ -294,7 +294,7 @@
   transform: translate(-50%, -50%);
   pointer-events: none;
   outline: 2px solid #666666;
-  transition: outline-color 0.3s;
+  transition: outline-color 0.25s ease;
 
   &::before,
   &::after {
@@ -305,7 +305,7 @@
     border-style: solid;
     width: 0;
     height: 0;
-    transition: border-color 0.3s;
+    transition: border-color 0.25s ease;
   }
 
   &::before {

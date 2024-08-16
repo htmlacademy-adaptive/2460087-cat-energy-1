@@ -132,8 +132,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition:
-      opacity 0.3s ease-in,
-      background-color 0.3s ease-in;
+      opacity 0.25s ease-in,
+      background-color 0.25s ease-in;
   }
 
   &::before {
@@ -158,12 +158,12 @@
 
   &:hover::before,
   &:hover::after {
-    background-color: #cdcdcd;
+    background-color: #c1c1c1;
   }
 
   &:focus::before,
   &:focus::after {
-    background-color: #cdcdcd;
+    background-color: #c1c1c1;
   }
 
   &:active::before,
@@ -201,7 +201,8 @@
 .catalog__additionally-text {
   font-size: 12px;
   line-height: 16px;
-  margin: 0 0 21px;  padding: 0;
+  margin: 0 0 21px;
+  padding: 0;
 
   @media (min-width: 570px) {
     font-size: 16px;
@@ -223,14 +224,20 @@
   color: #444444;
   text-decoration: none;
   border: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.25s ease-in;
   min-height: 40px;
   width: calc(100% - 40px);
   margin: 0 auto;
   align-self: flex-end;
 
-  &:hover,
-  &:focus,
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:focus {
+    background-color: #ebebeb;
+  }
+
   &:active {
     background-color: #ebebeb;
     color: #444444;

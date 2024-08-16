@@ -127,7 +127,7 @@
   outline: solid 1px #e7e7e7;
   flex: 1;
   box-sizing: border-box;
-  transition: outline 0.3s ease;
+  transition: outline 0.25s ease;
 
   &::-webkit-outer-spin-button,
   &::-webkit-inner-spin-button {
@@ -205,7 +205,7 @@
   align-items: center;
   cursor: pointer;
   gap: 15px;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.25s ease-in;
 
   @media (min-width: $tablet-width) {
     gap: 19px;
@@ -255,7 +255,7 @@
     transform: translate(-50%, -50%);
     border-radius: 50%;
     opacity: 0;
-    transition: opacity 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: opacity 0.25s ease-in-out, background-color 0.25s ease-in-out;
 
     @media (min-width: $tablet-width) {
       width: 18px;
@@ -272,7 +272,7 @@
 .form-label:hover .form__nutrition-radio:not(:disabled):not(:active) + .form__radio-style + .form__nutrition-text {
   outline-color: #bababa;
   color: #222222;
-  transition: outline-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: outline-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 .form-label .form__nutrition-radio:disabled + .form__radio-style::before,
@@ -388,7 +388,7 @@
   flex: 1;
   outline: solid 1px #cdcdcd;
   box-sizing: border-box;
-  transition: outline 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: outline 0.25s ease-in, color 0.25s ease-in;
 
   &:hover {
     outline: #cdcdcd solid 1px;
@@ -417,7 +417,7 @@
   transform: translateY(-50%);
   right: 14px;
   background-color: #000000;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.25s ease-in;
 }
 
 .icon--mail::before {
@@ -601,7 +601,7 @@
 .form__checkbox-style {
   outline: solid 1px #cdcdcd;
   box-sizing: border-box;
-  transition: outline-color 0.2s ease-in-out;
+  transition: outline-color 0.25s ease-in;
 
   &::before {
     position: absolute;
@@ -610,8 +610,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
     background-color: currentColor;
   }
 
@@ -629,7 +628,7 @@
     left: 0;
     opacity: 0;
     outline: solid 1px #cdcdcd;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.25s ease-in-out;
   }
 }
 
@@ -647,7 +646,7 @@
 
 .form-label:hover .form__extras-input:not(:disabled):not(:active) + .form__checkbox-style + .form__extras-text {
   color: #222222;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
 .form__extras-list {
