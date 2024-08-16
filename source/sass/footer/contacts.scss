@@ -94,20 +94,44 @@
 .contacts__map {
   height: 362px;
 
+  &--no-js {
+    width: 320px;
+    height: 362px;
+    max-width: $desktop-width;
+    display: block;
+    margin: 0 auto;
+    background-image: image-set(
+      url("../img/map/map--small@2x.webp") type("image/webp") 2x,
+      url("../img/map/map--small.webp") type("image/webp") 1x,
+      url("../img/map/map--small@2x.jpg") 2x,
+      url("../img/map/map--small.jpg") 1x
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: 600px) {
+      width: 768px;
+      min-height: 400px;
+      background-image: image-set(
+        url("../img/map/map--medium@2x.webp") type("image/webp") 2x,
+        url("../img/map/map--medium.webp") type("image/webp") 1x,
+        url("../img/map/map--medium@2x.jpg") 2x,
+        url("../img/map/map--medium.jpg") 1x
+      );
+    }
+
+    @media (min-width: 1099px) {
+      width: 1440px;
+      background-image: image-set(
+        url("../img/map/map--large@2x.webp") type("image/webp") 2x,
+        url("../img/map/map--large.webp") type("image/webp") 1x,
+        url("../img/map/map--large@2x.jpg") 2x,
+        url("../img/map/map--large.jpg") 1x
+      );
+    }
+  }
+
   @media (min-width: 600px) {
     height: 400px;
   }
-}
-
-.contacts__map-image {
-  width: 100%;
-  height: auto;
-  max-width: $desktop-width;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
-}
-
-.contacts__map.js .contacts__map-image {
-  display: none;
 }
