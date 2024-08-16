@@ -166,6 +166,7 @@
 .form__nutrition {
   border: none;
   padding: 22px var(--page-indentation) 0;
+  margin: 0 0 27px;
 
   &--line {
     @media (max-width: 767px) {
@@ -315,7 +316,7 @@
 
 .form__owner-title {
   text-transform: none;
-  padding: 27px 25px 0 0;
+  padding: 0 25px 0 0;
   margin: 0 0 35px;
   width: min-content;
   display: inline-block;
@@ -467,7 +468,7 @@
 
 .form__comments {
   border: none;
-  margin: 0 auto;
+  margin: 0 auto 21px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -575,7 +576,7 @@
 .form__extras-title {
   text-transform: none;
   margin: 0;
-  padding: 21px 25px 35px 0;
+  padding: 0 25px 35px 0;
   width: min-content;
   display: inline-block;
   background-color: #ffffff;

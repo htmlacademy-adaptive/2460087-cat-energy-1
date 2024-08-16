@@ -189,6 +189,8 @@
     right: -3px;
     mask-image: url("../img/stack.svg#arrow");
     mask-position: right 10px center;
+    mask-position-x: right 10px;
+    mask-position-y: center;
     mask-repeat: no-repeat;
     mask-size: contain;
     width: 32px;
