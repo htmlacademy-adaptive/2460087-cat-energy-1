@@ -15,6 +15,7 @@
 
   @media (min-width: 756px) {
     grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
     padding: 0 28px 40px;
     justify-self: center;
   }
