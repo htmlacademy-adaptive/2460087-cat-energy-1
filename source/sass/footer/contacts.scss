@@ -7,7 +7,7 @@
   }
 
   @media (min-width: 600px) {
-    padding: 63px 42px 60px 40px;
+    padding: 59px 42px 60px 40px;
   }
 
   @media (min-width: 1100px) {
@@ -85,12 +85,14 @@
 .contacts__street,
 .contacts__city {
   display: block;
-  margin: 0 0 0 -5px;
-}
 
+  @media (max-width: 599px) {
+    margin: 0 0 0 -5px;
+  }
+}
 .contacts__street {
   @media (min-width: 600px) {
-    margin: 0 0 19px;
+    margin: 0 0 20px;
   }
 }
 
