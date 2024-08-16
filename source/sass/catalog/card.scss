@@ -77,17 +77,16 @@
   }
 }
 
-.card__img-min,
-.card__img-max {
+.card__img {
   display: block;
   object-fit: contain;
   width: 100%;
   height: auto;
-}
 
-.card__img-min {
-  @media (min-width: 756px) {
-    margin: 16px 0 0;
+  &--min {
+    @media (min-width: 756px) {
+      margin: 16px 0 0;
+    }
   }
 }
 
