@@ -220,6 +220,11 @@
 }
 
 .catalog__additionally-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
   background-color: #f2f2f2;
   color: #444444;
   text-decoration: none;
@@ -227,8 +232,6 @@
   transition: background-color 0.25s ease-in;
   min-height: 40px;
   width: calc(100% - 40px);
-  margin: 0 auto;
-  align-self: flex-end;
 
   &:hover {
     background-color: #ebebeb;
@@ -244,7 +247,6 @@
   }
 
   @media (min-width: 570px) {
-    margin: 0 auto;
     width: calc(100% - 74px);
   }
 }
