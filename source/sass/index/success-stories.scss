@@ -17,8 +17,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 90px;
+    grid-column-gap: 80px;
     padding: 0 var(--page-indentation) 32px;
+  }
+
+  @media (min-width: 1200px) {
+    grid-column-gap: 90px;
   }
 }
 
