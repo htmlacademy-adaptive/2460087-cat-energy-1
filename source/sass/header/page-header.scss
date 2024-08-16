@@ -8,7 +8,13 @@
       &::before {
         position: absolute;
         content: "";
-        background-image: url("../img/index/hero-background--large.jpg");
+        background-image: image-set(
+          url("../img/index/hero-background--large@2x.webp") type("image/webp") 2x,
+          url("../img/index/hero-background--large.webp") type("image/webp") 1x,
+          url("../img/hero-background--large@2x.jpg") 2x,
+          url("../img/index/hero-background--large.jpg") 1x
+        );
+
         background-repeat: no-repeat;
         background-position: right;
         background-color: #494848;
@@ -17,18 +23,6 @@
         width: 50%;
         min-height: 694px;
         z-index: -3;
-
-        @media (min-resolution: 2dppx) {
-          background-image: url("../img/hero-background--large@2x.jpg");
-        }
-
-        @supports (background-image: url("../img/index/hero-background--large.webp")) {
-          background-image: url("../img/index/hero-background--large.webp");
-
-          @media (min-resolution: 2dppx) {
-            background-image: url("../img/index/hero-background--large@2x.webp");
-          }
-        }
       }
 
       &::after {

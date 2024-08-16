@@ -13,25 +13,18 @@
     }
 
     &::before {
-      background-image: url("../img/index/hero-background--small.png");
+      background-image: image-set(
+        url("../img/index/hero-background--small@2x.webp") type("image/webp") 2x,
+        url("../img/index/hero-background--small.webp") type("image/webp") 1x,
+        url("../img/index/hero-background--small@2x.jpg") 2x,
+        url("../img/index/hero-background--small.png") 1x
+      );
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       left: 50%;
       transform: translate(-50%);
       z-index: -2;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/index/hero-background--small@2x.jpg");
-      }
-
-      @supports (background-image: url("../img/index/hero-background--small.webp")) {
-        background-image: url("../img/index/hero-background--small.webp");
-
-        @media (min-resolution: 2dppx) {
-          background-image: url("../img/index/hero-background--small@2x.webp");
-        }
-      }
     }
 
     &::after {
