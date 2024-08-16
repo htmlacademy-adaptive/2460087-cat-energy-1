@@ -34,6 +34,7 @@
 
 .page-footer__link-logo {
   display: block;
+  transition: opacity 0.25s ease-in;
 
   &:hover {
     opacity: 0.8;
