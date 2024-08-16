@@ -60,7 +60,7 @@
         <h1 class="catalog__title page-title">Каталог продукции</h1>
         <div class="catalog__card-container">
           <article class="catalog__card catalog__card--first card">
-            <h3 class="card__title">Cat Energy PRO 500&nbsp;г</h3>
+            <h2 class="card__title">Cat Energy PRO 500&nbsp;г</h2>
             <a href="#" class="card__img-link">
               <picture>
                 <source type="image/webp" media="(min-width: 500px)"
@@ -90,7 +90,7 @@
           </article>
 
           <article class="catalog__card card">
-            <h3 class="card__title">Cat Energy PRO 1000&nbsp;г</h3>
+            <h2 class="card__title">Cat Energy PRO 1000&nbsp;г</h2>
             <a href="#" class="card__img-link">
               <picture>
                 <source type="image/webp" media="(min-width: 1100px)"
@@ -127,7 +127,7 @@
           </article>
 
           <article class="catalog__card card">
-            <h3 class="card__title">Cat Energy PRO 500&nbsp;г</h3>
+            <h2 class="card__title">Cat Energy PRO 500&nbsp;г</h2>
             <a href="#" class="card__img-link">
               <picture>
                 <source type="image/webp" media="(min-width: 500px)"
@@ -158,7 +158,7 @@
           </article>
 
           <article class="catalog__card card">
-            <h3 class="card__title">Cat Energy PRO 1000&nbsp;г</h3>
+            <h2 class="card__title">Cat Energy PRO 1000&nbsp;г</h2>
             <a href="#" class="card__img-link">
               <picture>
                 <source type="image/webp" media="(min-width: 1100px)"
@@ -195,7 +195,7 @@
           </article>
 
           <article class="catalog__card card">
-            <h3 class="card__title">Cat Energy SLIM 500&nbsp;г</h3>
+            <h2 class="card__title">Cat Energy SLIM 500&nbsp;г</h2>
             <a href="#" class="card__img-link">
               <picture>
                 <source type="image/webp" media="(min-width: 500px)"
@@ -226,7 +226,7 @@
           </article>
 
           <article class="catalog__card card">
-            <h3 class="card__title">Cat Energy SLIM 1000&nbsp;г</h3>
+            <h2 class="card__title">Cat Energy SLIM 1000&nbsp;г</h2>
             <a href="#" class="card__img-link">
 
               <picture>
@@ -264,7 +264,7 @@
           </article>
 
           <article class="catalog__card card">
-            <h3 class="card__title">Cat Energy SLIM 500&nbsp;г</h3>
+            <h2 class="card__title">Cat Energy SLIM 500&nbsp;г</h2>
             <a href="#" class="card__img-link">
               <picture>
                 <source type="image/webp" media="(min-width: 500px)"
@@ -295,8 +295,9 @@
           </article>
 
           <div class="catalog__additionally">
-            <a href="#" class="catalog__additionally-more catalog__additionally-more--no-js"></a>
-            <h3 class="catalog__additionally-title">Показать еще 100500 товаров</h3>
+            <a href="#" class="catalog__additionally-more catalog__additionally-more--no-js"
+              aria-label="Показать всё"></a>
+            <h2 class="catalog__additionally-title">Показать еще 100500 товаров</h2>
             <p class="catalog__additionally-text">На самом деле вкусов гораздо больше!</p>
             <a href="#" class="catalog__additionally-button catalog__additionally-button--no-js basic-button">показать
               все</a>
@@ -374,7 +375,8 @@
           </address>
         </div>
       </div>
-      <div class="contacts__map no-js" id="map">
+      <div class="contacts__map contacts__map--no-js" id="map">
+      </div>
       </div>
     </section>
 
@@ -422,10 +424,11 @@
 
   </footer>
   <script
-    src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=748c05f5-b923-40a4-87ff-c372433ecd66"></script>
+    src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=748c05f5-b923-40a4-87ff-c372433ecd66"
+    defer></script>
 
   <script src="./js/menu.min.js"></script>
-  <script src="./js/mapbasics.min.js"></script>
+  <script src="./js/mapbasics.min.js" defer></script>
 </body>
 
 </html>
