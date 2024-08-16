@@ -282,6 +282,7 @@
 .form__nutrition-radio:focus-visible:not(:disabled):not(:active) + .form__radio-style {
   outline: 3px solid #444444;
   border-radius: 50%;
+  outline-offset: 3px;
 }
 
 .form-label .form__nutrition-radio:disabled + .form__radio-style::before,
@@ -441,7 +442,10 @@
   background-color: #222222;
 }
 
-.form__owner-input:focus + .icon::before,
+.form__owner-input:focus + .icon::before {
+  background-color: $main-color;
+}
+
 .form__owner-input:active + .icon::before {
   background-color: $main-color;
 }
@@ -657,6 +661,7 @@
 
 .form__extras-input:focus-visible:not(:disabled):not(:active) + .form__checkbox-style {
   outline: 3px solid #444444;
+  outline-offset: 3px;
 }
 
 .form__extras-list {
