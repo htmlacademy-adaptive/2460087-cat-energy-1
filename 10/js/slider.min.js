@@ -1,0 +1,1 @@
+const container=document.querySelector(".slider__container"),slider=document.querySelector(".slider__input"),beforeImage=document.querySelector(".slider__image--before");document.addEventListener("input",(e=>{const r=slider.value+"%";container.style.setProperty("--position",r),slider.value<=38?beforeImage.classList.add("hidden"):beforeImage.classList.remove("hidden")}));
