@@ -91,11 +91,13 @@
   }
 }
 
+
+
 .card__title {
+  color: #222222;
   margin: 3px 0 14px;
   font-family: $secondary-font;
   grid-column: 2 / 3;
-  color: #222222;
   text-transform: uppercase;
   hyphens: auto;
   overflow-wrap: break-word;
@@ -124,6 +126,23 @@
   @media (min-width: 1100px) {
     padding: 0 20px;
     margin: 0 0 16px;
+  }
+}
+
+.card__title-link {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
