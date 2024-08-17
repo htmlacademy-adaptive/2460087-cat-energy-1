@@ -26,7 +26,7 @@
 
 .ration-description__wrapper {
   background-color: #f2f2f2;
-  padding: 29px 20px 22px;
+  padding: 29px 25px 22px 20px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -69,6 +69,7 @@
 
 .ration-description__icon {
   position: absolute;
+  object-fit: contain;
 
   &--slim {
     width: 36px;
@@ -128,7 +129,6 @@
     word-spacing: 0.1em;
   }
 
-
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
@@ -176,50 +176,42 @@
   width: fit-content;
   padding: 0 47px 0 0;
 
-  &::before,
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
   &::after {
     content: "";
     position: absolute;
     background-color: #000000;
-    right: -2px;
     top: 50%;
+    right: -3px;
+    mask-image: url("../img/stack.svg#arrow");
+    mask-position: right 10px center;
+    mask-position-x: right 10px;
+    mask-position-y: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    width: 32px;
+    height: 12px;
+    transform: translateY(-50%);
+    transition: mask-position 0.25s ease-in;
 
     @media (min-width: $tablet-width) {
-      right: -11px;
+      right: -13px;
     }
   }
 
-  &::before {
-    width: 8px;
-    height: 2px;
-    transform: translate(-24px, -50%);
-  }
-
-  &::after {
-    mask-image: url("../img/stack.svg#arrow");
-    mask-position: right center;
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    width: 24px;
-    height: 12px;
-    transform: translate(-8px, -50%);
-    transition: transform 0.3s;
-  }
-
   &:hover::after {
-    transform: translate(0, -50%);
+    mask-position: right;
   }
 
   &:focus::after {
-    transform: translate(0, -50%);
+    mask-position: right;
   }
 
   &:active {
     opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
   }
 }

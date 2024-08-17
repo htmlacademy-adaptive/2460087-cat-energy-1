@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   var mapElement = document.querySelector('.contacts__map');
-  mapElement.classList.add('js');
+  mapElement.classList.remove('contacts__map--no-js');
 
   ymaps.ready(function () {
     const sizePlacemark = [
