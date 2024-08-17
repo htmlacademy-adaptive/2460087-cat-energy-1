@@ -92,10 +92,10 @@
 }
 
 .card__title {
+  color: #222222;
   margin: 3px 0 14px;
   font-family: $secondary-font;
   grid-column: 2 / 3;
-  color: #222222;
   text-transform: uppercase;
   hyphens: auto;
   overflow-wrap: break-word;
@@ -126,6 +126,7 @@
     margin: 0 0 16px;
   }
 }
+
 
 .card__list {
   grid-column: 2 / 3;
