@@ -1,6 +1,6 @@
 .page-header__user-menu {
   @media (min-width: $tablet-width) {
-    margin: 2px 8px 0 0;
+    margin: 2px 6px 0 0;
   }
 
   @media (min-width: 1200px) {
@@ -64,13 +64,14 @@
   text-decoration: none;
   color: #000000;
   display: block;
-  padding: 8px 0;
+  padding: 10px 0;
   width: fit-content;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    padding: 8px 0 6px;
   }
 
   @media (min-width: 1200px) {

@@ -74,10 +74,13 @@
   padding: 26px 0 23px;
   box-sizing: border-box;
   display: grid;
+  align-items: start;
+  grid-auto-rows: minmax(max-content);
+  grid-template-rows: auto 0.5fr 1fr auto;
 
   @media (min-width: 570px) {
     outline: 1px solid #f2f2f2;
-    height: 86%;
+    min-height: 86%;
     align-self: end;
     padding: 48px 0 40px;
   }
@@ -109,11 +112,15 @@
   @media (min-width: 570px) {
     width: 60px;
     height: 60px;
-    margin: 0 auto 4px;
+    margin: 0 auto 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 47px;
   }
 
   @media (min-width: 1100px) {
-    margin: 0 auto -12px;
+    margin: 0 auto 35px;
   }
 
   &::before,
@@ -125,8 +132,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     transition:
-      opacity 0.3s ease-in,
-      background-color 0.3s ease-in;
+      opacity 0.25s ease-in,
+      background-color 0.25s ease-in;
   }
 
   &::before {
@@ -151,12 +158,12 @@
 
   &:hover::before,
   &:hover::after {
-    background-color: #cdcdcd;
+    background-color: #c1c1c1;
   }
 
   &:focus::before,
   &:focus::after {
-    background-color: #cdcdcd;
+    background-color: #c1c1c1;
   }
 
   &:active::before,
@@ -179,11 +186,11 @@
     font-size: 20px;
     line-height: 26px;
     padding: 0 50px;
+    margin: 0 0 20px;
   }
 
   @media (min-width: $tablet-width) {
     padding: 0 80px;
-    margin: 0 0 -22px;
   }
 
   @media (min-width: 1100px) {
@@ -195,43 +202,51 @@
   font-size: 12px;
   line-height: 16px;
   margin: 0 0 21px;
+  padding: 0;
 
   @media (min-width: 570px) {
     font-size: 16px;
     line-height: 18px;
-    padding: 0 50px;
+    padding: 0 50px 10px;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
     margin: 0;
   }
 
   @media (min-width: 1100px) {
-    padding: 0 38px;
+    padding: 0 38px 10px;
   }
 }
 
 .catalog__additionally-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
   background-color: #f2f2f2;
   color: #444444;
   text-decoration: none;
   border: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.25s ease-in;
   min-height: 40px;
   width: calc(100% - 40px);
-  margin: 0 auto;
-  align-self: flex-end;
 
-  &:hover,
-  &:focus,
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:focus {
+    background-color: #ebebeb;
+  }
+
   &:active {
     background-color: #ebebeb;
     color: #444444;
   }
 
   @media (min-width: 570px) {
-    margin: 0 auto;
     width: calc(100% - 74px);
   }
 }

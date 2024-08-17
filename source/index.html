@@ -5,10 +5,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cat Energy | Функциональное питание для котов </title>
+  <link rel="preload" href="./fonts/oswald/oswaldmedium.woff2">
+  <link rel="preload" href="./fonts/lato/Lato-Regular.woff2">
+  <link rel="preload" href="./fonts/oswald/oswaldregular.woff2">
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="./favicon.ico">
   <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="./img/favicons//apple.png">
+  <link rel="apple-touch-icon" href="./img/favicons/apple.png">
   <link rel="manifest" href="./manifest.webmanifest">
 </head>
 
@@ -34,7 +37,7 @@
 
         <nav class="page-header__user-menu user-menu user-menu--no-js">
           <button class="user-menu__button-menu" type="button"><span class="visually-hidden">Меню</span></button>
-          <ul class="user-menu__navigation-list" aria-hidden="true">
+          <ul class="user-menu__navigation-list">
             <li class="user-menu__navigation-item user-menu__navigation-item--first-item">
               <a class="user-menu__navigation-link user-menu__navigation-link--accent user-menu__navigation-link--active
               user-menu__navigation-link--accent-active" href="./index.html" aria-current="page">Главная</a>
@@ -57,29 +60,29 @@
           <h1 class="hero__primary-title primary-title hero__text-width">Функциональное питание для&nbsp;котов
           </h1>
           <p class="hero__slogan hero__text-width">Занялся собой? Займись котом!</p>
-            <picture>
-              <source type="image/webp" media="(min-width: 1000px)"
-                srcset="./img/index/cat-energy-promo--large.webp 1x, ./img/index/cat-energy-promo--large@2x.webp 2x"
-                width="552" height="449">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="./img/index/cat-energy-promo--medium.webp 1x, ./img/index/cat-energy-promo--medium@2x.webp 2x"
-                width="709" height="609">
-              <source type="image/webp"
-                srcset="./img/index/cat-energy-promo--small.webp 1x, ./img/index/cat-energy-promo--small@2x.webp 2x"
-                width="280" height="270">
+          <picture>
+            <source type="image/webp" media="(min-width: 1000px)"
+              srcset="./img/index/cat-energy-promo--large.webp 1x, ./img/index/cat-energy-promo--large@2x.webp 2x"
+              width="552" height="449">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="./img/index/cat-energy-promo--medium.webp 1x, ./img/index/cat-energy-promo--medium@2x.webp 2x"
+              width="709" height="609">
+            <source type="image/webp"
+              srcset="./img/index/cat-energy-promo--small.webp 1x, ./img/index/cat-energy-promo--small@2x.webp 2x"
+              width="280" height="270">
 
-              <source media="(min-width: 1000px)"
-                srcset="./img/index/cat-energy-promo--large.png 1x, ./img/index/cat-energy-promo--large@2x.png 2x"
-                width="552" height="449">
-              <source media="(min-width: 768px)"
-                srcset="img/index/cat-energy-promo--medium.jpg 1x, ./img/index/cat-energy-promo--medium@2x.jpg 2x"
-                width="709" height="609">
-              <img class="hero__advertising-banner" src="./img/index/cat-energy-promo--small.png"
-                srcset="./img/index/cat-energy-promo--small@2x.png 2x" width="280" height="270"
-                alt="Cat Energy с курицей.">
-            </picture>
+            <source media="(min-width: 1000px)"
+              srcset="./img/index/cat-energy-promo--large.png 1x, ./img/index/cat-energy-promo--large@2x.png 2x"
+              width="552" height="449">
+            <source media="(min-width: 768px)"
+              srcset="img/index/cat-energy-promo--medium.jpg 1x, ./img/index/cat-energy-promo--medium@2x.jpg 2x"
+              width="709" height="609">
+            <img class="hero__advertising-banner" src="./img/index/cat-energy-promo--small.png"
+              srcset="./img/index/cat-energy-promo--small@2x.png 2x" width="280" height="270"
+              alt="Cat Energy с курицей.">
+          </picture>
 
-            <a class="hero__button basic-button" href="./form.html">подобрать программу</a>
+          <a class="hero__button basic-button" href="./form.html">подобрать программу</a>
         </div>
       </section>
     </div>
@@ -188,7 +191,8 @@
                   srcset="./img/index/before--medium.png 1x, ./img/index/before--medium@2x.png 2x" width="560"
                   height="512">
                 <img class="slider__image slider__image--before" src="./img/index/before--small.png"
-                  srcset="./img/index/before--small@2x.png" width="280" height="256" alt="Толстый котик.">
+                  srcset="./img/index/before--small@2x.png" loading="lazy" width="280" height="256"
+                  alt="Толстый котик.">
               </picture>
 
               <picture>
@@ -202,14 +206,14 @@
                   srcset="./img/index/after--medium.png 1x, ./img/index/after--medium@2x.png 2x" width="560"
                   height="512">
                 <img class="slider__image slider__image--after" src="./img/index/after--small.png"
-                  srcset="./img/index/after--small@2x.png" width="280" height="256" alt="Худой котик.">
+                  srcset="./img/index/after--small@2x.png" loading="lazy" width="280" height="256" alt="Худой котик.">
               </picture>
 
             </div>
-            <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
-              class="slider__input" />
-            <div class="slider__line" aria-hidden="true"></div>
-            <div class="slider__button" aria-hidden="true"></div>
+            <input type="range" min="0" max="100" value="50" aria-label="Потяни, чтобы увидеть результат"
+              class="slider__input">
+            <div class="slider__line"></div>
+            <div class="slider__button"></div>
           </div>
         </div>
       </div>
@@ -234,23 +238,7 @@
           </address>
         </div>
       </div>
-      <div class="contacts__map no-js" id="map">
-        <picture>
-          <source type="image/webp" media="(min-width: 1100px)"
-            srcset="./img/map/map--large.webp 1x, ./img/map/map--large@2x.webp 2x" width="1440" height="400">
-          <source type="image/webp" media="(min-width: 600px)"
-            srcset="./img/map/map--medium.webp 1x, ./img/map/map--medium@2x.webp 2x" width="768" height="400">
-          <source type="image/webp" srcset="./img/map/map--small.webp 1x, ./img/map/map--small@2x.webp 2x" width="320"
-            height="362">
-
-          <source media="(min-width: 1100px)" srcset="./img/map/map--large.jpg 1x, ./img/map/map--large@2x.jpg 2x"
-            width="1440" height="400">
-          <source media="(min-width: 600px)" srcset="./img/map/map--medium.jpg 1x, ./img/map/map--medium@2x.jpg 2x"
-            width="768" height="400">
-          <img class="contacts__map-image" src="./img/map/map--small.jpg" srcset="./img/map/map--small@2x.jpg"
-            width="320" height="362" alt="Карта." loading="lazy">
-        </picture>
-
+      <div class="contacts__map contacts__map--no-js" id="map">
       </div>
     </section>
 
@@ -298,10 +286,10 @@
 
   </footer>
   <script
-    src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=748c05f5-b923-40a4-87ff-c372433ecd66"></script>
+    src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=748c05f5-b923-40a4-87ff-c372433ecd66" defer></script>
 
   <script src="./js/menu.min.js"></script>
-  <script src="./js/mapbasics.min.js"></script>
+  <script src="./js/mapbasics.min.js" defer></script>
   <script src="./js/slider.min.js"></script>
 
 </body>

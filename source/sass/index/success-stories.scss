@@ -2,7 +2,11 @@
   background-color: #eaeaea;
 
   @media (min-width: 600px) {
-    background-image: linear-gradient(to top, #eaeaea 462px, #ffffff 0);
+    background-image: linear-gradient(to top, #eaeaea 465px, #ffffff 0);
+  }
+
+  @media (min-width: 1100px) {
+    background-image: linear-gradient(to top, #f2f2f2 465px, #ffffff 0);
   }
 }
 
@@ -17,8 +21,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 90px;
+    grid-column-gap: 80px;
     padding: 0 var(--page-indentation) 32px;
+  }
+
+  @media (min-width: 1200px) {
+    grid-column-gap: 90px;
   }
 }
 
@@ -80,7 +88,7 @@
   grid-template-rows: auto;
   text-align: center;
   align-items: stretch;
-  margin: 0 0 11px;
+  margin: 0 0 12px;
   padding: 0;
   list-style: none;
 
@@ -123,16 +131,17 @@
   width: fit-content;
   transform: translateY(-8px);
   background-color: #eaeaea;
-  padding: 0 5px;
+  padding: 0 25px;
   margin: 0 auto;
 
   @media (min-width: 600px) {
     font-size: 14px;
     background-color: #ffffff;
+    padding: 0 15px;
   }
 
   @media (min-width: 1100px) {
-    background-color: #eaeaea;
+    background-color: #f2f2f2;
   }
 }
 
@@ -172,13 +181,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media (min-width: $tablet-width) {
-    padding: 0 0 55px 0;
-  }
 }
 
 .success-stories__slider {
+  @media (min-width: $tablet-width) {
+    margin: 0 0 58px;
+  }
+
   @media (min-width: 1100px) {
     grid-column: 2 / 3;
     grid-row: 1 / span 4;
@@ -210,7 +219,7 @@
   left: 0;
   width: var(--position);
   object-position: left;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.25s ease;
 }
 
 .hidden {
@@ -232,7 +241,7 @@
   left: var(--position);
   transform: translateX(-50%);
   pointer-events: none;
-  transition: background-color 0.3s;
+  transition: background-color 0.25s ease;
 }
 
 .slider__input {
@@ -277,7 +286,7 @@
   }
 
   &:focus-visible ~ .slider__button {
-    outline: 5px solid #000000;
+    outline: 3px solid #444444;
     outline-offset: 3px;
   }
 }
@@ -294,7 +303,7 @@
   transform: translate(-50%, -50%);
   pointer-events: none;
   outline: 2px solid #666666;
-  transition: outline-color 0.3s;
+  transition: outline-color 0.25s ease;
 
   &::before,
   &::after {
@@ -305,7 +314,7 @@
     border-style: solid;
     width: 0;
     height: 0;
-    transition: border-color 0.3s;
+    transition: border-color 0.25s ease;
   }
 
   &::before {
