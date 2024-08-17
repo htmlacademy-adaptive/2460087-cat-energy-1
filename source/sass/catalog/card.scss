@@ -129,22 +129,6 @@
   }
 }
 
-.card__title-link {
-  text-decoration: none;
-  color: inherit;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:focus {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-}
 
 .card__list {
   grid-column: 2 / 3;
