@@ -3,6 +3,7 @@
 @import "./common/general-rules.scss";
 @import "./common/text-rules.scss";
 @import "./common/common.scss";
+@import "./blocks/page-main.scss";
 //Шапка
 @import "./blocks/page-header.scss";
 @import "./blocks/user-menu.scss";
@@ -11,11 +12,13 @@
 @import "./blocks/ration-description.scss";
 @import "./blocks/promo-block.scss";
 @import "./blocks/success-stories.scss";
+@import "./blocks/slider.scss";
 //Каталог
 @import "./blocks/catalog.scss";
 @import "./blocks/card.scss";
 @import "./blocks/extras.scss";
 //Форма
+@import "./blocks/program-selection.scss";
 @import "./blocks/form.scss";
 //Подвал
 @import "./blocks/page-footer.scss";

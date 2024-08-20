@@ -27,12 +27,6 @@
   }
 }
 
-.page-main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
 .position-container {
   max-width: $desktop-width;
   margin: 0 auto;
@@ -46,12 +40,4 @@
 .text-logo {
   display: block;
   padding: 10px 0;
-}
-
-.icon::before {
-  position: absolute;
-  content: "";
-  mask-size: cover;
-  mask-repeat: no-repeat;
-  background-color: #000000;
 }

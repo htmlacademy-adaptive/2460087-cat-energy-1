@@ -2,19 +2,6 @@
   padding: 0 var(--page-indentation) 49px;
 }
 
-.page-main__promo-block {
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-    border-bottom: 1px solid #e6e6e6;
-    padding: 0 var(--page-indentation) 45px;
-  }
-
-  @media (min-width: 1200px) {
-    margin: 0 0 25px 0;
-    border: none;
-  }
-}
-
 .promo-block__title {
   margin: 0 0 40px;
 
@@ -107,7 +94,6 @@
   background-repeat: no-repeat;
   top: 14px;
   left: 17px;
-
 
   &--healthy {
     width: 30px;

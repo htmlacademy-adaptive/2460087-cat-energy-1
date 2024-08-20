@@ -94,7 +94,7 @@
             </legend>
             <ul class="form__nutrition-list">
               <li class="form__nutrion-input-radio">
-                <label class="form-label">
+                <label class="form__label">
                   <input class="form__nutrition-radio visually-hidden" type="radio" name="nutrition-type"
                     value="thinness" checked>
                   <span class="form__radio-style"></span>
@@ -102,7 +102,7 @@
                 </label>
               </li>
               <li class="form__nutrion-input-radio">
-                <label class="form-label">
+                <label class="form__label">
                   <input class="form__nutrition-radio visually-hidden" type="radio" name="nutrition-type"
                     value="weight">
                   <span class="form__radio-style"></span>
@@ -110,7 +110,7 @@
                 </label>
               </li>
               <li class="form__nutrion-input-radio">
-                <label class="form-label">
+                <label class="form__label">
                   <input class="form__nutrition-radio visually-hidden" type="radio" name="nutrition-type"
                     value="unsure">
                   <span class="form__radio-style"></span>
@@ -123,21 +123,21 @@
 
         <div class="form__owner-wrapper">
           <fieldset class="form__owner position-container">
-            <legend class="form__owner-title form-title">Контактные&nbsp;данные (владельца&nbsp;кота)
+            <legend class="form__owner-title form__title">Контактные&nbsp;данные (владельца&nbsp;кота)
             </legend>
             <ul class="form__owner-list">
               <li class="form__owner-item">
                 <label class="form__owner-label">E-mail:*
                   <input class="form__owner-input" type="email" name="owner-mail" placeholder="Введите E-mail"
                     value="kuklachev@gmail.com" required>
-                  <span class="icon icon--mail"></span>
+                  <span class="form__owner-icon form__owner-icon--mail"></span>
                 </label>
               </li>
               <li class="form__owner-item">
                 <label class="form__owner-label">Телефон:*
                   <input class="form__owner-input" type="tel" name="owner-tel" placeholder="Введите телефон"
                     value="8 (960) 900-60-90" required>
-                  <span class="icon icon--phone"></span>
+                  <span class="form__owner-icon form__owner-icon--phone"></span>
                 </label>
               </li>
             </ul>
@@ -146,7 +146,7 @@
 
         <div class="form__comments-wrapper">
           <fieldset class="form__comments position-container">
-            <legend class="form__comments-title form-title">
+            <legend class="form__comments-title form__title">
               Комментарий
             </legend>
             <textarea class="form__comments-textarea" name="commetns" cols="20" rows="5"
@@ -156,33 +156,33 @@
 
         <div class="form__extras-wrapper">
           <fieldset class="form__extras position-container">
-            <legend class="form__extras-title form-title">
+            <legend class="form__extras-title form__title">
               Дополнительно
             </legend>
             <ul class="form__extras-list">
               <li class="form__extras-item">
-                <label class="form-label">
+                <label class="form__label">
                   <input class="form__extras-input visually-hidden" type="checkbox" name="sugar-substitute" checked>
                   <span class="form__checkbox-style"></span>
                   <span class="form__extras-text">Cахарозаменитель</span>
                 </label>
               </li>
               <li class="form__extras-item">
-                <label class="form-label">
+                <label class="form__label">
                   <input class="form__extras-input visually-hidden" type="checkbox" name="water">
                   <span class="form__checkbox-style"></span>
                   <span class="form__extras-text">Питьевая вода</span>
                 </label>
               </li>
               <li class="form__extras-item">
-                <label class="form-label">
+                <label class="form__label">
                   <input class="form__extras-input visually-hidden" type="checkbox" name="milk">
                   <span class="form__checkbox-style"></span>
                   <span class="form__extras-text">Молоко</span>
                 </label>
               </li>
               <li class="form__extras-item">
-                <label class="form-label">
+                <label class="form__label">
                   <input class="form__extras-input visually-hidden" type="checkbox" name="vitamins">
                   <span class="form__checkbox-style"></span>
                   <span class="form__extras-text">Витамины</span>
@@ -236,7 +236,7 @@
 
       <!--Социальные сети-->
 
-      <section class="page-footer__social-media page-footer__social-media--border social-media">
+      <section class="page-footer__social-media social-media social-media--border">
         <h2 class="social-media__title visually-hidden">Социальные сети</h2>
         <ul class="social-media__list social-media__list--border">
           <li class="social-media__item">
@@ -268,7 +268,8 @@
   </footer>
 
   <script
-    src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=748c05f5-b923-40a4-87ff-c372433ecd66" defer></script>
+    src="https://api-maps.yandex.ru/2.0/?load=package.standard&amp;lang=ru-RU&amp;apikey=748c05f5-b923-40a4-87ff-c372433ecd66"
+    defer></script>
 
   <script src="./js/menu.min.js"></script>
   <script src="./js/mapbasics.min.js" defer></script>

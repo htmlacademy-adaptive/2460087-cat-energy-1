@@ -12,18 +12,6 @@
   }
 }
 
-.page-main__ration-description {
-  margin: 0 var(--page-indentation) 20px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 var(--page-indentation) 45px;
-  }
-
-  @media (min-width: 1200px) {
-    margin: 0 var(--page-indentation) 71px;
-  }
-}
-
 .ration-description__wrapper {
   background-color: #f2f2f2;
   padding: 29px 25px 22px 20px;
@@ -46,7 +34,6 @@
     border-radius: 50%;
     left: 20px;
     top: 24px;
-    float: left;
 
     @media (min-width: $tablet-width) {
       width: 200px;
@@ -54,7 +41,6 @@
       left: auto;
       right: 63px;
       top: 92px;
-      float: right;
     }
 
     @media (min-width: 1200px) {
@@ -62,7 +48,6 @@
       height: 100px;
       top: 46px;
       left: 52px;
-      float: left;
     }
   }
 }

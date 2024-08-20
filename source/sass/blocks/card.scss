@@ -31,11 +31,9 @@
   }
 }
 
-.catalog__card {
-  border-bottom: 1px solid #ebebeb;
-
-  @media (min-width: 570px) {
-    border: none;
+.card--border {
+  @media (max-width: 569px) {
+    border-bottom: 1px solid #ebebeb;
   }
 }
 

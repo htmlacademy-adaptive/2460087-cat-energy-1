@@ -39,22 +39,6 @@
   }
 }
 
-.page-header__hero {
-  margin: 0 0 20px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 526px;
-  }
-
-  @media (min-width: 1000px) {
-    margin: 0 0 133px;
-  }
-
-  @media (min-width: 1200px) {
-    margin: 0 0 266px;
-  }
-}
-
 .hero__container {
   @media (min-width: $tablet-width) {
     width: 515px;

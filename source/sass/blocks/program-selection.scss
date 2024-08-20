@@ -1,0 +1,37 @@
+.program-selection__title {
+  padding: 0 var(--page-indentation);
+  margin: 28px 0 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0 40px 55px;
+  }
+
+  @media (min-width: 1100px) {
+    margin: 33px 0 55px;
+  }
+}
+
+.program-selection__subtitle {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 0 40px;
+  padding: 0 var(--page-indentation);
+  max-width: 75%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 40px 66px;
+    max-width: 50%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: 1100px) {
+    margin: 0 0 66px;
+    max-width: 25%;
+  }
+}
