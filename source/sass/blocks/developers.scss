@@ -17,47 +17,42 @@
   padding: 10px 0;
   transition: opacity 0.25s ease-in;
 
-  &::before {
-    content: "";
-    position: absolute;
-    mask-position: center;
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    width: 27px;
-    height: 34px;
-    background-color: #666666;
-    mask-image: url("../img/stack.svg#academy");
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: opacity 0.25s, background-color 0.25s ease-in;
-
-    @media (min-width: 600px) {
-      right: 0;
-    }
-  }
-
-  &:hover::before {
-    background-color: $main-color;
-  }
-
-  &:focus::before {
-    background-color: $main-color;
+  &:active .developers__icon {
+    fill: $main-color;
   }
 
   &:active {
     opacity: 0.3;
   }
 
-  &:active::before {
-    background-color: $main-color;
-    opacity: 0.3;
-  }
-
-
   @media (min-width: 600px) {
     font-size: 16px;
     line-height: 20px;
     margin: 0 50px 0 0;
+  }
+}
+
+.developers__icon {
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition:
+    opacity 0.25s,
+    fill 0.25s ease-in;
+  fill: #666666;
+
+  @media (min-width: 600px) {
+    right: 0;
+  }
+
+  &:hover {
+    fill: $main-color;
+  }
+
+  &:focus {
+    fill: $main-color;
   }
 }
