@@ -135,6 +135,11 @@
     animation: 0.3s ease-in-out 0s 1 forwards running opacity-nav;
   }
 
+  .user-menu--no-js .user-menu__navigation-list {
+    position: relative;
+  }
+
+
   .user-menu--no-animation .user-menu__navigation-list {
     transition: none;
   }
