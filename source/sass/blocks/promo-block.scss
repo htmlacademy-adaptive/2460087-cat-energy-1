@@ -19,6 +19,7 @@
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-auto-rows: minmax(60px, auto);
   gap: 20px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
@@ -53,26 +54,6 @@
     }
   }
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 60px;
-    background-color: $main-color;
-    top: 0;
-    left: 0;
-
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      content: "";
-      width: 80px;
-      height: 80px;
-      background-color: $main-color;
-      top: 40px;
-      left: 0;
-    }
-  }
-
   &::after {
     @media (min-width: $tablet-width) {
       color: #f2f2f2;
@@ -89,35 +70,63 @@
   }
 }
 
-.promo-block__icon {
-  position: absolute;
-  background-repeat: no-repeat;
-  top: 14px;
-  left: 17px;
+.promo-block__iсon {
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    background-position: top left;
+  }
+
+  &::after {
+    background-color: $main-color; //убрать фоновый цвет
+    top: 0;
+    left: 0;
+  }
+
+  &::before {
+    width: 60px;
+    height: 60px;
+    background-color: $main-color;
+    top: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      top: 40px;
+    }
+  }
 
   &--healthy {
-    width: 30px;
-    height: 32px;
+    &::after {
+      background-image: url("../img/stack.svg#promo-healthy");
+      width: 30px;
+      height: 32px;
+    }
   }
 
   &--powder {
-    width: 26px;
-    height: 29px;
+    &::after {
+      background-image: url("../img/stack.svg#promo-powder");
+      width: 30px;
+      height: 32px;
+    }
   }
 
   &--economy {
-    width: 27px;
-    height: 31px;
+    &::after {
+      background-image: url("../img/stack.svg#promo-economy");
+      width: 30px;
+      height: 32px;
+    }
   }
 
   &--quick {
-    width: 27px;
-    height: 31px;
-  }
-
-  @media (min-width: $tablet-width) {
-    top: 50px;
-    left: 40px;
-    transform: translate(-50%, 50%);
+    &::after {
+      background-image: url("../img/stack.svg#promo-quick");
+      width: 30px;
+      height: 32px;
+    }
   }
 }

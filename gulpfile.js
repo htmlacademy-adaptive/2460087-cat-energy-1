@@ -90,7 +90,7 @@ const sprite = () => {
 
 //Создает стеки
 const { src, dest } = gulp;
-const createStack = () => {
+export const createStack = () => {
   return src('source/img/icon/stack/*.svg')
     .pipe(svgo())
     .pipe(stacksvg())

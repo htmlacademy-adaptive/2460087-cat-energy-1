@@ -25,9 +25,13 @@
     padding: 77px 61px 59px 52px;
   }
 
-  &::before {
+  &::before,
+  &::after {
     position: absolute;
     content: "";
+  }
+
+  &::before {
     width: 50px;
     height: 50px;
     background-color: $main-color;
@@ -50,53 +54,46 @@
       left: 52px;
     }
   }
-}
-
-.ration-description__icon {
-  position: absolute;
-  object-fit: contain;
 
   &--slim {
-    width: 36px;
-    height: 50px;
-    left: 27px;
-    top: 21px;
+    &::after {
+      background-image: url("../img/stack.svg#cat-slim");
+      top: 20px;
+      left: 24px;
+      width: 36px;
+      height: 50px;
 
-    @media (min-width: $tablet-width) {
-      width: 140px;
-      height: 194px;
-      right: 92px;
-      top: 81px;
-      left: auto;
-    }
+      @media (min-width: $tablet-width) {
+        width: 140px;
+        height: 194px;
+      }
 
-    @media (min-width: 1200px) {
-      width: 70px;
-      height: 97px;
-      top: 41px;
-      left: 67px;
+      @media (min-width: 1200px) {
+        width: 100px;
+        height: 106px;
+      }
     }
   }
 
-  &--muskular {
-    width: 67px;
-    height: 28px;
-    left: 12px;
-    top: 35px;
+  &--muscular {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/stack.svg#cat-muscular");
+      top: 20px;
+      left: 24px;
+      width: 67px;
+      height: 50px;
 
-    @media (min-width: $tablet-width) {
-      width: 268px;
-      height: 172px;
-      top: 105px;
-      right: 30px;
-      left: auto;
-    }
+      @media (min-width: $tablet-width) {
+        width: 268px;
+        height: 112px;
+      }
 
-    @media (min-width: 1200px) {
-      width: 134px;
-      height: 56px;
-      top: 67px;
-      left: 34px;
+      @media (min-width: 1200px) {
+        width: 134px;
+        height: 100px;
+      }
     }
   }
 }
