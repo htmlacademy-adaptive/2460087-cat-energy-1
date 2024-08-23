@@ -184,12 +184,14 @@
 .form__checkbox-style {
   display: inline-block;
   width: 30px;
+  min-width: 30px;
   height: 30px;
   vertical-align: baseline;
   position: relative;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    min-width: 40px;
     width: 40px;
     height: 40px;
   }
@@ -633,7 +635,7 @@
 }
 
 .form__label:hover .form__extras-input:not(:disabled):not(:active) + .form__checkbox-style {
-  outline-color: #cdcdcd;
+  outline-color: #bababa;
 }
 
 .form__label:hover .form__extras-input:not(:disabled):not(:active) + .form__checkbox-style + .form__extras-text {
