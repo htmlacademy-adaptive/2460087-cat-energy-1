@@ -1,5 +1,9 @@
 .promo-block {
   padding: 0 var(--page-indentation) 49px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 var(--page-indentation) 45px;
+  }
 }
 
 .promo-block__title {
@@ -82,14 +86,17 @@
     background-color: $main-color;
     top: 14px;
     left: 15px;
+
+    @media (min-width: $tablet-width) {
+      top: 63px;
+      left: 25px;
+    }
   }
 
   &::before {
     width: 60px;
     height: 60px;
     background-color: $main-color;
-    top: 0;
-    left: 0;
 
     @media (min-width: $tablet-width) {
       width: 80px;
