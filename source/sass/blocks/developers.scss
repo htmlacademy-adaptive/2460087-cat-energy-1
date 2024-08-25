@@ -1,6 +1,6 @@
 .developers {
   position: relative;
-  padding: 19px;
+  padding: 19px 0 0 20px;
 
   @media (min-width: 600px) {
     padding: 0;
@@ -37,8 +37,7 @@
   width: 27px;
   height: 34px;
   right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 20px;
   transition:
     opacity 0.25s,
     fill 0.25s ease-in;
