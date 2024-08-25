@@ -129,10 +129,10 @@
   font-size: 12px;
   line-height: 100%;
   display: block;
-  width: fit-content;
+  width: min-content;
   transform: translateY(-8px);
   background-color: #eaeaea;
-  padding: 0 25px;
+  padding: 0 10px;
   margin: 0 auto;
 
   @media (min-width: 600px) {
