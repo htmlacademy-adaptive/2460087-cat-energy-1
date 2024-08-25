@@ -79,9 +79,9 @@
   }
 
   &::after {
-    background-color: $main-color; //убрать фоновый цвет
-    top: 0;
-    left: 0;
+    background-color: $main-color;
+    top: 14px;
+    left: 15px;
   }
 
   &::before {
