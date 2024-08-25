@@ -58,15 +58,15 @@
   &--slim {
     &::after {
       background-image: url("../img/stack.svg#cat-slim");
-      top: 20px;
-      width: 36px;
-      height: 50px;
 
       @media (max-width: 767px) {
         left: 27px;
+        top: 20px;
+        width: 36px;
+        height: 50px;
       }
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $tablet-width) and (max-width: 1199px) {
         width: 140px;
         height: 194px;
         right: 94px;
@@ -74,26 +74,26 @@
       }
 
       @media (min-width: 1200px) {
-        width: 100px;
-        height: 106px;
+        width: 70px;
+        height: 97px;
+        top: 41px;
+        left: 66px;
       }
     }
   }
 
   &--muscular {
     &::after {
-      position: absolute;
-      content: "";
       background-image: url("../img/stack.svg#cat-muscular");
-      top: 24px;
-      width: 67px;
-      height: 50px;
 
       @media (max-width: 767px) {
         left: 11px;
+        top: 24px;
+        width: 67px;
+        height: 50px;
       }
 
-      @media (min-width: $tablet-width) {
+      @media (min-width: $tablet-width) and (max-width: 1199px) {
         width: 268px;
         height: 112px;
         right: 30px;
@@ -103,6 +103,8 @@
       @media (min-width: 1200px) {
         width: 134px;
         height: 100px;
+        top: 44px;
+        left: 32px;
       }
     }
   }
