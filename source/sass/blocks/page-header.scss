@@ -3,7 +3,13 @@
   font-weight: 400;
   position: relative;
 
+  @media (max-width: 767px) {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
   &--index {
+    border: none;
+
     @media (min-width: 1200px) {
       &::before {
         position: absolute;
