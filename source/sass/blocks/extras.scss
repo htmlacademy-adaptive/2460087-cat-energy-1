@@ -32,7 +32,6 @@
     line-height: 36px;
     padding: 0 40px 83px 80px;
     margin: 0 -40px 0;
-    letter-spacing: -1.2px;
   }
 
   @media (min-width: 1200px) {
@@ -116,11 +115,12 @@
     padding: 25px 0 25px;
     font-size: 20px;
     line-height: 20px;
+    letter-spacing: -0.1px;
   }
 
   @media (min-width: 1200px) {
     margin: 0;
-    padding: 25px 0 0 0;
+    padding: 25px 0 0;
   }
 }
 
