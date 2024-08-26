@@ -10,13 +10,6 @@
   }
 }
 
-.form__title {
-  @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-  }
-}
-
 .form__layout-wrapper {
   @media (min-width: 1100px) {
     display: flex;
@@ -349,7 +342,7 @@
   position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 13px;
+  gap: 0 13px;
 }
 
 .form__owner-input {
@@ -398,18 +391,16 @@
     background-color: #000000;
     width: 20px;
     height: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 17px;
+    top: 12px;
+    right: 13px;
     transition: background-color 0.25s ease-in;
 
     @media (min-width: $tablet-width) {
       right: 14px;
+      top: 15px;
     }
   }
-}
 
-.form__owner-icon {
   &--mail::before {
     mask-image: url("../img/stack.svg#email-stroke");
   }
@@ -456,7 +447,11 @@
   padding: 0 var(--page-indentation);
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto 74px;
+    margin: 0 auto 68px;
+  }
+
+  @media (min-width: 1100px) {
+    margin: 0 auto 75px;
   }
 }
 
