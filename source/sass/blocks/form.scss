@@ -259,11 +259,11 @@
   padding: 0 var(--page-indentation);
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 25px;
+    margin: 0 0 44px;
   }
 
   @media (min-width: 1100px) {
-    margin: 0 auto 2px;
+    margin: 0 auto 72px;
   }
 }
 
@@ -311,15 +311,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  display: grid;
 
-  @media (min-width: $tablet-width) {
-    margin: 0 40px 40px;
+  @media (min-width: $tablet-width) and (max-width: 1099px) {
+    margin: 0 40px;
   }
 
   @media (min-width: 1100px) {
-    margin: 0 0 70px;
-    display: flex;
-    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
     gap: 80px;
   }
 }
@@ -334,7 +333,6 @@
 
   @media (min-width: 1100px) {
     margin: 0;
-    flex: 1;
   }
 }
 
@@ -350,6 +348,11 @@
   max-width: 70px;
   display: block;
   margin: 0 13px 0 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 85px;
+    margin: 0 15px 0 0;
+  }
 }
 
 .form__owner-input {
@@ -366,16 +369,15 @@
     color 0.25s ease-in;
 
   &--email {
-    max-width: 217px;
-    hyphens: none;
+    min-width: 217px;
   }
 
   &--phone {
-    max-width: 200px;
+    min-width: 200px;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 11px 45px 0 19px;
+    padding: 9px 0 10px 21px;
   }
 
   &:hover {
@@ -515,7 +517,7 @@
   text-transform: inherit;
   font-size: inherit;
   line-height: inherit;
-  padding: 14px 16px 0;
+  padding: 14px 15px 0;
   border: none;
   outline: 1px solid #e7e7e7;
   resize: none;
