@@ -1,0 +1,58 @@
+.developers {
+  position: relative;
+  padding: 19px 0 0 20px;
+
+  @media (min-width: 600px) {
+    padding: 0;
+  }
+}
+
+.developers__link {
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  width: fit-content;
+  padding: 10px 0;
+  transition: opacity 0.25s ease-in;
+
+  &:active .developers__icon {
+    fill: $main-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: 600px) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 50px 0 0;
+  }
+}
+
+.developers__icon {
+  position: absolute;
+  width: 27px;
+  height: 34px;
+  right: 20px;
+  top: 20px;
+  transition:
+    opacity 0.25s,
+    fill 0.25s ease-in;
+  fill: #666666;
+
+  @media (min-width: 600px) {
+    right: 0;
+    top: 3px;
+  }
+
+  &:hover {
+    fill: $main-color;
+  }
+
+  &:focus {
+    fill: $main-color;
+  }
+}

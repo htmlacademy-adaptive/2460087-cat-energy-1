@@ -1,13 +1,3 @@
-.page-header__user-menu {
-  @media (min-width: $tablet-width) {
-    margin: 2px 6px 0 0;
-  }
-
-  @media (min-width: 1200px) {
-    margin: 4px 2px 0 0;
-  }
-}
-
 .user-menu__navigation-list {
   text-align: center;
   list-style: none;
@@ -144,6 +134,11 @@
     display: block;
     animation: 0.3s ease-in-out 0s 1 forwards running opacity-nav;
   }
+
+  .user-menu--no-js .user-menu__navigation-list {
+    position: relative;
+  }
+
 
   .user-menu--no-animation .user-menu__navigation-list {
     transition: none;

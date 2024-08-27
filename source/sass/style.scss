@@ -3,22 +3,25 @@
 @import "./common/general-rules.scss";
 @import "./common/text-rules.scss";
 @import "./common/common.scss";
+@import "./blocks/page-main.scss";
 //Шапка
-@import "./header/page-header.scss";
-@import "./header/user-menu.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/user-menu.scss";
 //Главная
-@import "./index/hero.scss";
-@import "./index/ration-description.scss";
-@import "./index/promo-block.scss";
-@import "./index/success-stories.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/ration-description.scss";
+@import "./blocks/promo-block.scss";
+@import "./blocks/success-stories.scss";
+@import "./blocks/slider.scss";
 //Каталог
-@import "./catalog/catalog.scss";
-@import "./catalog/card.scss";
-@import "./catalog/extras.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/card.scss";
+@import "./blocks/extras.scss";
 //Форма
-@import "./form/form.scss";
+@import "./blocks/program-selection.scss";
+@import "./blocks/form.scss";
 //Подвал
-@import "./footer/page-footer.scss";
-@import "./footer/contacts.scss";
-@import "./footer/social-media.scss";
-@import "./footer/developers.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/social-media.scss";
+@import "./blocks/developers.scss";

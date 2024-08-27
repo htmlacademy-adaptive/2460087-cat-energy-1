@@ -1,25 +1,14 @@
-.basic-title {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 40px;
-  color: #000000;
-  font-weight: 400;
-}
-
 .primary-title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
   font-weight: 400;
-}
 
-.page-title {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 36px;
-  color: #000000;
-  font-weight: 400;
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form-title {
@@ -28,4 +17,9 @@
   line-height: 26px;
   color: #000000;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }

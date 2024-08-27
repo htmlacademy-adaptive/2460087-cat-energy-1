@@ -12,18 +12,6 @@
   }
 }
 
-.page-main__ration-description {
-  margin: 0 var(--page-indentation) 20px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 var(--page-indentation) 45px;
-  }
-
-  @media (min-width: 1200px) {
-    margin: 0 var(--page-indentation) 71px;
-  }
-}
-
 .ration-description__wrapper {
   background-color: #f2f2f2;
   padding: 29px 25px 22px 20px;
@@ -37,16 +25,19 @@
     padding: 77px 61px 59px 52px;
   }
 
-  &::before {
+  &::before,
+  &::after {
     position: absolute;
     content: "";
+  }
+
+  &::before {
     width: 50px;
     height: 50px;
     background-color: $main-color;
     border-radius: 50%;
     left: 20px;
     top: 24px;
-    float: left;
 
     @media (min-width: $tablet-width) {
       width: 200px;
@@ -54,7 +45,6 @@
       left: auto;
       right: 63px;
       top: 92px;
-      float: right;
     }
 
     @media (min-width: 1200px) {
@@ -62,67 +52,71 @@
       height: 100px;
       top: 46px;
       left: 52px;
-      float: left;
     }
   }
-}
-
-.ration-description__icon {
-  position: absolute;
-  object-fit: contain;
 
   &--slim {
-    width: 36px;
-    height: 50px;
-    left: 27px;
-    top: 21px;
+    &::after {
+      background-image: url("../img/stack.svg#cat-slim");
 
-    @media (min-width: $tablet-width) {
-      width: 140px;
-      height: 194px;
-      right: 92px;
-      top: 81px;
-      left: auto;
-    }
+      @media (max-width: 767px) {
+        left: 27px;
+        top: 20px;
+        width: 36px;
+        height: 50px;
+      }
 
-    @media (min-width: 1200px) {
-      width: 70px;
-      height: 97px;
-      top: 41px;
-      left: 67px;
+      @media (min-width: $tablet-width) and (max-width: 1199px) {
+        width: 140px;
+        height: 194px;
+        right: 94px;
+        top: 80px;
+      }
+
+      @media (min-width: 1200px) {
+        width: 70px;
+        height: 97px;
+        top: 41px;
+        left: 66px;
+      }
     }
   }
 
-  &--muskular {
-    width: 67px;
-    height: 28px;
-    left: 12px;
-    top: 35px;
+  &--muscular {
+    &::after {
+      background-image: url("../img/stack.svg#cat-muscular");
 
-    @media (min-width: $tablet-width) {
-      width: 268px;
-      height: 172px;
-      top: 105px;
-      right: 30px;
-      left: auto;
-    }
+      @media (max-width: 767px) {
+        left: 11px;
+        top: 24px;
+        width: 67px;
+        height: 50px;
+      }
 
-    @media (min-width: 1200px) {
-      width: 134px;
-      height: 56px;
-      top: 67px;
-      left: 34px;
+      @media (min-width: $tablet-width) and (max-width: 1199px) {
+        width: 268px;
+        height: 112px;
+        right: 30px;
+        top: 135px;
+      }
+
+      @media (min-width: 1200px) {
+        width: 134px;
+        height: 100px;
+        top: 44px;
+        left: 32px;
+      }
     }
   }
 }
 
 .ration-description__title {
-  margin: 0 0 30px 71px;
+  margin: 0 0 30px 70px;
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: -1px;
   color: #000000;
 
   @media (max-width: 767px) {
@@ -154,7 +148,7 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0 200px 52px 0;
-    padding: 0 70px 0 0;
+    padding: 0 69px 0 0;
     color: #000000;
   }
 

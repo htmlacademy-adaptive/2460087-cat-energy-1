@@ -7,8 +7,8 @@ document.addEventListener('input', (e) => {
   container.style.setProperty('--position', position);
 
   if (slider.value <= 38) {
-    beforeImage.classList.add('hidden');
+    beforeImage.classList.add('slider__hidden');
   } else {
-    beforeImage.classList.remove('hidden');
+    beforeImage.classList.remove('slider__hidden');
   }
 });
