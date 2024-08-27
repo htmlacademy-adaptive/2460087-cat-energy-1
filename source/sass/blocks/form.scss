@@ -318,8 +318,8 @@
 
   @media (min-width: 1100px) {
     margin: 0 0 70px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 80px;
   }
 }
@@ -334,6 +334,7 @@
 
   @media (min-width: 1100px) {
     margin: 0;
+    flex: 1;
   }
 }
 
@@ -341,8 +342,14 @@
   align-items: center;
   position: relative;
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0 13px;
+  grid-template-columns: auto 1fr auto;
+  gap: 0;
+}
+
+.form__owner-contact {
+  max-width: 70px;
+  display: block;
+  margin: 0 13px 0 0;
 }
 
 .form__owner-input {
@@ -351,16 +358,24 @@
   border: none;
   color: inherit;
   text-transform: inherit;
-  margin: 0;
-  padding: 11px 45px 9px 14px;
+  padding: 11px 40px 9px 14px;
   outline: solid 1px #cdcdcd;
   box-sizing: border-box;
   transition:
     outline 0.1s ease,
     color 0.25s ease-in;
 
+  &--email {
+    max-width: 217px;
+    hyphens: none;
+  }
+
+  &--phone {
+    max-width: 200px;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 11px 45px 9px 19px;
+    padding: 11px 45px 0 19px;
   }
 
   &:hover {
@@ -383,50 +398,53 @@
 }
 
 .form__owner-icon {
-  &::before {
-    position: absolute;
-    content: "";
-    mask-size: cover;
-    mask-repeat: no-repeat;
-    background-color: #000000;
-    width: 20px;
-    height: 20px;
-    top: 12px;
-    right: 13px;
-    transition: background-color 0.25s ease-in;
+  display: block;
+  color: #000000;
+  background-color: #000000;
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 13px;
+}
 
-    @media (min-width: $tablet-width) {
-      right: 14px;
-      top: 15px;
-    }
-  }
+.form__owner-icon--mail,
+.form__owner-icon--phone {
+  transition: background-color 0.25s ease-in;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
 
-  &--mail::before {
-    mask-image: url("../img/stack.svg#email-stroke");
-  }
-
-  &--phone::before {
-    mask-image: url("../img/stack.svg#phone-stroke");
+  @media (min-width: $tablet-width) {
+    right: 14px;
   }
 }
 
-.form__owner-input:hover:not(:disabled):not(:focus):not(:invalid) + .form__owner-icon::before {
+.form__owner-icon--mail {
+  mask-image: url("../img/stack.svg#email-stroke");
+}
+
+.form__owner-icon--phone {
+  mask-image: url("../img/stack.svg#phone-stroke");
+}
+
+.form__owner-input:hover:not(:disabled):not(:focus):not(:invalid) + .form__owner-icon {
   background-color: #222222;
 }
 
-.form__owner-input:focus + .form__owner-icon::before {
+.form__owner-input:focus + .form__owner-icon {
   background-color: $main-color;
 }
 
-.form__owner-input:active + .form__owner-icon::before {
+.form__owner-input:active + .form__owner-icon {
   background-color: $main-color;
 }
 
-.form__owner-input:invalid + .form__owner-icon::before {
+.form__owner-input:invalid + .form__owner-icon {
   background-color: #ff8282;
 }
 
-.form__owner-input:disabled + .form__owner-icon::before {
+.form__owner-input:disabled + .form__owner-icon {
   opacity: 0.5;
   cursor: not-allowed;
 }

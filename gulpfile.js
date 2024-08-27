@@ -71,7 +71,7 @@ const createWebp = () => {
 }
 
 //SVG
-export const svg = () => {
+const svg = () => {
   return gulp.src(['source/img/**/*.svg', '!source/img/icon/sprite/*.svg', '!source/img/icon/stack/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
@@ -90,7 +90,7 @@ const sprite = () => {
 
 //Создает стеки
 const { src, dest } = gulp;
-export const createStack = () => {
+const createStack = () => {
   return src('source/img/icon/stack/*.svg')
     .pipe(svgo())
     .pipe(stacksvg())
