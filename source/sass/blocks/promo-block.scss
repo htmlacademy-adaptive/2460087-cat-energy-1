@@ -8,6 +8,11 @@
 
 .promo-block__title {
   margin: 0 0 40px;
+  font-family: $secondary-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 33px;
@@ -82,18 +87,9 @@
     background-position: top left;
   }
 
-  &::after {
-    background-color: $main-color;
-    top: 14px;
-    left: 15px;
-
-    @media (min-width: $tablet-width) {
-      top: 63px;
-      left: 25px;
-    }
-  }
-
   &::before {
+    top: 0;
+    left: 0;
     width: 60px;
     height: 60px;
     background-color: $main-color;
@@ -102,6 +98,16 @@
       width: 80px;
       height: 80px;
       top: 40px;
+    }
+  }
+
+  &::after {
+    top: 14px;
+    left: 15px;
+
+    @media (min-width: $tablet-width) {
+      top: 63px;
+      left: 25px;
     }
   }
 

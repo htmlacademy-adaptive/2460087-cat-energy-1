@@ -52,16 +52,14 @@
 }
 
 .hero__primary-title {
-  margin: 0;
-  padding: 28px 10px 25px;
-  color: #ffffff;
-  text-align: center;
+  @media (max-width: 767px) {
+    margin: 0;
+    padding: 28px 10px 25px;
+    color: #ffffff;
+    text-align: center;
+  }
 
   @media (min-width: $tablet-width) {
-    color: #000000;
-    text-align: left;
-    font-size: 60px;
-    line-height: 60px;
     margin: 0 0 42px;
     padding: 0;
     max-width: 440px;

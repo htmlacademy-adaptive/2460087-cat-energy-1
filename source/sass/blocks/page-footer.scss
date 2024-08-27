@@ -1,9 +1,10 @@
 .page-footer {
   background-color: #f2f2f2;
-  padding: 0 0 20px;
 }
 
 .page-footer__container {
+  padding: 0 0 20px;
+
   @media (min-width: 600px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

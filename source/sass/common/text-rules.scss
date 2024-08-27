@@ -4,20 +4,12 @@
   line-height: 36px;
   color: #000000;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
-
-//дописать медиавыражения для изменения на всех страницах, убрать лишний код из других страниц
-
-
-.basic-title {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 40px;
-  color: #000000;
-  font-weight: 400;
-}
-
-//аналогично
 
 .form-title {
   font-family: $secondary-font;
